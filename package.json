@@ -33,8 +33,6 @@
 		"lint.watch": "chokidar 'src/**/*' -c 'yarn lint'",
 		"lint.fix": "eslint --fix '**/*.ts'",
 		"release": "semantic-release",
-		"arkit": "arkit -f index.ts -o docs/images/arkit.svg",
-		"arkit.png": "arkit -f index.ts -o docs/images/arkit.png",
 		"test": "jest",
 		"test.watch": "jest --watch"
 	},
