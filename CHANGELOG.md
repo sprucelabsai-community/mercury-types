@@ -1,3 +1,12 @@
+# [13.2.0](https://github.com/sprucelabsai/mercury-types/compare/v13.1.1...v13.2.0) (2020-11-23)
+
+
+### Features
+
+* export event signatures by name type ([f54a1c2](https://github.com/sprucelabsai/mercury-types/commit/f54a1c2))
+
+## [13.1.1](https://github.com/sprucelabsai/mercury-types/compare/v13.1.0...v13.1.1) (2020-11-23)
+
 # 1.0.0 (2020-11-23)
 
 
