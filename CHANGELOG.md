@@ -1,3 +1,11 @@
+# 1.0.0 (2020-11-23)
+
+
+### Features
+
+* moving mercury-types to stand alone repo ([b41e4b7](https://github.com/sprucelabsai/mercury-types/commit/b41e4b7))
+* publish ([75bad25](https://github.com/sprucelabsai/mercury-types/commit/75bad25))
+
 # Change Log
 
 All notable changes to this project will be documented in this file.
