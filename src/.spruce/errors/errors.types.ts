@@ -19,7 +19,7 @@ export declare namespace SpruceErrors.MercuryTypes {
 			'validNames': string[]
 	}
 
-	export interface IInvalidEventNameSchema extends SpruceSchema.ISchema {
+	export interface IInvalidEventNameSchema extends SpruceSchema.Schema {
 		id: 'invalidEventName',
 		namespace: 'MercuryTypes',
 		name: 'Invalid event name',

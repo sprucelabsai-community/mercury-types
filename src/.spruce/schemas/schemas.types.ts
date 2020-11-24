@@ -32,7 +32,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'can'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
 		}
 
-		interface IPermissionSchema extends SpruceSchema.ISchema {
+		interface IPermissionSchema extends SpruceSchema.Schema {
 			id: 'permission',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -102,7 +102,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'permissions': SpruceSchemas.MercuryTypes.v2020_09_01.IPermission[]
 		}
 
-		interface IPermissionContractSchema extends SpruceSchema.ISchema {
+		interface IPermissionContractSchema extends SpruceSchema.Schema {
 			id: 'permissionContract',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -156,16 +156,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface IEventSignature {
 			
 				
-				'responsePayloadSchema'?: (SpruceSchema.ISchema)| undefined | null
+				'responsePayloadSchema'?: (SpruceSchema.Schema)| undefined | null
 				
-				'emitPayloadSchema'?: (SpruceSchema.ISchema)| undefined | null
+				'emitPayloadSchema'?: (SpruceSchema.Schema)| undefined | null
 				
 				'listenPermissionContract'?: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContract| undefined | null
 				
 				'emitPermissionContract'?: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContract| undefined | null
 		}
 
-		interface IEventSignatureSchema extends SpruceSchema.ISchema {
+		interface IEventSignatureSchema extends SpruceSchema.Schema {
 			id: 'eventSignature',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -174,12 +174,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'responsePayloadSchema': {
 			                type: 'raw',
-			                options: {valueType: `SpruceSchema.ISchema`,}
+			                options: {valueType: `SpruceSchema.Schema`,}
 			            },
 			            /** . */
 			            'emitPayloadSchema': {
 			                type: 'raw',
-			                options: {valueType: `SpruceSchema.ISchema`,}
+			                options: {valueType: `SpruceSchema.Schema`,}
 			            },
 			            /** . */
 			            'listenPermissionContract': {
@@ -207,7 +207,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				[eventName:string]: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignature
 		}
 
-		interface IEventSignaturesByNameSchema extends SpruceSchema.ISchema {
+		interface IEventSignaturesByNameSchema extends SpruceSchema.Schema {
 			id: 'eventSignaturesByName',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -233,7 +233,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'eventSignatures': SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignaturesByName
 		}
 
-		interface IEventContractSchema extends SpruceSchema.ISchema {
+		interface IEventContractSchema extends SpruceSchema.Schema {
 			id: 'eventContract',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -270,7 +270,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'offPrem'?: boolean| undefined | null
 		}
 
-		interface IStatusFlagsSchema extends SpruceSchema.ISchema {
+		interface IStatusFlagsSchema extends SpruceSchema.Schema {
 			id: 'statusFlags',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -337,7 +337,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'anonymous'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
 		}
 
-		interface IDefaultsByRoleSchema extends SpruceSchema.ISchema {
+		interface IDefaultsByRoleSchema extends SpruceSchema.Schema {
 			id: 'defaultsByRole',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',

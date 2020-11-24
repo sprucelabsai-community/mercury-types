@@ -12,12 +12,12 @@ const eventSignatureSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignatu
 	            /** . */
 	            'responsePayloadSchema': {
 	                type: 'raw',
-	                options: {valueType: `SpruceSchema.ISchema`,}
+	                options: {valueType: `SpruceSchema.Schema`,}
 	            },
 	            /** . */
 	            'emitPayloadSchema': {
 	                type: 'raw',
-	                options: {valueType: `SpruceSchema.ISchema`,}
+	                options: {valueType: `SpruceSchema.Schema`,}
 	            },
 	            /** . */
 	            'listenPermissionContract': {
