@@ -11,7 +11,7 @@ import * as SpruceSchema from '@sprucelabs/schema'
 export declare namespace SpruceErrors.MercuryTypes {
 
 	
-	export interface IInvalidEventName {
+	export interface InvalidEventName {
 		
 			
 			'eventNameWithOptionalNamespace': string
@@ -19,7 +19,7 @@ export declare namespace SpruceErrors.MercuryTypes {
 			'validNames': string[]
 	}
 
-	export interface IInvalidEventNameSchema extends SpruceSchema.Schema {
+	export interface InvalidEventNameSchema extends SpruceSchema.Schema {
 		id: 'invalidEventName',
 		namespace: 'MercuryTypes',
 		name: 'Invalid event name',
@@ -40,7 +40,7 @@ export declare namespace SpruceErrors.MercuryTypes {
 		    }
 	}
 
-	export type InvalidEventNameEntity = SchemaEntity<SpruceErrors.MercuryTypes.IInvalidEventNameSchema>
+	export type InvalidEventNameEntity = SchemaEntity<SpruceErrors.MercuryTypes.InvalidEventNameSchema>
 
 }
 

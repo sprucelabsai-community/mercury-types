@@ -4,7 +4,7 @@ import { SpruceSchemas } from '../../schemas.types'
 import defaultsByRoleSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/defaultsByRole.schema'
 import statusFlagsSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/statusFlags.schema'
 
-const permissionSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionSchema  = {
+const permissionSchema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionSchema  = {
 	id: 'permission',
 	version: 'v2020_09_01',
 	namespace: 'MercuryTypes',

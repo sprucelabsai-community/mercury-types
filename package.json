@@ -44,7 +44,7 @@
 		"@sprucelabs/log": ">=10.2.294",
 		"@sprucelabs/schema": ">=17.0.0",
 		"@sprucelabs/spruce-core-schemas": ">=22.0.0",
-		"@sprucelabs/spruce-skill-utils": ">=11.3.1"
+		"@sprucelabs/spruce-skill-utils": ">=12.0.0"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.11.6",

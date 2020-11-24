@@ -16,7 +16,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IPermission {
+		interface Permission {
 			
 				/** id. Hyphen separated di for this permission, e.g. can-unlock-doors */
 				'id': string
@@ -27,12 +27,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Require all statuses. */
 				'requireAllStatuses'?: boolean| undefined | null
 				
-				'defaultsByRoleBase'?: SpruceSchemas.MercuryTypes.v2020_09_01.IDefaultsByRole| undefined | null
+				'defaultsByRoleBase'?: SpruceSchemas.MercuryTypes.v2020_09_01.DefaultsByRole| undefined | null
 				
-				'can'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'can'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 		}
 
-		interface IPermissionSchema extends SpruceSchema.Schema {
+		interface PermissionSchema extends SpruceSchema.Schema {
 			id: 'permission',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -70,17 +70,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'defaultsByRoleBase': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IDefaultsByRoleSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.DefaultsByRoleSchema,}
 			            },
 			            /** . */
 			            'can': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			    }
 		}
 
-		type PermissionEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionSchema>
+		type PermissionEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.PermissionSchema>
 
 	}
 
@@ -88,7 +88,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IPermissionContract {
+		interface PermissionContract {
 			
 				
 				'id': string
@@ -99,10 +99,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Require all permissions. */
 				'requireAllPermissions'?: boolean| undefined | null
 				
-				'permissions': SpruceSchemas.MercuryTypes.v2020_09_01.IPermission[]
+				'permissions': SpruceSchemas.MercuryTypes.v2020_09_01.Permission[]
 		}
 
-		interface IPermissionContractSchema extends SpruceSchema.Schema {
+		interface PermissionContractSchema extends SpruceSchema.Schema {
 			id: 'permissionContract',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -140,12 +140,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionSchema,}
 			            },
 			    }
 		}
 
-		type PermissionContractEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContractSchema>
+		type PermissionContractEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContractSchema>
 
 	}
 
@@ -153,19 +153,19 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IEventSignature {
+		interface EventSignature {
 			
 				
 				'responsePayloadSchema'?: (SpruceSchema.Schema)| undefined | null
 				
 				'emitPayloadSchema'?: (SpruceSchema.Schema)| undefined | null
 				
-				'listenPermissionContract'?: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContract| undefined | null
+				'listenPermissionContract'?: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContract| undefined | null
 				
-				'emitPermissionContract'?: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContract| undefined | null
+				'emitPermissionContract'?: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContract| undefined | null
 		}
 
-		interface IEventSignatureSchema extends SpruceSchema.Schema {
+		interface EventSignatureSchema extends SpruceSchema.Schema {
 			id: 'eventSignature',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -184,17 +184,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'listenPermissionContract': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContractSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContractSchema,}
 			            },
 			            /** . */
 			            'emitPermissionContract': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContractSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContractSchema,}
 			            },
 			    }
 		}
 
-		type EventSignatureEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignatureSchema>
+		type EventSignatureEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.EventSignatureSchema>
 
 	}
 
@@ -202,12 +202,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IEventSignaturesByName {
+		interface EventSignaturesByName {
 				/** . */
-				[eventName:string]: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignature
+				[eventName:string]: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignature
 		}
 
-		interface IEventSignaturesByNameSchema extends SpruceSchema.Schema {
+		interface EventSignaturesByNameSchema extends SpruceSchema.Schema {
 			id: 'eventSignaturesByName',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -216,10 +216,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    type: 'schema',
 			    keyName: 'eventName',
 			    isRequired: true,
-			    options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignatureSchema,}
+			    options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignatureSchema,}
 			}		}
 
-		type EventSignaturesByNameEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignaturesByNameSchema>
+		type EventSignaturesByNameEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByNameSchema>
 
 	}
 
@@ -227,13 +227,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IEventContract {
+		interface EventContract {
 			
 				
-				'eventSignatures': SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignaturesByName
+				'eventSignatures': SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByName
 		}
 
-		interface IEventContractSchema extends SpruceSchema.Schema {
+		interface EventContractSchema extends SpruceSchema.Schema {
 			id: 'eventContract',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -243,12 +243,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'eventSignatures': {
 			                type: 'schema',
 			                isRequired: true,
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignaturesByNameSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByNameSchema,}
 			            },
 			    }
 		}
 
-		type EventContractEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IEventContractSchema>
+		type EventContractEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.EventContractSchema>
 
 	}
 
@@ -256,7 +256,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IStatusFlags {
+		interface StatusFlags {
 			
 				/** . What is the fallback if no status is set? */
 				'default'?: boolean| undefined | null
@@ -270,7 +270,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'offPrem'?: boolean| undefined | null
 		}
 
-		interface IStatusFlagsSchema extends SpruceSchema.Schema {
+		interface StatusFlagsSchema extends SpruceSchema.Schema {
 			id: 'statusFlags',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -313,7 +313,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type StatusFlagsEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema>
+		type StatusFlagsEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema>
 
 	}
 
@@ -321,23 +321,23 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
 		
-		interface IDefaultsByRole {
+		interface DefaultsByRole {
 			
 				/** Owner. */
-				'owner'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'owner'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 				/** Group manager. */
-				'groupManager'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'groupManager'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 				/** Manager. */
-				'manager'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'manager'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 				/** Teammate. */
-				'teammate'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'teammate'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 				/** Guest. */
-				'guest'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'guest'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 				/** Anonymous. */
-				'anonymous'?: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlags| undefined | null
+				'anonymous'?: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlags| undefined | null
 		}
 
-		interface IDefaultsByRoleSchema extends SpruceSchema.Schema {
+		interface DefaultsByRoleSchema extends SpruceSchema.Schema {
 			id: 'defaultsByRole',
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
@@ -347,42 +347,42 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'owner': {
 			                label: 'Owner',
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			            /** Group manager. */
 			            'groupManager': {
 			                label: 'Group manager',
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			            /** Manager. */
 			            'manager': {
 			                label: 'Manager',
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			            /** Teammate. */
 			            'teammate': {
 			                label: 'Teammate',
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			            /** Guest. */
 			            'guest': {
 			                label: 'Guest',
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			            /** Anonymous. */
 			            'anonymous': {
 			                label: 'Anonymous',
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema,}
+			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema,}
 			            },
 			    }
 		}
 
-		type DefaultsByRoleEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.IDefaultsByRoleSchema>
+		type DefaultsByRoleEntity = SchemaEntity<SpruceSchemas.MercuryTypes.v2020_09_01.DefaultsByRoleSchema>
 
 	}
 

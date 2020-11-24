@@ -3,7 +3,7 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const statusFlagsSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IStatusFlagsSchema  = {
+const statusFlagsSchema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema  = {
 	id: 'statusFlags',
 	version: 'v2020_09_01',
 	namespace: 'MercuryTypes',
