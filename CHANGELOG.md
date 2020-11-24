@@ -1,3 +1,10 @@
+# [14.0.0](https://github.com/sprucelabsai/mercury-types/compare/v13.2.1...v14.0.0) (2020-11-24)
+
+
+### Breaking Changes
+
+* remove I from interfaces ([107211d](https://github.com/sprucelabsai/mercury-types/commit/107211d))
+
 ## [13.2.1](https://github.com/sprucelabsai/mercury-types/compare/v13.2.0...v13.2.1) (2020-11-23)
 
 # [13.2.0](https://github.com/sprucelabsai/mercury-types/compare/v13.1.1...v13.2.0) (2020-11-23)
