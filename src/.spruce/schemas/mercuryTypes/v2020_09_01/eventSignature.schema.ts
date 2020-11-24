@@ -3,7 +3,7 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import permissionContractSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/permissionContract.schema'
 
-const eventSignatureSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignatureSchema  = {
+const eventSignatureSchema: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignatureSchema  = {
 	id: 'eventSignature',
 	version: 'v2020_09_01',
 	namespace: 'MercuryTypes',
@@ -12,12 +12,12 @@ const eventSignatureSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignatu
 	            /** . */
 	            'responsePayloadSchema': {
 	                type: 'raw',
-	                options: {valueType: `SpruceSchema.ISchema`,}
+	                options: {valueType: `SpruceSchema.Schema`,}
 	            },
 	            /** . */
 	            'emitPayloadSchema': {
 	                type: 'raw',
-	                options: {valueType: `SpruceSchema.ISchema`,}
+	                options: {valueType: `SpruceSchema.Schema`,}
 	            },
 	            /** . */
 	            'listenPermissionContract': {

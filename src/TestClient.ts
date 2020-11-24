@@ -1,4 +1,4 @@
-import { SchemaValues, ISchema } from '@sprucelabs/schema'
+import { SchemaValues, Schema } from '@sprucelabs/schema'
 import MercuryEventEmitter, {
 	MercuryAggregateResponse,
 	EmitCallback,
@@ -13,19 +13,19 @@ export default class TestClient<Contract extends EventContract>
 	public async emit<
 		EventName extends EventNames<Contract> = EventNames<Contract>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends ISchema = IEventSignature['emitPayloadSchema'] extends ISchema
+		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends ISchema = IEventSignature['responsePayloadSchema'] extends ISchema
+		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never,
-		ResponsePayload = ResponseSchema extends ISchema
+		ResponsePayload = ResponseSchema extends Schema
 			? SchemaValues<ResponseSchema>
 			: never
 	>(
 		_eventName: EventName,
 		_payload:
-			| (EmitSchema extends ISchema ? SchemaValues<EmitSchema> : never)
+			| (EmitSchema extends Schema ? SchemaValues<EmitSchema> : never)
 			| EmitCallback<Contract, EventName>
 			| undefined,
 		_cb?: EmitCallback<Contract, EventName> | undefined
@@ -52,14 +52,14 @@ export default class TestClient<Contract extends EventContract>
 			Contract['eventSignatures']
 		>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends ISchema = IEventSignature['emitPayloadSchema'] extends ISchema
+		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never
 	>(
 		_eventName: EventName,
 		_cb: (
-			payload: EmitSchema extends ISchema ? SchemaValues<EmitSchema> : never
-		) => IEventSignature['responsePayloadSchema'] extends ISchema
+			payload: EmitSchema extends Schema ? SchemaValues<EmitSchema> : never
+		) => IEventSignature['responsePayloadSchema'] extends Schema
 			?
 					| Promise<SchemaValues<IEventSignature['responsePayloadSchema']>>
 					| SchemaValues<IEventSignature['responsePayloadSchema']>

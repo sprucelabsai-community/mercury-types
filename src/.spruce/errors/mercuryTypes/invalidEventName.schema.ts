@@ -3,7 +3,7 @@ import { SpruceErrors } from '../errors.types'
 
 
 
-const invalidEventNameSchema: SpruceErrors.MercuryTypes.IInvalidEventNameSchema  = {
+const invalidEventNameSchema: SpruceErrors.MercuryTypes.InvalidEventNameSchema  = {
 	id: 'invalidEventName',
 	namespace: 'MercuryTypes',
 	name: 'Invalid event name',

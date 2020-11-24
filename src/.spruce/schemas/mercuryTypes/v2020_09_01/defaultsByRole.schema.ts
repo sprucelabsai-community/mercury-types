@@ -3,7 +3,7 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import statusFlagsSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/statusFlags.schema'
 
-const defaultsByRoleSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IDefaultsByRoleSchema  = {
+const defaultsByRoleSchema: SpruceSchemas.MercuryTypes.v2020_09_01.DefaultsByRoleSchema  = {
 	id: 'defaultsByRole',
 	version: 'v2020_09_01',
 	namespace: 'MercuryTypes',

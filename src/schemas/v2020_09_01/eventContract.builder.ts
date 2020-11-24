@@ -23,11 +23,11 @@ export default buildSchema({
 								fields: {
 									responsePayloadSchema: {
 										type: 'raw',
-										options: { valueType: 'SpruceSchema.ISchema' },
+										options: { valueType: 'SpruceSchema.Schema' },
 									},
 									emitPayloadSchema: {
 										type: 'raw',
-										options: { valueType: 'SpruceSchema.ISchema' },
+										options: { valueType: 'SpruceSchema.Schema' },
 									},
 									listenPermissionContract: {
 										type: 'schema',

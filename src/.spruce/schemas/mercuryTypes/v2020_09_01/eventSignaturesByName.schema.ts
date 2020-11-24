@@ -3,7 +3,7 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import eventSignatureSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/eventSignature.schema'
 
-const eventSignaturesByNameSchema: SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignaturesByNameSchema  = {
+const eventSignaturesByNameSchema: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByNameSchema  = {
 	id: 'eventSignaturesByName',
 	version: 'v2020_09_01',
 	namespace: 'MercuryTypes',

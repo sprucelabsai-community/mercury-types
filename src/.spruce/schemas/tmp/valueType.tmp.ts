@@ -1,7 +1,7 @@
-import { FieldDefinition } from '#spruce/schemas/fields/fields.types'
+import { FieldDefinitions } from '#spruce/schemas/fields/fields.types'
 
 import fieldClassMap from '#spruce/schemas/fields/fieldClassMap'
-import { TemplateRenderAs, IFieldTemplateDetailOptions } from '@sprucelabs/schema'
+import { TemplateRenderAs, FieldTemplateDetailOptions } from '@sprucelabs/schema'
 
 
 // @ts-ignore
@@ -9,8 +9,8 @@ import * as SpruceSchema from '@sprucelabs/schema'
 
 const schemaTemplateItems = [{"id":"permission","namespace":"MercuryTypes","schema":{"version":"v2020_09_01","id":"permission","name":"Permission","fields":{"id":{"type":"text","label":"id","isRequired":true,"hint":"Hyphen separated di for this permission, e.g. can-unlock-doors"},"name":{"type":"text","label":"Name","isRequired":true,"hint":"Human readable name for this permission"},"description":{"type":"text","label":"Description"},"requireAllStatuses":{"type":"boolean","label":"Require all statuses","defaultValue":false},"defaultsByRoleBase":{"type":"schema","options":{"schemaIds":[{"id":"defaultsByRole","version":"v2020_09_01"}]}},"can":{"type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}}}},"nameReadable":"Permission","nameCamel":"permission","namePascal":"Permission","isNested":true,"destinationDir":"#spruce/schemas"},{"id":"permissionContract","namespace":"MercuryTypes","schema":{"version":"v2020_09_01","id":"permissionContract","fields":{"id":{"type":"text","isRequired":true},"name":{"type":"text","label":"Name","isRequired":true,"hint":"Human readable name for this contract"},"description":{"type":"text","label":"Description"},"requireAllPermissions":{"type":"boolean","label":"Require all permissions","defaultValue":false},"permissions":{"type":"schema","isRequired":true,"isArray":true,"options":{"schemaIds":[{"id":"permission","version":"v2020_09_01"}]}}},"name":"Permission contract","description":""},"nameReadable":"Permission contract","nameCamel":"permissionContract","namePascal":"PermissionContract","isNested":false,"destinationDir":"#spruce/schemas"},{"id":"eventSignature","namespace":"MercuryTypes","schema":{"version":"v2020_09_01","id":"eventSignature","name":"Event Signature","description":"","fields":{"eventNameWithOptionalNamespace":{"type":"text","isRequired":true},"responsePayloadSchema":{"type":"raw","options":{"valueType":"SpruceSchema.ISchema"}},"emitPayloadSchema":{"type":"raw","options":{"valueType":"SpruceSchema.ISchema"}},"listenPermissionContract":{"type":"schema","options":{"schemaIds":[{"version":"v2020_09_01","id":"permissionContract"}]}},"emitPermissionContract":{"type":"schema","options":{"schemaIds":[{"version":"v2020_09_01","id":"permissionContract"}]}}}},"nameReadable":"Event Signature","nameCamel":"eventSignature","namePascal":"EventSignature","isNested":true,"destinationDir":"#spruce/schemas"},{"id":"eventContract","namespace":"MercuryTypes","schema":{"id":"eventContract","name":"Event contract","description":"","fields":{"eventSignatures":{"type":"schema","isRequired":true,"isArray":true,"options":{"schemaIds":[{"id":"eventSignature","version":"v2020_09_01"}]}}},"version":"v2020_09_01"},"nameReadable":"Event contract","nameCamel":"eventContract","namePascal":"EventContract","isNested":false,"destinationDir":"#spruce/schemas"},{"id":"statusFlags","namespace":"MercuryTypes","schema":{"version":"v2020_09_01","id":"statusFlags","fields":{"default":{"type":"boolean","hint":"What is the fallback if no status is set?"},"clockedIn":{"label":"Clocked in","hint":"Is the person clocked in and ready to rock?","type":"boolean"},"clockedOut":{"label":"Clocked out","hint":"When someone is not working (off the clock).","type":"boolean"},"onPrem":{"label":"On premise","hint":"Are they at work (maybe working, maybe visiting).","type":"boolean"},"offPrem":{"label":"Off premise","hint":"They aren't at the office or shop.","type":"boolean"}}},"nameReadable":"statusFlags","nameCamel":"statusFlags","namePascal":"StatusFlags","isNested":true,"destinationDir":"#spruce/schemas"},{"id":"defaultsByRole","namespace":"MercuryTypes","schema":{"version":"v2020_09_01","id":"defaultsByRole","fields":{"owner":{"label":"Owner","type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}},"groupManager":{"label":"Group manager","type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}},"manager":{"label":"Manager","type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}},"teammate":{"label":"Teammate","type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}},"guest":{"label":"Guest","type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}},"anonymous":{"label":"Anonymous","type":"schema","options":{"schemaIds":[{"id":"statusFlags","version":"v2020_09_01"}]}}}},"nameReadable":"defaultsByRole","nameCamel":"defaultsByRole","namePascal":"DefaultsByRole","isNested":true,"destinationDir":"#spruce/schemas"}]
 
-const generateTypeLiteral = (definition: FieldDefinition, renderAs: TemplateRenderAs, importAs: string) => {
-	const options:SpruceSchema.IFieldTemplateDetailOptions<FieldDefinition> = {
+const generateTypeLiteral = (definition: FieldDefinitions, renderAs: TemplateRenderAs, importAs: string) => {
+	const options:SpruceSchema.FieldTemplateDetailOptions<FieldDefinitions> = {
 		language: 'ts',
 		// @ts-ignore
 		templateItems: schemaTemplateItems,
@@ -22,7 +22,7 @@ const generateTypeLiteral = (definition: FieldDefinition, renderAs: TemplateRend
 
 	const FieldClass = fieldClassMap[definition.type]
 	const details = FieldClass.generateTemplateDetails(
-		options as IFieldTemplateDetailOptions<any>
+		options as FieldTemplateDetailOptions<any>
 	)
 	
 	return details.valueType

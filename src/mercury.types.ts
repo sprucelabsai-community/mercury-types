@@ -1,15 +1,15 @@
 import AbstractSpruceError from '@sprucelabs/error'
-import { ISchema, SchemaValues } from '@sprucelabs/schema'
+import { Schema, SchemaValues } from '@sprucelabs/schema'
 import { SpruceSchemas } from '#spruce/schemas/schemas.types'
 import { authorizerStatuses } from './constants'
 
-export type EventContract = SpruceSchemas.MercuryTypes.v2020_09_01.IEventContract
-export type EventSignature = SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignature
-export type EventSignaturesByName = SpruceSchemas.MercuryTypes.v2020_09_01.IEventSignaturesByName
-export type Permission = SpruceSchemas.MercuryTypes.v2020_09_01.IPermission
+export type EventContract = SpruceSchemas.MercuryTypes.v2020_09_01.EventContract
+export type EventSignature = SpruceSchemas.MercuryTypes.v2020_09_01.EventSignature
+export type EventSignaturesByName = SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByName
+export type Permission = SpruceSchemas.MercuryTypes.v2020_09_01.Permission
 type Statuses = typeof authorizerStatuses
 export type AuthorizerStatus = Statuses[number]['name']
-export type PermissionContract = SpruceSchemas.MercuryTypes.v2020_09_01.IPermissionContract
+export type PermissionContract = SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContract
 export type MercuryAggregateResponse<Payload> = {
 	totalContracts: number
 	totalResponses: number
@@ -30,10 +30,10 @@ export declare type EmitCallback<
 	Contract extends EventContract,
 	EventName extends EventNames<Contract>,
 	IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-	ResponseSchema extends ISchema = IEventSignature['responsePayloadSchema'] extends ISchema
+	ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
 		? IEventSignature['responsePayloadSchema']
 		: never,
-	ResponsePayload = ResponseSchema extends ISchema
+	ResponsePayload = ResponseSchema extends Schema
 		? SchemaValues<ResponseSchema>
 		: never
 > = (payload: MercurySingleResponse<ResponsePayload>) => void | Promise<void>
@@ -43,10 +43,10 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 			Contract['eventSignatures']
 		>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends ISchema = IEventSignature['emitPayloadSchema'] extends ISchema
+		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends ISchema = IEventSignature['responsePayloadSchema'] extends ISchema
+		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never
 	>(
@@ -60,7 +60,7 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 			Contract['eventSignatures']
 		>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		ResponseSchema extends ISchema = IEventSignature['responsePayloadSchema'] extends ISchema
+		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never
 	>(
@@ -73,14 +73,14 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 			Contract['eventSignatures']
 		>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends ISchema = IEventSignature['emitPayloadSchema'] extends ISchema
+		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never
 	>(
 		eventName: EventName,
 		cb: (
-			payload: EmitSchema extends ISchema ? SchemaValues<EmitSchema> : never
-		) => IEventSignature['responsePayloadSchema'] extends ISchema
+			payload: EmitSchema extends Schema ? SchemaValues<EmitSchema> : never
+		) => IEventSignature['responsePayloadSchema'] extends Schema
 			?
 					| Promise<SchemaValues<IEventSignature['responsePayloadSchema']>>
 					| SchemaValues<IEventSignature['responsePayloadSchema']>
