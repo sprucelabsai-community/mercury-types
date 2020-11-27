@@ -40,7 +40,7 @@
 		"upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build && yarn test"
 	},
 	"dependencies": {
-		"@sprucelabs/error": "^3.0.0",
+		"@sprucelabs/error": "^4.0.0",
 		"@sprucelabs/log": ">=10.2.294",
 		"@sprucelabs/schema": ">=17.0.0",
 		"@sprucelabs/spruce-core-schemas": ">=22.0.0",
