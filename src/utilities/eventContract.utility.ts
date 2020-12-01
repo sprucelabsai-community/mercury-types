@@ -19,6 +19,28 @@ const eventContractUtil = {
 		}))
 	},
 
+	unifyContracts<Contract extends EventContract = EventContract>(
+		contracts: EventContract[]
+	) {
+		const unifiedContract: EventContract = {
+			eventSignatures: {},
+		}
+
+		for (const contract of contracts ?? []) {
+			unifiedContract.eventSignatures = {
+				...unifiedContract.eventSignatures,
+				...contract.eventSignatures,
+			}
+		}
+
+		const eventContract =
+			contracts && contracts.length > 0
+				? (unifiedContract as Contract)
+				: undefined
+
+		return eventContract
+	},
+
 	getSignatureByName<Contract extends EventContract>(
 		contract: Contract,
 		eventNameWithOptionalNamespace: EventNames<Contract>
