@@ -6,17 +6,51 @@ const eventContractUtil = {
 		return Object.keys(contract.eventSignatures)
 	},
 
+	splitEventNameWithOptionalNamespace(
+		name: string
+	): { eventName: string; eventNamespace?: string } {
+		const parts = name.split('.')
+		const eventNamespace = parts[1] ? parts[0] : undefined
+		const eventName = parts[1] || parts[0]
+
+		return {
+			eventName,
+			eventNamespace,
+		}
+	},
+
+	joinEventNameWithOptionalNamespace(options: {
+		eventName: string
+		eventNamespace?: string
+	}): string {
+		const { eventName, eventNamespace } = options
+
+		if (!eventNamespace) {
+			return eventName
+		}
+
+		return !eventNamespace ? eventName : `${eventNamespace}.${eventName}`
+	},
+
 	getNamedEventSignatures(
 		contract: EventContract
 	): {
 		eventNameWithOptionalNamespace: string
+		eventName: string
+		eventNamespace?: string
 		signature: EventSignature
 	}[] {
 		const names = this.getEventNames(contract)
-		return names.map((name) => ({
-			eventNameWithOptionalNamespace: name,
-			signature: contract.eventSignatures[name],
-		}))
+
+		return names.map((name) => {
+			const nameParts = this.splitEventNameWithOptionalNamespace(name)
+			return {
+				eventNameWithOptionalNamespace: name,
+				eventName: nameParts.eventName,
+				eventNamespace: nameParts.eventNamespace,
+				signature: contract.eventSignatures[name],
+			}
+		})
 	},
 
 	unifyContracts<Contract extends EventContract = EventContract>(
