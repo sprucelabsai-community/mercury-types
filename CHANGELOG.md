@@ -1,3 +1,10 @@
+# [14.2.0](https://github.com/sprucelabsai/mercury-types/compare/v14.1.3...v14.2.0) (2020-12-02)
+
+
+### Features
+
+* split and join event name ([1f3b5ad](https://github.com/sprucelabsai/mercury-types/commit/1f3b5ad))
+
 ## [14.1.3](https://github.com/sprucelabsai/mercury-types/compare/v14.1.2...v14.1.3) (2020-12-02)
 
 ## [14.1.2](https://github.com/sprucelabsai/mercury-types/compare/v14.1.1...v14.1.2) (2020-12-02)
