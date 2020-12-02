@@ -1,3 +1,10 @@
+# [14.1.0](https://github.com/sprucelabsai/mercury-types/compare/v14.0.3...v14.1.0) (2020-12-01)
+
+
+### Features
+
+* unify contracts ([7dfe3a2](https://github.com/sprucelabsai/mercury-types/commit/7dfe3a2))
+
 ## [14.0.3](https://github.com/sprucelabsai/mercury-types/compare/v14.0.2...v14.0.3) (2020-11-30)
 
 ## [14.0.2](https://github.com/sprucelabsai/mercury-types/compare/v14.0.1...v14.0.2) (2020-11-28)
