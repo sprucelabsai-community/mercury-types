@@ -39,9 +39,7 @@ const eventContractUtil = {
 		return !eventNamespace ? eventName : `${eventNamespace}.${eventName}`
 	},
 
-	getNamedEventSignatures(
-		contract: EventContract
-	): NamedEventSignature[] {
+	getNamedEventSignatures(contract: EventContract): NamedEventSignature[] {
 		const names = this.getEventNames(contract)
 
 		return names.map((name) => {
