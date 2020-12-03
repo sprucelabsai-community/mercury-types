@@ -61,7 +61,7 @@
 		"concurrently": "^5.3.0",
 		"conventional-changelog-sprucelabs": "^1.1.2",
 		"eslint": "^7.14.0",
-		"eslint-config-spruce": "10.9.116",
+		"eslint-config-spruce": "10.9.117",
 		"jest": "^26.6.3",
 		"jest-circus": "^26.6.3",
 		"prettier": "^2.2.0",
