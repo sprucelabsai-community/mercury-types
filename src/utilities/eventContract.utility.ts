@@ -1,6 +1,13 @@
 import SpruceError from '../errors/SpruceError'
 import { EventContract, EventNames, EventSignature } from '../mercury.types'
 
+export interface NamedEventSignature {
+	eventNameWithOptionalNamespace: string
+	eventName: string
+	eventNamespace?: string
+	signature: EventSignature
+}
+
 const eventContractUtil = {
 	getEventNames(contract: EventContract) {
 		return Object.keys(contract.eventSignatures)
@@ -34,12 +41,7 @@ const eventContractUtil = {
 
 	getNamedEventSignatures(
 		contract: EventContract
-	): {
-		eventNameWithOptionalNamespace: string
-		eventName: string
-		eventNamespace?: string
-		signature: EventSignature
-	}[] {
+	): NamedEventSignature[] {
 		const names = this.getEventNames(contract)
 
 		return names.map((name) => {
