@@ -1,3 +1,10 @@
+# [14.3.0](https://github.com/sprucelabsai/mercury-types/compare/v14.2.1...v14.3.0) (2020-12-04)
+
+
+### Features
+
+* named event signature interface ([3fe50b4](https://github.com/sprucelabsai/mercury-types/commit/3fe50b4))
+
 ## [14.2.1](https://github.com/sprucelabsai/mercury-types/compare/v14.2.0...v14.2.1) (2020-12-03)
 
 # [14.2.0](https://github.com/sprucelabsai/mercury-types/compare/v14.1.3...v14.2.0) (2020-12-02)
