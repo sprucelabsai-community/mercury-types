@@ -1,3 +1,10 @@
+# [14.4.0](https://github.com/sprucelabsai/mercury-types/compare/v14.3.4...v14.4.0) (2020-12-08)
+
+
+### Features
+
+* all schemas output ([60c5d21](https://github.com/sprucelabsai/mercury-types/commit/60c5d21))
+
 ## [14.3.4](https://github.com/sprucelabsai/mercury-types/compare/v14.3.3...v14.3.4) (2020-12-07)
 
 ## [14.3.3](https://github.com/sprucelabsai/mercury-types/compare/v14.3.2...v14.3.3) (2020-12-07)
