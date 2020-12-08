@@ -7,6 +7,7 @@ export { default as permissionContractSchema } from './.spruce/schemas/mercuryTy
 export { default as statusFlagsSchema } from './.spruce/schemas/mercuryTypes/v2020_09_01/statusFlags.schema'
 
 export * from './mercury.types'
+export * from './.spruce/schemas/schemas.types'
 export { default as MercuryEventEmitter } from './mercury.types'
 export * from './constants'
 export { default as buildEventContract } from './utilities/buildEventContract'
