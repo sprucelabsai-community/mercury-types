@@ -6,7 +6,6 @@ export { default as permissionSchema } from './.spruce/schemas/mercuryTypes/v202
 export { default as permissionContractSchema } from './.spruce/schemas/mercuryTypes/v2020_09_01/permissionContract.schema'
 export { default as statusFlagsSchema } from './.spruce/schemas/mercuryTypes/v2020_09_01/statusFlags.schema'
 
-
 export * from './mercury.types'
 export { default as MercuryEventEmitter } from './mercury.types'
 export * from './constants'
