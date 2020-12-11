@@ -10,12 +10,12 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 			case 'INVALID_EVENT_NAME':
 				message = 'A Invalid event name just happened!'
 				break
-			
-            case 'MERCURY_RESPONSE_ERROR':
-                message = 'A mercury response error just happened!'
-                break
 
-default:
+			case 'MERCURY_RESPONSE_ERROR':
+				message = 'A mercury response error just happened!'
+				break
+
+			default:
 				message = super.friendlyMessage()
 		}
 
