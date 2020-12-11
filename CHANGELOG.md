@@ -1,3 +1,10 @@
+# [14.6.0](https://github.com/sprucelabsai/mercury-types/compare/v14.5.0...v14.6.0) (2020-12-11)
+
+
+### Features
+
+* event response utilities ([0f65afc](https://github.com/sprucelabsai/mercury-types/commit/0f65afc))
+
 # [14.5.0](https://github.com/sprucelabsai/mercury-types/compare/v14.4.3...v14.5.0) (2020-12-11)
 
 
