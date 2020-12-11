@@ -1,3 +1,10 @@
+# [14.5.0](https://github.com/sprucelabsai/mercury-types/compare/v14.4.3...v14.5.0) (2020-12-11)
+
+
+### Features
+
+* spruce error any type ([88cffc1](https://github.com/sprucelabsai/mercury-types/commit/88cffc1))
+
 ## [14.4.3](https://github.com/sprucelabsai/mercury-types/compare/v14.4.2...v14.4.3) (2020-12-08)
 
 ## [14.4.2](https://github.com/sprucelabsai/mercury-types/compare/v14.4.1...v14.4.2) (2020-12-08)
