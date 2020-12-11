@@ -10,7 +10,7 @@ export type Permission = SpruceSchemas.MercuryTypes.v2020_09_01.Permission
 type Statuses = typeof authorizerStatuses
 export type AuthorizerStatus = Statuses[number]['name']
 export type PermissionContract = SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContract
-export type MercuryAggregateResponse<Payload> = {
+export interface MercuryAggregateResponse<Payload> {
 	totalContracts: number
 	totalResponses: number
 	totalErrors: number

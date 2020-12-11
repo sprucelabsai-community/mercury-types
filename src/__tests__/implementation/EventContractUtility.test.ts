@@ -3,7 +3,7 @@ import eventContractUtil from '../../utilities/eventContract.utility'
 
 export default class EventContractUtilityTest extends AbstractSpruceTest {
 	@test()
-	protected static async canParseEventName() {
+	protected static canParseEventName() {
 		const nameParts = eventContractUtil.splitEventNameWithOptionalNamespace(
 			'test.event'
 		)
@@ -14,7 +14,7 @@ export default class EventContractUtilityTest extends AbstractSpruceTest {
 	}
 
 	@test()
-	protected static async canJoinEventName() {
+	protected static canJoinEventName() {
 		const name = eventContractUtil.joinEventNameWithOptionalNamespace({
 			eventNamespace: 'test',
 			eventName: 'event',

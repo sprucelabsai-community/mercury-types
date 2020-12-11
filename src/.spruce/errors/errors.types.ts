@@ -7,6 +7,37 @@ import * as SpruceSchema from '@sprucelabs/schema'
 
 
 
+import AbstractSpruceError from '@sprucelabs/error'
+
+export declare namespace SpruceErrors.MercuryTypes {
+
+	
+	export interface MercuryResponseError {
+		
+			
+			'responseErrors': (AbstractSpruceError<any>)[]
+	}
+
+	export interface MercuryResponseErrorSchema extends SpruceSchema.Schema {
+		id: 'mercuryResponseError',
+		namespace: 'MercuryTypes',
+		name: 'Mercury response error',
+		    fields: {
+		            /** . */
+		            'responseErrors': {
+		                type: 'raw',
+		                isRequired: true,
+		                isArray: true,
+		                options: {valueType: `AbstractSpruceError<any>`,}
+		            },
+		    }
+	}
+
+	export type MercuryResponseErrorEntity = SchemaEntity<SpruceErrors.MercuryTypes.MercuryResponseErrorSchema>
+
+}
+
+
 
 export declare namespace SpruceErrors.MercuryTypes {
 
