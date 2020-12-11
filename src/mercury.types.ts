@@ -18,7 +18,7 @@ export type MercuryAggregateResponse<Payload> = {
 }
 export interface MercurySingleResponse<Payload> {
 	responderRef?: string
-	errors?: AbstractSpruceError[]
+	errors?: AbstractSpruceError<any>[]
 	payload?: Payload
 }
 export type KeyOf<O> = Extract<keyof O, string>
