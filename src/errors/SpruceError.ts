@@ -11,9 +11,21 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 				message = 'A Invalid event name just happened!'
 				break
 
-			case 'MERCURY_RESPONSE_ERROR':
-				message = 'A mercury response error just happened!'
+			case 'MERCURY_RESPONSE_ERROR': {
+				const errors = options.responseErrors
+				message = `Got ${
+					errors.length === 1 ? 'an error' : `${errors.length} errors`
+				} from the server:\n\n`
+
+				const errorMessages: string[] = []
+				for (const err of errors) {
+					errorMessages.push(err.message)
+				}
+
+				message += errorMessages.join('\n')
+
 				break
+			}
 
 			default:
 				message = super.friendlyMessage()
