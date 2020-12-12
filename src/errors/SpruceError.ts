@@ -27,6 +27,10 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 				break
 			}
 
+			case 'EMPTY_MERCURY_RESPONSE':
+				message = 'Got no results back from the server! That was unexpected.'
+				break
+
 			default:
 				message = super.friendlyMessage()
 		}

@@ -7,6 +7,27 @@ import * as SpruceSchema from '@sprucelabs/schema'
 
 
 
+
+export declare namespace SpruceErrors.MercuryTypes {
+
+	
+	export interface EmptyMercuryResponse {
+		
+	}
+
+	export interface EmptyMercuryResponseSchema extends SpruceSchema.Schema {
+		id: 'emptyMercuryResponse',
+		namespace: 'MercuryTypes',
+		name: 'empty mercury response',
+		    fields: {
+		    }
+	}
+
+	export type EmptyMercuryResponseEntity = SchemaEntity<SpruceErrors.MercuryTypes.EmptyMercuryResponseSchema>
+
+}
+
+
 import AbstractSpruceError from '@sprucelabs/error'
 
 export declare namespace SpruceErrors.MercuryTypes {
