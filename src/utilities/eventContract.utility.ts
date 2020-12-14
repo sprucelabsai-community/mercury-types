@@ -94,6 +94,10 @@ const eventContractUtil = {
 
 		return match.signature
 	},
+
+	generateResponseEventName(eventNameWithOptionalNamespace: string) {
+		return `${eventNameWithOptionalNamespace}:response`
+	},
 }
 
 export default eventContractUtil
