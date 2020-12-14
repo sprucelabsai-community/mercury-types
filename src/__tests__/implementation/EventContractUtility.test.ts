@@ -22,10 +22,21 @@ export default class EventContractUtilityTest extends AbstractSpruceTest {
 		assert.isEqual(name, 'test.event')
 	}
 
-	@test('can generate response name from event', 'test-event', 'test-event:response')
-	@test('can generate response name from event with namespace', 'test.event', 'test.event:response')
-	protected static canGenerateResponseEventName(eventName: string, expected: string) {
+	@test(
+		'can generate response name from event',
+		'test-event',
+		'test-event:response'
+	)
+	@test(
+		'can generate response name from event with namespace',
+		'test.event',
+		'test.event:response'
+	)
+	protected static canGenerateResponseEventName(
+		eventName: string,
+		expected: string
+	) {
 		const actual = eventContractUtil.generateResponseEventName(eventName)
-		assert.isEqual(actual,expected)
+		assert.isEqual(actual, expected)
 	}
 }
