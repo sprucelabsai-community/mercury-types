@@ -1,3 +1,10 @@
+# [14.8.0](https://github.com/sprucelabsai/mercury-types/compare/v14.7.1...v14.8.0) (2020-12-16)
+
+
+### Features
+
+* mercuryErrorAssert utility ([a942e22](https://github.com/sprucelabsai/mercury-types/commit/a942e22))
+
 ## [14.7.1](https://github.com/sprucelabsai/mercury-types/compare/v14.7.0...v14.7.1) (2020-12-14)
 
 # [14.7.0](https://github.com/sprucelabsai/mercury-types/compare/v14.6.5...v14.7.0) (2020-12-14)
