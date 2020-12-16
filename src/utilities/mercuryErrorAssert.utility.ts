@@ -1,5 +1,5 @@
 import AbstractSpruceError from '@sprucelabs/error'
-import { assert } from '@sprucelabs/test'
+import { assert, assertUtil } from '@sprucelabs/test'
 import { errorAssertUtil } from '@sprucelabs/test-utils'
 import { MercuryAggregateResponse } from '../mercury.types'
 import eventResponseUtil from './eventResponse.utility'
@@ -13,7 +13,9 @@ const mercuryErrorAssertUtil = {
 		errorAssertUtil.assertError(error, 'MERCURY_RESPONSE_ERROR')
 		if ((error as any)?.options?.responseErrors?.length > 1) {
 			assert.fail(
-				`Mercury response has more than 1 error and I was expecting only 1`
+				`Mercury response has more than 1 error and I was expecting only 1.\n\nReceived:\n\n${assertUtil.stringify(
+					(error as any)?.options?.responseErrors
+				)}`
 			)
 		}
 
