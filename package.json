@@ -7,7 +7,7 @@
 		"build"
 	],
 	"main": "./build/index.js",
-	"version": "14.8.1",
+	"version": "14.8.2",
 	"description": "Types for Mercury!",
 	"keywords": [
 		"node",
@@ -45,7 +45,8 @@
 		"@sprucelabs/log": ">=10.2.295",
 		"@sprucelabs/schema": ">=18.2.4",
 		"@sprucelabs/spruce-core-schemas": ">=22.0.10",
-		"@sprucelabs/spruce-skill-utils": "^12.3.0"
+		"@sprucelabs/spruce-skill-utils": "^12.3.0",
+		"@sprucelabs/test-utils": "^3.0.4"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.11.6",
@@ -56,7 +57,6 @@
 		"@sprucelabs/jest-json-reporter": ">=5.1.2",
 		"@sprucelabs/semantic-release": ">=4.0.6",
 		"@sprucelabs/test": ">=7.2.0",
-		"@sprucelabs/test-utils": "^3.0.4",
 		"babel-plugin-module-resolver": "^4.0.0",
 		"chokidar-cli": "^2.1.0",
 		"concurrently": "^5.3.0",
