@@ -25,7 +25,6 @@
 		"build.tsc": "tsc",
 		"build.babel": "babel src --out-dir build --extensions \".ts,.tsx\" --root-mode upward --source-maps --copy-files",
 		"build.babel.debug": "node --inspect-brk=5200 ../../node_modules/.bin/babel src --out-dir build --extensions \".ts,.tsx\" --root-mode upward --source-maps --copy-files",
-		"build.watch": "concurrently 'yarn run build.babel --watch' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.types && yarn build.resolve-paths'\"",
 		"build.resolve-paths": "resolve-path-aliases --target build --patterns **/*.js,**/*.d.ts",
 		"rebuild": "yarn clean && rm -rf node_modules && yarn && yarn build",
 		"clean": "rm -rf build/",
@@ -34,7 +33,8 @@
 		"lint.fix": "eslint --fix '**/*.ts'",
 		"release": "semantic-release",
 		"test": "jest",
-		"test.watch": "jest --watch",
+		"watch.tests": "jest --watch",
+		"watch.build": "concurrently 'yarn run build.babel --watch' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.types && yarn build.resolve-paths'\"",
 		"upgrade.packages": "yarn upgrade --latest && rm -f yarn.lock ; yarn ; yarn lint.fix || true",
 		"upgrade.packages.all": "yarn install && yarn upgrade.packages",
 		"upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build && yarn test"
