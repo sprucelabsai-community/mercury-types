@@ -1,3 +1,12 @@
+## [14.7.1](https://github.com/sprucelabsai/mercury-types/compare/v14.7.0...v14.7.1) (2020-12-14)
+
+# [14.7.0](https://github.com/sprucelabsai/mercury-types/compare/v14.6.5...v14.7.0) (2020-12-14)
+
+
+### Features
+
+* response name event generation ([76bc476](https://github.com/sprucelabsai/mercury-types/commit/76bc476))
+
 ## [14.6.5](https://github.com/sprucelabsai/mercury-types/compare/v14.6.4...v14.6.5) (2020-12-13)
 
 ## [14.6.4](https://github.com/sprucelabsai/mercury-types/compare/v14.6.3...v14.6.4) (2020-12-12)
