@@ -2,7 +2,6 @@ import AbstractSpruceTest, { assert, test } from '@sprucelabs/test'
 import { errorAssertUtil } from '@sprucelabs/test-utils'
 import SpruceError from '../../errors/SpruceError'
 import eventResponseUtil from '../../utilities/eventResponse.utility'
-import mercuryErrorAssertUtil from '../../utilities/mercuryErrorAssert.utility'
 
 export default class EventResponseUtilTest extends AbstractSpruceTest {
 	private static readonly errorWithoutErrorInstance = {
@@ -49,28 +48,6 @@ export default class EventResponseUtilTest extends AbstractSpruceTest {
 
 		errorAssertUtil.assertError(err, 'MERCURY_RESPONSE_ERROR', {
 			'responseErrors[0].options.code': 'COOL_ERROR',
-		})
-	}
-
-	@test()
-	protected static canAssertMercuryError() {
-		const err = assert.doesThrow(() =>
-			eventResponseUtil.getFirstResponseOrThrow(
-				eventResponseUtil.mutatingMapAggregateResultsErrorsToSpruceErrors(
-					this.errorWithoutErrorInstance,
-					SpruceError
-				)
-			)
-		)
-
-		assert.doesThrow(() =>
-			mercuryErrorAssertUtil.assertError(err, 'COOL_ERROR', {
-				foo: 'bar2',
-			})
-		)
-
-		mercuryErrorAssertUtil.assertError(err, 'COOL_ERROR', {
-			foo: 'bar',
 		})
 	}
 }
