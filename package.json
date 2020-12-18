@@ -42,11 +42,8 @@
 	"dependencies": {
 		"@babel/runtime": "^7.12.5",
 		"@sprucelabs/error": "^4.0.0",
-		"@sprucelabs/log": ">=10.2.295",
 		"@sprucelabs/schema": ">=18.2.4",
-		"@sprucelabs/spruce-core-schemas": ">=22.0.10",
-		"@sprucelabs/spruce-skill-utils": "^12.3.0",
-		"@sprucelabs/test-utils": "^3.0.4"
+		"@sprucelabs/spruce-core-schemas": ">=22.0.10"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.11.6",
