@@ -4,7 +4,6 @@
   ],
   "installed": [
     "schema",
-    "test",
-    "error"
+    "test"
   ]
 }
