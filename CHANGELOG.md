@@ -1,3 +1,10 @@
+# [15.1.0](https://github.com/sprucelabsai/mercury-types/compare/v15.0.5...v15.1.0) (2020-12-21)
+
+
+### Features
+
+* buildPermissionContract utility function ([f8a3e09](https://github.com/sprucelabsai/mercury-types/commit/f8a3e09))
+
 ## [15.0.5](https://github.com/sprucelabsai/mercury-types/compare/v15.0.4...v15.0.5) (2020-12-21)
 
 ## [15.0.4](https://github.com/sprucelabsai/mercury-types/compare/v15.0.3...v15.0.4) (2020-12-19)
