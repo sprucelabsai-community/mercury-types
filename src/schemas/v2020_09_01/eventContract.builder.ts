@@ -8,9 +8,6 @@ export default buildSchema({
 		id: {
 			type: 'id',
 		},
-		version: {
-			type: 'text',
-		},
 		eventSignatures: {
 			type: 'schema',
 			isRequired: true,

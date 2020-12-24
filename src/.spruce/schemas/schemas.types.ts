@@ -367,8 +367,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'id'?: string| undefined | null
 				
-				'version'?: string| undefined | null
-				
 				'eventSignatures': SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByName
 		}
 
@@ -382,11 +380,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'id': {
 			                type: 'id',
-			                options: undefined
-			            },
-			            /** . */
-			            'version': {
-			                type: 'text',
 			                options: undefined
 			            },
 			            /** . */

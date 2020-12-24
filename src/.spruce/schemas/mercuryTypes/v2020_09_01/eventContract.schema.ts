@@ -16,11 +16,6 @@ const eventContractSchema: SpruceSchemas.MercuryTypes.v2020_09_01.EventContractS
 	                options: undefined
 	            },
 	            /** . */
-	            'version': {
-	                type: 'text',
-	                options: undefined
-	            },
-	            /** . */
 	            'eventSignatures': {
 	                type: 'schema',
 	                isRequired: true,
