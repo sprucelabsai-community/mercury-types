@@ -47,7 +47,7 @@ const defaultsByRoleSchema = buildSchema({
 export default buildSchema({
 	id: 'permissionContract',
 	name: 'Permission contract',
-	description: '',
+	description: 'A Mercury Permission Contract',
 	fields: {
 		id: {
 			type: 'text',

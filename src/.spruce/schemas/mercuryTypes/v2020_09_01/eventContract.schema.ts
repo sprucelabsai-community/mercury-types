@@ -8,7 +8,18 @@ const eventContractSchema: SpruceSchemas.MercuryTypes.v2020_09_01.EventContractS
 	version: 'v2020_09_01',
 	namespace: 'MercuryTypes',
 	name: 'Event contract',
+	description: 'A Mercury Event Contract.',
 	    fields: {
+	            /** . */
+	            'id': {
+	                type: 'id',
+	                options: undefined
+	            },
+	            /** . */
+	            'version': {
+	                type: 'text',
+	                options: undefined
+	            },
 	            /** . */
 	            'eventSignatures': {
 	                type: 'schema',

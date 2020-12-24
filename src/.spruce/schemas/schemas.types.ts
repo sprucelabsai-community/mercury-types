@@ -221,7 +221,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
-		
+		/** A Mercury Permission Contract */
 		interface PermissionContract {
 			
 				
@@ -241,6 +241,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
 			name: 'Permission contract',
+			description: 'A Mercury Permission Contract',
 			    fields: {
 			            /** . */
 			            'id': {
@@ -360,9 +361,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 
 	namespace SpruceSchemas.MercuryTypes.v2020_09_01 {
 
-		
+		/** A Mercury Event Contract. */
 		interface EventContract {
 			
+				
+				'id'?: string| undefined | null
+				
+				'version'?: string| undefined | null
 				
 				'eventSignatures': SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByName
 		}
@@ -372,7 +377,18 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_09_01',
 			namespace: 'MercuryTypes',
 			name: 'Event contract',
+			description: 'A Mercury Event Contract.',
 			    fields: {
+			            /** . */
+			            'id': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'version': {
+			                type: 'text',
+			                options: undefined
+			            },
 			            /** . */
 			            'eventSignatures': {
 			                type: 'schema',
