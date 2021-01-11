@@ -26,7 +26,9 @@ export declare type EventNames<Contract extends EventContract> = KeyOf<
 	Contract['eventSignatures']
 >
 
-type EmitCallbackReturnValue = void | { errors: AbstractSpruceError<any>[] }
+type EmitCallbackReturnValue =
+	| undefined
+	| { errors: AbstractSpruceError<any>[] }
 
 export declare type EmitCallback<
 	Contract extends EventContract,
