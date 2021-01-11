@@ -26,6 +26,8 @@ export declare type EventNames<Contract extends EventContract> = KeyOf<
 	Contract['eventSignatures']
 >
 
+type EmitCallbackReturnValue = void | { errors: AbstractSpruceError<any>[] }
+
 export declare type EmitCallback<
 	Contract extends EventContract,
 	EventName extends EventNames<Contract>,
@@ -36,7 +38,9 @@ export declare type EmitCallback<
 	ResponsePayload = ResponseSchema extends Schema
 		? SchemaValues<ResponseSchema>
 		: never
-> = (payload: MercurySingleResponse<ResponsePayload>) => void | Promise<void>
+> = (
+	payload: MercurySingleResponse<ResponsePayload>
+) => EmitCallbackReturnValue | Promise<EmitCallbackReturnValue>
 export default interface MercuryEventEmitter<Contract extends EventContract> {
 	emit<
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
