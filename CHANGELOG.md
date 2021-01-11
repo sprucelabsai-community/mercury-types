@@ -1,3 +1,10 @@
+# [15.2.0](https://github.com/sprucelabsai/mercury-types/compare/v15.1.11...v15.2.0) (2021-01-11)
+
+
+### Features
+
+* emit callbacks can return object with errors ([8a09443](https://github.com/sprucelabsai/mercury-types/commit/8a09443))
+
 ## [15.1.11](https://github.com/sprucelabsai/mercury-types/compare/v15.1.10...v15.1.11) (2021-01-11)
 
 ## [15.1.10](https://github.com/sprucelabsai/mercury-types/compare/v15.1.9...v15.1.10) (2021-01-04)
