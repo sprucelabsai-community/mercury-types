@@ -1,7 +1,7 @@
 import { buildSchema } from '@sprucelabs/schema'
 import AbstractSpruceTest, { test, assert } from '@sprucelabs/test'
-import { EventContract, EventNames } from '../../mercury.types'
 import TestClient from '../../TestClient'
+import { EventContract, EventNames } from '../../types/mercury.types'
 import buildEventContract from '../../utilities/buildEventContract'
 import validateEventContract from '../../utilities/validateEventContract'
 
