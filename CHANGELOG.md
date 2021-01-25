@@ -1,3 +1,10 @@
+# [15.4.0](https://github.com/sprucelabsai/mercury-types/compare/v15.3.0...v15.4.0) (2021-01-25)
+
+
+### Features
+
+* core event contracts ([7b60e29](https://github.com/sprucelabsai/mercury-types/commit/7b60e29))
+
 # [15.3.0](https://github.com/sprucelabsai/mercury-types/compare/v15.2.5...v15.3.0) (2021-01-24)
 
 
