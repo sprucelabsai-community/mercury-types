@@ -40,16 +40,16 @@
 		"watch.tests": "jest --watch"
 	},
 	"dependencies": {
-		"@babel/runtime": "^7.12.18",
+		"@babel/runtime": "^7.13.0",
 		"@sprucelabs/error": "latest",
 		"@sprucelabs/schema": "latest",
 		"@sprucelabs/spruce-core-schemas": "latest"
 	},
 	"devDependencies": {
-		"@babel/cli": "^7.12.17",
-		"@babel/plugin-proposal-decorators": "^7.12.13",
-		"@babel/plugin-transform-runtime": "^7.12.17",
-		"@babel/preset-typescript": "^7.12.17",
+		"@babel/cli": "^7.13.0",
+		"@babel/plugin-proposal-decorators": "^7.13.0",
+		"@babel/plugin-transform-runtime": "^7.13.0",
+		"@babel/preset-typescript": "^7.13.0",
 		"@sprucelabs/babel-plugin-schema": "latest",
 		"@sprucelabs/jest-json-reporter": "latest",
 		"@sprucelabs/semantic-release": "latest",
