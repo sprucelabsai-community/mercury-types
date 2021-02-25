@@ -7,16 +7,16 @@
 		"build"
 	],
 	"main": "./build/index.js",
-	"version": "15.4.28",
+	"version": "15.4.29",
 	"types": "./build/index.d.ts",
-    "exports": {
-        ".": {
-            "node": "./build/index.js",
-            "require": "./build/index.js",
-            "import": "./build/esm/index.js",
-            "default": "./build/esm/index.js"
-        }
-    },
+	"exports": {
+		".": {
+			"node": "./build/index.js",
+			"require": "./build/index.js",
+			"import": "./build/esm/index.js",
+			"default": "./build/esm/index.js"
+		}
+	},
 	"module": "./esm/index.js",
 	"description": "Types for Mercury!",
 	"keywords": [
