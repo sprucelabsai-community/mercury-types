@@ -44,7 +44,7 @@
 		"rebuild": "yarn clean.all && yarn && yarn build.dev",
 		"release": "semantic-release",
 		"test": "jest",
-		"upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint || true",
+		"upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint ; true",
 		"upgrade.packages.all": "yarn install && yarn upgrade.packages",
 		"upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
 		"watch.build.dev": "concurrently 'yarn run build.dev' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.dev'\"",
@@ -53,9 +53,7 @@
 	"dependencies": {
 		"@sprucelabs/error": "latest",
 		"@sprucelabs/schema": "latest",
-		"@sprucelabs/spruce-core-schemas": "latest",
-		"rebuild": "^0.1.2",
-		"yarn": "^1.22.10"
+		"@sprucelabs/spruce-core-schemas": "latest"
 	},
 	"devDependencies": {
 		"@sprucelabs/babel-plugin-schema": "latest",
@@ -95,16 +93,14 @@
 	},
 	"yarn-upgrade-all": {
 		"ignore": [
-			"socket.io",
-			"socket.io-client",
 			"@sprucelabs/babel-plugin-schema",
+			"@sprucelabs/error",
 			"@sprucelabs/esm-postbuild",
 			"@sprucelabs/jest-json-reporter",
-			"@sprucelabs/semantic-release",
-			"@sprucelabs/test",
-			"@sprucelabs/error",
 			"@sprucelabs/schema",
+			"@sprucelabs/semantic-release",
 			"@sprucelabs/spruce-core-schemas",
+			"@sprucelabs/test",
 			"conventional-changelog-sprucelabs",
 			"eslint-config-spruce"
 		]
