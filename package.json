@@ -52,7 +52,7 @@
 	},
 	"dependencies": {
 		"@sprucelabs/error": "latest",
-		"@sprucelabs/esm-postbuild": "^1.0.0",
+		"@sprucelabs/esm-postbuild": "^1.0.1",
 		"@sprucelabs/schema": "latest",
 		"@sprucelabs/spruce-core-schemas": "latest",
 		"rebuild": "^0.1.2",
