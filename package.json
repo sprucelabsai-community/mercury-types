@@ -25,9 +25,11 @@
 	"scripts": {
 		"build.copy-files": "mkdir -p build/.spruce && cp -r ./src/.spruce/settings.json build/.spruce/settings.json",
 		"build.dev": "yarn build.tsc && yarn build.resolve-paths",
-		"build.dist": "yarn build.tsc && tsc --project tsconfig.dist.json && yarn build.resolve-paths && yarn build.esm-postbuild",
-		"build.esm-postbuild": "esm-postbuild --target build/esm --patterns '**/*.js'",
+		"build.dist": "yarn clean && yarn build.tsc && yarn build.resolve-paths && yarn build.esm && mv ./esm ./build/",
+		"build.esm": "tsc --project tsconfig.dist.json && yarn build.resolve-paths.dist && yarn build.esm-postbuild",
+		"build.esm-postbuild": "esm-postbuild --target esm --patterns '**/*.js'",
 		"build.resolve-paths": "resolve-path-aliases --target build --patterns **/*.js,**/*.d.ts",
+		"build.resolve-paths.dist": "TS_NODE_PROJECT=`pwd`/tsconfig.dist.json resolve-path-aliases --target build/esm --patterns **/*.js,**/*.d.ts",
 		"build.tsc": "tsc",
 		"build.types": "tsc --emitDeclarationOnly && echo PASS",
 		"clean": "rm -rf build/",
@@ -49,7 +51,7 @@
 		"@sprucelabs/spruce-core-schemas": "latest"
 	},
 	"devDependencies": {
-		"@sprucelabs/babel-plugin-schema": "latest",
+		"@sprucelabs/resolve-path-aliases": "latest",
 		"@sprucelabs/esm-postbuild": "latest",
 		"@sprucelabs/jest-json-reporter": "latest",
 		"@sprucelabs/semantic-release": "latest",
@@ -81,15 +83,15 @@
 			"**/__tests__/**/*.test.js?(x)"
 		],
 		"moduleNameMapper": {
-			"^#spruce/(.*)$": "<rootDir>/build/.spruce/$1"
+			"^#spruce/(.*)$": "<rootDir>/snakebuild/.spruce/$1"
 		}
 	},
 	"yarn-upgrade-all": {
 		"ignore": [
-			"@sprucelabs/babel-plugin-schema",
 			"@sprucelabs/error",
 			"@sprucelabs/esm-postbuild",
 			"@sprucelabs/jest-json-reporter",
+			"@sprucelabs/resolve-path-aliases",
 			"@sprucelabs/schema",
 			"@sprucelabs/semantic-release",
 			"@sprucelabs/spruce-core-schemas",
