@@ -1,3 +1,10 @@
+## [15.4.39](https://github.com/sprucelabsai/mercury-types/compare/v15.4.38...v15.4.39) (2021-03-05)
+
+
+### Bug Fixes
+
+* esm resolve-path-aliases loads proper config ([bb9fcb0](https://github.com/sprucelabsai/mercury-types/commit/bb9fcb0))
+
 ## [15.4.38](https://github.com/sprucelabsai/mercury-types/compare/v15.4.37...v15.4.38) (2021-03-04)
 
 ## [15.4.37](https://github.com/sprucelabsai/mercury-types/compare/v15.4.36...v15.4.37) (2021-03-04)
