@@ -51,9 +51,9 @@
 		"@sprucelabs/spruce-core-schemas": "latest"
 	},
 	"devDependencies": {
-		"@sprucelabs/resolve-path-aliases": "latest",
 		"@sprucelabs/esm-postbuild": "latest",
 		"@sprucelabs/jest-json-reporter": "latest",
+		"@sprucelabs/resolve-path-aliases": "latest",
 		"@sprucelabs/semantic-release": "latest",
 		"@sprucelabs/test": "latest",
 		"chokidar-cli": "^2.1.0",
