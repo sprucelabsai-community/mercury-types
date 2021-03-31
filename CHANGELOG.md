@@ -1,3 +1,10 @@
+# [15.5.0](https://github.com/sprucelabsai/mercury-types/compare/v15.4.43...v15.5.0) (2021-03-31)
+
+
+### Features
+
+* global events ([6b17a12](https://github.com/sprucelabsai/mercury-types/commit/6b17a12))
+
 ## [15.4.43](https://github.com/sprucelabsai/mercury-types/compare/v15.4.42...v15.4.43) (2021-03-26)
 
 ## [15.4.42](https://github.com/sprucelabsai/mercury-types/compare/v15.4.41...v15.4.42) (2021-03-22)
