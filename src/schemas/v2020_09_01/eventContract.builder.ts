@@ -24,6 +24,10 @@ export default buildSchema({
 								name: 'Event Signature',
 								description: '',
 								fields: {
+									isGlobal: {
+										type: 'boolean',
+										defaultValue: false,
+									},
 									responsePayloadSchema: {
 										type: 'raw',
 										options: { valueType: 'SpruceSchema.Schema' },
