@@ -291,6 +291,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface EventSignature {
 			
 				
+				'isGlobal'?: boolean| undefined | null
+				
 				'responsePayloadSchema'?: (SpruceSchema.Schema)| undefined | null
 				
 				'emitPayloadSchema'?: (SpruceSchema.Schema)| undefined | null
@@ -306,6 +308,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'MercuryTypes',
 			name: 'Event Signature',
 			    fields: {
+			            /** . */
+			            'isGlobal': {
+			                type: 'boolean',
+			                defaultValue: false,
+			                options: undefined
+			            },
 			            /** . */
 			            'responsePayloadSchema': {
 			                type: 'raw',

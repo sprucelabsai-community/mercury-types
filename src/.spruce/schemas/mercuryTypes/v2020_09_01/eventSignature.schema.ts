@@ -10,6 +10,12 @@ const eventSignatureSchema: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignatur
 	name: 'Event Signature',
 	    fields: {
 	            /** . */
+	            'isGlobal': {
+	                type: 'boolean',
+	                defaultValue: false,
+	                options: undefined
+	            },
+	            /** . */
 	            'responsePayloadSchema': {
 	                type: 'raw',
 	                options: {valueType: `SpruceSchema.Schema`,}
