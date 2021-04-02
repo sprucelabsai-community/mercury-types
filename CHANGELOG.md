@@ -1,3 +1,5 @@
+## [15.5.2](https://github.com/sprucelabsai/mercury-types/compare/v15.5.1...v15.5.2) (2021-04-02)
+
 ## [15.5.1](https://github.com/sprucelabsai/mercury-types/compare/v15.5.0...v15.5.1) (2021-03-31)
 
 # [15.5.0](https://github.com/sprucelabsai/mercury-types/compare/v15.4.43...v15.5.0) (2021-03-31)
