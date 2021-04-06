@@ -42,8 +42,9 @@
 		"upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint ; true",
 		"upgrade.packages.all": "yarn install && yarn upgrade.packages",
 		"upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
-		"watch.build.dev": "concurrently 'yarn build.dev' 'yarn run build.tsc -w' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'build.resolve-paths'\"",
-		"watch.lint": "chokidar 'src/**/*' -c 'yarn lint'"
+		"watch.build.dev": "concurrently 'yarn build.dev' 'yarn watch.tsc' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.copy-files && build.resolve-paths'\"",
+		"watch.lint": "chokidar 'src/**/*' -c 'yarn lint'",
+		"watch.tsc": "tsc -w"
 	},
 	"dependencies": {
 		"@sprucelabs/error": "latest",
