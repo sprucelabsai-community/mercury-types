@@ -1,3 +1,12 @@
+## [15.6.1](https://github.com/sprucelabsai/mercury-types/compare/v15.6.0...v15.6.1) (2021-04-07)
+
+# [15.6.0](https://github.com/sprucelabsai/mercury-types/compare/v15.5.4...v15.6.0) (2021-04-07)
+
+
+### Features
+
+* skill event contract type exported ([44f73e1](https://github.com/sprucelabsai/mercury-types/commit/44f73e1))
+
 ## [15.5.4](https://github.com/sprucelabsai/mercury-types/compare/v15.5.3...v15.5.4) (2021-04-06)
 
 ## [15.5.3](https://github.com/sprucelabsai/mercury-types/compare/v15.5.2...v15.5.3) (2021-04-05)
