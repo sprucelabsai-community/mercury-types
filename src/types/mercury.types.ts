@@ -99,8 +99,8 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 }
 
 type Sigs = CoreEventContract['eventSignatures']
-export interface SkillEventSignatures extends Sigs, EventSignaturesByName {}
+export interface SkillEventSignatures extends Sigs {}
 
-export interface SkillEventContract extends EventContract {
+export interface SkillEventContract {
 	eventSignatures: SkillEventSignatures
 }
