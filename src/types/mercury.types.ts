@@ -2,6 +2,7 @@ import AbstractSpruceError from '@sprucelabs/error'
 import { Schema, SchemaValues } from '@sprucelabs/schema'
 import { SpruceSchemas } from '#spruce/schemas/schemas.types'
 import { authorizerStatuses } from '../constants'
+import { CoreEventContract } from '../events.contract'
 
 export type EventContract = SpruceSchemas.MercuryTypes.v2020_09_01.EventContract
 export type EventSignature = SpruceSchemas.MercuryTypes.v2020_09_01.EventSignature
@@ -96,3 +97,5 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		cb?: (payload?: any) => void
 	): Promise<number>
 }
+
+export type SkillEventContract = CoreEventContract
