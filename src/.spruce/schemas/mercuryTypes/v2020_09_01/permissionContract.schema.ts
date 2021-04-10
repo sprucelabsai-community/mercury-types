@@ -42,6 +42,7 @@ const permissionContractSchema: SpruceSchemas.MercuryTypes.v2020_09_01.Permissio
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
+	                minArrayLength: 0,
 	                options: {schema: permissionSchema,}
 	            },
 	    }

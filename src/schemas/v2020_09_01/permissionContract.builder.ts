@@ -72,6 +72,7 @@ export default buildSchema({
 			type: 'schema',
 			isRequired: true,
 			isArray: true,
+			minArrayLength: 0,
 			options: {
 				schema: {
 					id: 'permission',

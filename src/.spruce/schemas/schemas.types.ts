@@ -275,6 +275,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                isRequired: true,
 			                isArray: true,
+			                minArrayLength: 0,
 			                options: {schema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionSchema,}
 			            },
 			    }
