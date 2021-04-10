@@ -1,3 +1,10 @@
+# [15.7.0](https://github.com/sprucelabsai/mercury-types/compare/v15.6.5...v15.7.0) (2021-04-10)
+
+
+### Features
+
+* permissions can be empty array ([361225b](https://github.com/sprucelabsai/mercury-types/commit/361225b))
+
 ## [15.6.5](https://github.com/sprucelabsai/mercury-types/compare/v15.6.4...v15.6.5) (2021-04-09)
 
 ## [15.6.4](https://github.com/sprucelabsai/mercury-types/compare/v15.6.3...v15.6.4) (2021-04-07)
