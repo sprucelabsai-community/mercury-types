@@ -1,12 +1,12 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import statusFlagsSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/statusFlags.schema'
+import statusFlagsSchema from '#spruce/schemas/mercury/v2020_09_01/statusFlags.schema'
 
-const defaultsByRoleSchema: SpruceSchemas.MercuryTypes.v2020_09_01.DefaultsByRoleSchema  = {
+const defaultsByRoleSchema: SpruceSchemas.Mercury.v2020_09_01.DefaultsByRoleSchema  = {
 	id: 'defaultsByRole',
 	version: 'v2020_09_01',
-	namespace: 'MercuryTypes',
+	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** Owner. */

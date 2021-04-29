@@ -1,13 +1,13 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import defaultsByRoleSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/defaultsByRole.schema'
-import statusFlagsSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/statusFlags.schema'
+import defaultsByRoleSchema from '#spruce/schemas/mercury/v2020_09_01/defaultsByRole.schema'
+import statusFlagsSchema from '#spruce/schemas/mercury/v2020_09_01/statusFlags.schema'
 
-const permissionSchema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionSchema  = {
+const permissionSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionSchema  = {
 	id: 'permission',
 	version: 'v2020_09_01',
-	namespace: 'MercuryTypes',
+	namespace: 'Mercury',
 	name: 'Permission',
 	    fields: {
 	            /** id. Hyphen separated di for this permission, e.g. can-unlock-doors */

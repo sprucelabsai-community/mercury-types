@@ -3,10 +3,10 @@ import { SpruceSchemas } from '../../schemas.types'
 
 
 
-const statusFlagsSchema: SpruceSchemas.MercuryTypes.v2020_09_01.StatusFlagsSchema  = {
+const statusFlagsSchema: SpruceSchemas.Mercury.v2020_09_01.StatusFlagsSchema  = {
 	id: 'statusFlags',
 	version: 'v2020_09_01',
-	namespace: 'MercuryTypes',
+	namespace: 'Mercury',
 	name: '',
 	    fields: {
 	            /** . What is the fallback if no status is set? */

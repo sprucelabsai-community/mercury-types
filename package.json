@@ -7,6 +7,9 @@
 	"files": [
 		"build"
 	],
+	"skill": {
+		"namespace": "mercury"
+	},
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
 	"module": "./build/esm/index.js",
@@ -32,6 +35,7 @@
 		"build.resolve-paths.esm": "TS_NODE_PROJECT=`pwd`/tsconfig.dist.json resolve-path-aliases --target build/esm --patterns '**/*.js,**/*.d.ts'",
 		"build.tsc": "tsc",
 		"build.types": "tsc --emitDeclarationOnly && echo PASS",
+		"sync.schemas": "spruce sync.schemas --fetchCoreSchemas false",
 		"clean": "rm -rf build/",
 		"clean.all": "rm -rf node_modules/ yarn.lock ; yarn clean",
 		"fix.lint": "eslint --fix '**/*.ts'",

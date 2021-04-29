@@ -1,12 +1,12 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import eventSignatureSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/eventSignature.schema'
+import eventSignatureSchema from '#spruce/schemas/mercury/v2020_09_01/eventSignature.schema'
 
-const eventSignaturesByNameSchema: SpruceSchemas.MercuryTypes.v2020_09_01.EventSignaturesByNameSchema  = {
+const eventSignaturesByNameSchema: SpruceSchemas.Mercury.v2020_09_01.EventSignaturesByNameSchema  = {
 	id: 'eventSignaturesByName',
 	version: 'v2020_09_01',
-	namespace: 'MercuryTypes',
+	namespace: 'Mercury',
 	name: '',
 	dynamicFieldSignature: { 
 	    type: 'schema',

@@ -1,12 +1,12 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import permissionSchema from '#spruce/schemas/mercuryTypes/v2020_09_01/permission.schema'
+import permissionSchema from '#spruce/schemas/mercury/v2020_09_01/permission.schema'
 
-const permissionContractSchema: SpruceSchemas.MercuryTypes.v2020_09_01.PermissionContractSchema  = {
+const permissionContractSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionContractSchema  = {
 	id: 'permissionContract',
 	version: 'v2020_09_01',
-	namespace: 'MercuryTypes',
+	namespace: 'Mercury',
 	name: 'Permission contract',
 	description: 'A Mercury Permission Contract',
 	    fields: {
