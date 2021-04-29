@@ -1,3 +1,10 @@
+# [16.0.0](https://github.com/sprucelabsai/mercury-types/compare/v15.8.1...v16.0.0) (2021-04-29)
+
+
+### Breaking Changes
+
+* namespace change MercuryTypes -> Mercury ([56ca3dc](https://github.com/sprucelabsai/mercury-types/commit/56ca3dc))
+
 ## [15.8.1](https://github.com/sprucelabsai/mercury-types/compare/v15.8.0...v15.8.1) (2021-04-23)
 
 # [15.8.0](https://github.com/sprucelabsai/mercury-types/compare/v15.7.2...v15.8.0) (2021-04-21)
