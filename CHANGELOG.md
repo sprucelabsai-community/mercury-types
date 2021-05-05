@@ -1,3 +1,10 @@
+# [17.0.0](https://github.com/sprucelabsai/mercury-types/compare/v16.0.1...v17.0.0) (2021-05-05)
+
+
+### Breaking Changes
+
+* signature updates (target objects with emits) ([7a47c98](https://github.com/sprucelabsai/mercury-types/commit/7a47c98))
+
 ## [16.0.1](https://github.com/sprucelabsai/mercury-types/compare/v16.0.0...v16.0.1) (2021-04-29)
 
 # [16.0.0](https://github.com/sprucelabsai/mercury-types/compare/v15.8.1...v16.0.0) (2021-04-29)
