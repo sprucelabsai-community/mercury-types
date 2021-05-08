@@ -98,10 +98,7 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 			: Promise<void> | void
 	): Promise<void>
 
-	off(
-		eventName: EventNames<Contract>,
-		cb?: (payload?: any) => void
-	): Promise<number>
+	off(eventName: EventNames<Contract>, cb?: any): Promise<number>
 }
 
 type Sigs = CoreEventContract['eventSignatures']
