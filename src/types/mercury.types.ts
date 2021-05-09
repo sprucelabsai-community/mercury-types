@@ -6,11 +6,13 @@ import { CoreEventContract } from '../events.contract'
 
 export type EventContract = SpruceSchemas.Mercury.v2020_09_01.EventContract
 export type EventSignature = SpruceSchemas.Mercury.v2020_09_01.EventSignature
-export type EventSignaturesByName = SpruceSchemas.Mercury.v2020_09_01.EventSignaturesByName
+export type EventSignaturesByName =
+	SpruceSchemas.Mercury.v2020_09_01.EventSignaturesByName
 export type Permission = SpruceSchemas.Mercury.v2020_09_01.Permission
 type Statuses = typeof authorizerStatuses
 export type AuthorizerStatus = Statuses[number]['name']
-export type PermissionContract = SpruceSchemas.Mercury.v2020_09_01.PermissionContract
+export type PermissionContract =
+	SpruceSchemas.Mercury.v2020_09_01.PermissionContract
 export interface MercuryAggregateResponse<Payload> {
 	totalContracts: number
 	totalResponses: number

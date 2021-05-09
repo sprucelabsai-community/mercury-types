@@ -9,7 +9,8 @@ import MercuryEventEmitter, {
 } from './types/mercury.types'
 
 export default class TestClient<Contract extends EventContract>
-	implements MercuryEventEmitter<Contract> {
+	implements MercuryEventEmitter<Contract>
+{
 	public async emit<
 		EventName extends EventNames<Contract> = EventNames<Contract>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
