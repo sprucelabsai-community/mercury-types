@@ -8,7 +8,13 @@
 		"build"
 	],
 	"skill": {
-		"namespace": "mercury"
+		"namespace": "mercury",
+		"commandOverrides": {
+			"sync.schemas": "--fetchCoreSchemas false"
+		},
+		"blockedCommands": {
+			"sync.events": "You need to run `spruce pull.event.contracts` in this project."
+		}
 	},
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
@@ -35,7 +41,6 @@
 		"build.resolve-paths.esm": "TS_NODE_PROJECT=`pwd`/tsconfig.dist.json resolve-path-aliases --target build/esm --patterns '**/*.js,**/*.d.ts'",
 		"build.tsc": "tsc",
 		"build.types": "tsc --emitDeclarationOnly && echo PASS",
-		"sync.schemas": "spruce sync.schemas --fetchCoreSchemas false",
 		"clean": "rm -rf build/",
 		"clean.all": "rm -rf node_modules/ yarn.lock ; yarn clean",
 		"fix.lint": "eslint --fix '**/*.ts'",
@@ -43,7 +48,6 @@
 		"rebuild": "yarn clean.all && yarn && yarn build.dev",
 		"release": "semantic-release",
 		"test": "jest",
-		"sync.events": "spruce pull.event.contracts",
 		"upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint ; true",
 		"upgrade.packages.all": "yarn install && yarn upgrade.packages",
 		"upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
