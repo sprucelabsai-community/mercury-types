@@ -1,3 +1,10 @@
+# [17.1.0](https://github.com/sprucelabsai/mercury-types/compare/v17.0.7...v17.1.0) (2021-05-19)
+
+
+### Features
+
+* does honor permission contract event signature ([14a03a1](https://github.com/sprucelabsai/mercury-types/commit/14a03a1))
+
 ## [17.0.7](https://github.com/sprucelabsai/mercury-types/compare/v17.0.6...v17.0.7) (2021-05-19)
 
 ## [17.0.6](https://github.com/sprucelabsai/mercury-types/compare/v17.0.5...v17.0.6) (2021-05-10)
