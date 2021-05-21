@@ -1,3 +1,10 @@
+# [18.0.0](https://github.com/sprucelabsai/mercury-types/compare/v17.1.0...v18.0.0) (2021-05-21)
+
+
+### Breaking Changes
+
+* new targets ([9df8b18](https://github.com/sprucelabsai/mercury-types/commit/9df8b18))
+
 # [17.1.0](https://github.com/sprucelabsai/mercury-types/compare/v17.0.7...v17.1.0) (2021-05-19)
 
 
