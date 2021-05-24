@@ -1,3 +1,10 @@
+# [18.2.0](https://github.com/sprucelabsai/mercury-types/compare/v18.1.2...v18.2.0) (2021-05-24)
+
+
+### Features
+
+* contract update (does-honor-permission-contract personId optional) ([05f55fc](https://github.com/sprucelabsai/mercury-types/commit/05f55fc))
+
 ## [18.1.2](https://github.com/sprucelabsai/mercury-types/compare/v18.1.1...v18.1.2) (2021-05-24)
 
 ## [18.1.1](https://github.com/sprucelabsai/mercury-types/compare/v18.1.0...v18.1.1) (2021-05-23)
