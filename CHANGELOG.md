@@ -1,3 +1,10 @@
+# [20.0.0](https://github.com/sprucelabsai/mercury-types/compare/v19.0.0...v20.0.0) (2021-05-24)
+
+
+### Breaking Changes
+
+* permission skilId -> skill rename ([4374a89](https://github.com/sprucelabsai/mercury-types/commit/4374a89))
+
 # [19.0.0](https://github.com/sprucelabsai/mercury-types/compare/v18.2.0...v19.0.0) (2021-05-24)
 
 
