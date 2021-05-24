@@ -1,4 +1,4 @@
-export { default as defaultsByRoleSchema } from './.spruce/schemas/mercury/v2020_09_01/defaultsByRole.schema'
+export { default as permissionDefaultsSchema } from './.spruce/schemas/mercury/v2020_09_01/permissionDefaults.schema'
 export { default as eventContractSchema } from './.spruce/schemas/mercury/v2020_09_01/eventContract.schema'
 export { default as eventSignatureSchema } from './.spruce/schemas/mercury/v2020_09_01/eventSignature.schema'
 export { default as eventSignaturesByNameSchema } from './.spruce/schemas/mercury/v2020_09_01/eventSignaturesByName.schema'
