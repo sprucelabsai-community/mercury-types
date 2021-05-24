@@ -29,7 +29,7 @@ const roleBases = schemaChoicesToHash(roleSchema, 'base')
 const permissionDefaultsSchema = buildSchema({
 	id: 'permissionDefaults',
 	fields: {
-		skillId: {
+		skill: {
 			type: 'boolean',
 		},
 		...Object.keys(roleBases).reduce((fields, baseSlug) => {

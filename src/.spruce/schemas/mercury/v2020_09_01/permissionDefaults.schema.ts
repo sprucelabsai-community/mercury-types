@@ -10,7 +10,7 @@ const permissionDefaultsSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionDefa
 	name: '',
 	    fields: {
 	            /** . */
-	            'skillId': {
+	            'skill': {
 	                type: 'boolean',
 	                options: undefined
 	            },

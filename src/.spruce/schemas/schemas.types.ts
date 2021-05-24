@@ -84,7 +84,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface PermissionDefaults {
 			
 				
-				'skillId'?: boolean| undefined | null
+				'skill'?: boolean| undefined | null
 				/** Owner. */
 				'owner'?: SpruceSchemas.Mercury.v2020_09_01.StatusFlags| undefined | null
 				/** Group manager. */
@@ -106,7 +106,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			name: '',
 			    fields: {
 			            /** . */
-			            'skillId': {
+			            'skill': {
 			                type: 'boolean',
 			                options: undefined
 			            },
