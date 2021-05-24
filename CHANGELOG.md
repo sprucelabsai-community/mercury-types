@@ -1,3 +1,10 @@
+# [19.0.0](https://github.com/sprucelabsai/mercury-types/compare/v18.2.0...v19.0.0) (2021-05-24)
+
+
+### Breaking Changes
+
+* permission defaultsByRoleBase now defaults and includes skillId ([5db3e35](https://github.com/sprucelabsai/mercury-types/commit/5db3e35))
+
 # [18.2.0](https://github.com/sprucelabsai/mercury-types/compare/v18.1.2...v18.2.0) (2021-05-24)
 
 
