@@ -81,8 +81,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_09_01 {
 
 		
-		interface DefaultsByRole {
+		interface PermissionDefaults {
 			
+				
+				'skillId'?: boolean| undefined | null
 				/** Owner. */
 				'owner'?: SpruceSchemas.Mercury.v2020_09_01.StatusFlags| undefined | null
 				/** Group manager. */
@@ -97,12 +99,17 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'anonymous'?: SpruceSchemas.Mercury.v2020_09_01.StatusFlags| undefined | null
 		}
 
-		interface DefaultsByRoleSchema extends SpruceSchema.Schema {
-			id: 'defaultsByRole',
+		interface PermissionDefaultsSchema extends SpruceSchema.Schema {
+			id: 'permissionDefaults',
 			version: 'v2020_09_01',
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
+			            /** . */
+			            'skillId': {
+			                type: 'boolean',
+			                options: undefined
+			            },
 			            /** Owner. */
 			            'owner': {
 			                label: 'Owner',
@@ -142,7 +149,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type DefaultsByRoleEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_09_01.DefaultsByRoleSchema>
+		type PermissionDefaultsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_09_01.PermissionDefaultsSchema>
 
 	}
 
@@ -161,7 +168,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Require all statuses. */
 				'requireAllStatuses'?: boolean| undefined | null
 				
-				'defaultsByRoleBase'?: SpruceSchemas.Mercury.v2020_09_01.DefaultsByRole| undefined | null
+				'defaults'?: SpruceSchemas.Mercury.v2020_09_01.PermissionDefaults| undefined | null
 				
 				'can'?: SpruceSchemas.Mercury.v2020_09_01.StatusFlags| undefined | null
 		}
@@ -202,9 +209,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                options: undefined
 			            },
 			            /** . */
-			            'defaultsByRoleBase': {
+			            'defaults': {
 			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_09_01.DefaultsByRoleSchema,}
+			                options: {schema: SpruceSchemas.Mercury.v2020_09_01.PermissionDefaultsSchema,}
 			            },
 			            /** . */
 			            'can': {

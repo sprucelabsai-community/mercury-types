@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import defaultsByRoleSchema from '#spruce/schemas/mercury/v2020_09_01/defaultsByRole.schema'
+import permissionDefaultsSchema from '#spruce/schemas/mercury/v2020_09_01/permissionDefaults.schema'
 import statusFlagsSchema from '#spruce/schemas/mercury/v2020_09_01/statusFlags.schema'
 
 const permissionSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionSchema  = {
@@ -40,9 +40,9 @@ const permissionSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionSchema  = {
 	                options: undefined
 	            },
 	            /** . */
-	            'defaultsByRoleBase': {
+	            'defaults': {
 	                type: 'schema',
-	                options: {schema: defaultsByRoleSchema,}
+	                options: {schema: permissionDefaultsSchema,}
 	            },
 	            /** . */
 	            'can': {

@@ -3,12 +3,17 @@ import { SpruceSchemas } from '../../schemas.types'
 
 import statusFlagsSchema from '#spruce/schemas/mercury/v2020_09_01/statusFlags.schema'
 
-const defaultsByRoleSchema: SpruceSchemas.Mercury.v2020_09_01.DefaultsByRoleSchema  = {
-	id: 'defaultsByRole',
+const permissionDefaultsSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionDefaultsSchema  = {
+	id: 'permissionDefaults',
 	version: 'v2020_09_01',
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
+	            /** . */
+	            'skillId': {
+	                type: 'boolean',
+	                options: undefined
+	            },
 	            /** Owner. */
 	            'owner': {
 	                label: 'Owner',
@@ -48,6 +53,6 @@ const defaultsByRoleSchema: SpruceSchemas.Mercury.v2020_09_01.DefaultsByRoleSche
 	    }
 }
 
-SchemaRegistry.getInstance().trackSchema(defaultsByRoleSchema)
+SchemaRegistry.getInstance().trackSchema(permissionDefaultsSchema)
 
-export default defaultsByRoleSchema
+export default permissionDefaultsSchema

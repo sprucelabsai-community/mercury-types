@@ -26,9 +26,12 @@ const statusFlagsSchema = buildSchema({
 
 const roleBases = schemaChoicesToHash(roleSchema, 'base')
 
-const defaultsByRoleSchema = buildSchema({
-	id: 'defaultsByRole',
+const permissionDefaultsSchema = buildSchema({
+	id: 'permissionDefaults',
 	fields: {
+		skillId: {
+			type: 'boolean',
+		},
 		...Object.keys(roleBases).reduce((fields, baseSlug) => {
 			//@ts-ignore
 			fields[baseSlug] = {
@@ -99,10 +102,10 @@ export default buildSchema({
 							label: 'Require all statuses',
 							defaultValue: false,
 						},
-						defaultsByRoleBase: {
+						defaults: {
 							type: 'schema',
 							options: {
-								schema: defaultsByRoleSchema,
+								schema: permissionDefaultsSchema,
 							},
 						},
 						can: {
