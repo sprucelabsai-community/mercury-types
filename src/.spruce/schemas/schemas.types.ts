@@ -159,7 +159,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		
 		interface Permission {
 			
-				/** id. Hyphen separated di for this permission, e.g. can-unlock-doors */
+				/** id. Hyphen separated id for this permission, e.g. can-unlock-doors */
 				'id': string
 				/** Name. Human readable name for this permission */
 				'name': string
@@ -179,12 +179,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: 'Permission',
 			    fields: {
-			            /** id. Hyphen separated di for this permission, e.g. can-unlock-doors */
+			            /** id. Hyphen separated id for this permission, e.g. can-unlock-doors */
 			            'id': {
 			                label: 'id',
 			                type: 'text',
 			                isRequired: true,
-			                hint: 'Hyphen separated di for this permission, e.g. can-unlock-doors',
+			                hint: 'Hyphen separated id for this permission, e.g. can-unlock-doors',
 			                options: undefined
 			            },
 			            /** Name. Human readable name for this permission */
