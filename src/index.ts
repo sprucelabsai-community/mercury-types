@@ -13,5 +13,18 @@ export * from './constants'
 export { default as buildEventContract } from './utilities/buildEventContract'
 export { default as buildPermissionContract } from './utilities/buildPermissionContract'
 export { default as validateEventContract } from './utilities/validateEventContract'
-export { default as coreEventContracts } from './events.contract'
-export * from './events.contract'
+import { default as coreEventContractsSplit } from '#spruce/events/events.contract'
+
+export const coreEventContracts = [
+	coreEventContractsSplit.reduce(
+		(contract, current) => {
+			Object.keys(current.eventSignatures).forEach((name) => {
+				//@ts-ignore
+				contract.eventSignatures[name] = current.eventSignatures[name]
+			})
+			return contract
+		},
+		{ eventSignatures: {} }
+	),
+]
+export * from '#spruce/events/events.contract'

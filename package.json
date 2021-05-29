@@ -10,10 +10,7 @@
 	"skill": {
 		"namespace": "mercury",
 		"commandOverrides": {
-			"sync.schemas": "--fetchCoreSchemas false"
-		},
-		"blockedCommands": {
-			"sync.events": "You need to run `spruce pull.event.contracts` in this project."
+			"sync.events": "--shouldSyncOnlyCoreEvents true --skillEventContractTypesFile ../../types/mercury.types --eventBuilderFile ../../../utilities"
 		}
 	},
 	"main": "./build/index.js",

@@ -2,7 +2,6 @@ import AbstractSpruceError from '@sprucelabs/error'
 import { Schema, SchemaValues } from '@sprucelabs/schema'
 import { SpruceSchemas } from '#spruce/schemas/schemas.types'
 import { authorizerStatuses } from '../constants'
-import { CoreEventContract } from '../events.contract'
 
 export type EventContract = SpruceSchemas.Mercury.v2020_09_01.EventContract
 export type EventSignature = SpruceSchemas.Mercury.v2020_09_01.EventSignature
@@ -103,9 +102,9 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 	off(eventName: EventNames<Contract>, cb?: any): Promise<number>
 }
 
-type Sigs = CoreEventContract['eventSignatures']
-export interface SkillEventSignatures extends Sigs {}
+export interface SkillEventSignatures {}
 
-export interface SkillEventContract {
+/** @ts-ignore */
+export interface SkillEventContract extends EventContract {
 	eventSignatures: SkillEventSignatures
 }
