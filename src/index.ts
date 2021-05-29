@@ -27,4 +27,6 @@ export const coreEventContracts = [
 		{ eventSignatures: {} }
 	),
 ]
+
+export { SkillEventContract as CoreEventContract } from './types/mercury.types'
 export * from '#spruce/events/events.contract'
