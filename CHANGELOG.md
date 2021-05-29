@@ -1,3 +1,12 @@
+## [21.1.1](https://github.com/sprucelabsai/mercury-types/compare/v21.1.0...v21.1.1) (2021-05-29)
+
+# [21.1.0](https://github.com/sprucelabsai/mercury-types/compare/v21.0.4...v21.1.0) (2021-05-29)
+
+
+### Features
+
+* enhanched typings ([bf0c150](https://github.com/sprucelabsai/mercury-types/commit/bf0c150))
+
 ## [21.0.4](https://github.com/sprucelabsai/mercury-types/compare/v21.0.3...v21.0.4) (2021-05-29)
 
 ## [21.0.3](https://github.com/sprucelabsai/mercury-types/compare/v21.0.2...v21.0.3) (2021-05-26)
