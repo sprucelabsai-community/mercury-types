@@ -1,3 +1,10 @@
+# [22.0.0](https://github.com/sprucelabsai/mercury-types/compare/v21.1.7...v22.0.0) (2021-06-06)
+
+
+### Breaking Changes
+
+* throw proper error when validating event contracts ([55e6b67](https://github.com/sprucelabsai/mercury-types/commit/55e6b67))
+
 ## [21.1.7](https://github.com/sprucelabsai/mercury-types/compare/v21.1.6...v21.1.7) (2021-06-05)
 
 ## [21.1.6](https://github.com/sprucelabsai/mercury-types/compare/v21.1.5...v21.1.6) (2021-06-04)
