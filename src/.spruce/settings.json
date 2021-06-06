@@ -5,7 +5,8 @@
   "installed": [
     "schema",
     "test",
-    "event"
+    "event",
+    "error"
   ],
   "events.lastSync": {
     "contractDestinationDir": "#spruce/events",
