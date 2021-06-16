@@ -1,3 +1,10 @@
+# [23.0.0](https://github.com/sprucelabsai/mercury-types/compare/v22.1.0...v23.0.0) (2021-06-16)
+
+
+### Breaking Changes
+
+* version change export ([1e4c3fb](https://github.com/sprucelabsai/mercury-types/commit/1e4c3fb))
+
 # [22.1.0](https://github.com/sprucelabsai/mercury-types/compare/v22.0.7...v22.1.0) (2021-06-16)
 
 
