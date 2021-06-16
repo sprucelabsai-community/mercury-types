@@ -1,8 +1,8 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import installSkillEmitTargetSchema from '#spruce/schemas/mercury/v2020_12_25/installSkillEmitTarget.schema'
-import installSkillEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/installSkillEmitPayload.schema'
+import installSkillEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/installSkillEmitTarget.schema'
+import installSkillEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/installSkillEmitPayload.schema'
 
 const installSkillEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.InstallSkillEmitTargetAndPayloadSchema  = {
 	id: 'installSkillEmitTargetAndPayload',
@@ -14,13 +14,13 @@ const installSkillEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: installSkillEmitTargetSchema,}
+	                options: {schema: installSkillEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: installSkillEmitPayloadSchema,}
+	                options: {schema: installSkillEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

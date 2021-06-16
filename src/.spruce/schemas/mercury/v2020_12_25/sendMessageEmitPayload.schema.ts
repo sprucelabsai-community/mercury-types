@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import sendMessageMessagePayloadSchema from '#spruce/schemas/mercury/v2020_12_25/sendMessageMessagePayload.schema'
+import sendMessageMessagePayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/sendMessageMessagePayload.schema'
 
 const sendMessageEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitPayloadSchema  = {
 	id: 'sendMessageEmitPayload',
@@ -13,7 +13,7 @@ const sendMessageEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessag
 	            'message': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: sendMessageMessagePayloadSchema,}
+	                options: {schema: sendMessageMessagePayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

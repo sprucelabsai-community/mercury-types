@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import conversationTopicSchema from '#spruce/schemas/mercury/v2020_12_25/conversationTopic.schema'
+import conversationTopicSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/conversationTopic.schema'
 
 const didMessageResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidMessageResponsePayloadSchema  = {
 	id: 'didMessageResponsePayload',
@@ -35,7 +35,7 @@ const didMessageResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DidMess
 	            'suggestedTopics': {
 	                type: 'schema',
 	                isArray: true,
-	                options: {schema: conversationTopicSchema,}
+	                options: {schema: conversationTopicSchema_v2020_12_25,}
 	            },
 	    }
 }

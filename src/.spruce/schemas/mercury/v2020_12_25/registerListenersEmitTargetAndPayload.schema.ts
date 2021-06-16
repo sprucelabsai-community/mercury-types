@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import registerListenersEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/registerListenersEmitPayload.schema'
+import registerListenersEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/registerListenersEmitPayload.schema'
 
 const registerListenersEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterListenersEmitTargetAndPayloadSchema  = {
 	id: 'registerListenersEmitTargetAndPayload',
@@ -13,7 +13,7 @@ const registerListenersEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_1
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: registerListenersEmitPayloadSchema,}
+	                options: {schema: registerListenersEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

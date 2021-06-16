@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import authenticateEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/authenticateEmitPayload.schema'
+import authenticateEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/authenticateEmitPayload.schema'
 
 const authenticateEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.AuthenticateEmitTargetAndPayloadSchema  = {
 	id: 'authenticateEmitTargetAndPayload',
@@ -12,7 +12,7 @@ const authenticateEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                options: {schema: authenticateEmitPayloadSchema,}
+	                options: {schema: authenticateEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

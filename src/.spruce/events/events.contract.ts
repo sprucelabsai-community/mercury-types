@@ -25,6 +25,9 @@ import mercuryDeleteOrganizationEventContract_v2020_12_25, {
 import mercuryDeleteRoleEventContract_v2020_12_25, {
 	DeleteRoleEventContract as MercuryDeleteRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/deleteRole.v2020_12_25.contract'
+import mercuryDidInstallEventContract_v2020_12_25, {
+	DidInstallEventContract as MercuryDidInstallEventContract_v2020_12_25,
+} from '#spruce/events/mercury/didInstall.v2020_12_25.contract'
 import mercuryDidMessageEventContract_v2020_12_25, {
 	DidMessageEventContract as MercuryDidMessageEventContract_v2020_12_25,
 } from '#spruce/events/mercury/didMessage.v2020_12_25.contract'
@@ -126,6 +129,7 @@ import mercuryWhoamiEventContract_v2020_12_25, {
 } from '#spruce/events/mercury/whoami.v2020_12_25.contract'
 
 export default [
+	mercuryDidInstallEventContract_v2020_12_25,
 	mercuryDidMessageEventContract_v2020_12_25,
 	mercuryAuthenticateEventContract_v2020_12_25,
 	mercuryCanListenEventContract_v2020_12_25,
@@ -172,47 +176,90 @@ export default [
 
 declare module '../../types/mercury.types' {
 	interface SkillEventSignatures {
+		'did-install::v2020_12_25': MercuryDidInstallEventContract_v2020_12_25['eventSignatures']['did-install::v2020_12_25']
+
 		'did-message::v2020_12_25': MercuryDidMessageEventContract_v2020_12_25['eventSignatures']['did-message::v2020_12_25']
+
 		'authenticate::v2020_12_25': MercuryAuthenticateEventContract_v2020_12_25['eventSignatures']['authenticate::v2020_12_25']
+
 		'can-listen::v2020_12_25': MercuryCanListenEventContract_v2020_12_25['eventSignatures']['can-listen::v2020_12_25']
+
 		'confirm-pin::v2020_12_25': MercuryConfirmPinEventContract_v2020_12_25['eventSignatures']['confirm-pin::v2020_12_25']
+
 		'create-location::v2020_12_25': MercuryCreateLocationEventContract_v2020_12_25['eventSignatures']['create-location::v2020_12_25']
+
 		'create-organization::v2020_12_25': MercuryCreateOrganizationEventContract_v2020_12_25['eventSignatures']['create-organization::v2020_12_25']
+
 		'create-role::v2020_12_25': MercuryCreateRoleEventContract_v2020_12_25['eventSignatures']['create-role::v2020_12_25']
+
 		'delete-location::v2020_12_25': MercuryDeleteLocationEventContract_v2020_12_25['eventSignatures']['delete-location::v2020_12_25']
+
 		'delete-organization::v2020_12_25': MercuryDeleteOrganizationEventContract_v2020_12_25['eventSignatures']['delete-organization::v2020_12_25']
+
 		'delete-role::v2020_12_25': MercuryDeleteRoleEventContract_v2020_12_25['eventSignatures']['delete-role::v2020_12_25']
+
 		'does-honor-permission-contract::v2020_12_25': MercuryDoesHonorPermissionContractEventContract_v2020_12_25['eventSignatures']['does-honor-permission-contract::v2020_12_25']
+
 		'get-conversation-topics::v2020_12_25': MercuryGetConversationTopicsEventContract_v2020_12_25['eventSignatures']['get-conversation-topics::v2020_12_25']
+
 		'get-event-contracts::v2020_12_25': MercuryGetEventContractsEventContract_v2020_12_25['eventSignatures']['get-event-contracts::v2020_12_25']
+
 		'get-location::v2020_12_25': MercuryGetLocationEventContract_v2020_12_25['eventSignatures']['get-location::v2020_12_25']
+
 		'get-organization::v2020_12_25': MercuryGetOrganizationEventContract_v2020_12_25['eventSignatures']['get-organization::v2020_12_25']
+
 		'get-role::v2020_12_25': MercuryGetRoleEventContract_v2020_12_25['eventSignatures']['get-role::v2020_12_25']
+
 		'get-skill::v2020_12_25': MercuryGetSkillEventContract_v2020_12_25['eventSignatures']['get-skill::v2020_12_25']
+
 		'health::v2020_12_25': MercuryHealthEventContract_v2020_12_25['eventSignatures']['health::v2020_12_25']
+
 		'install-skill::v2020_12_25': MercuryInstallSkillEventContract_v2020_12_25['eventSignatures']['install-skill::v2020_12_25']
+
 		'is-skill-installed::v2020_12_25': MercuryIsSkillInstalledEventContract_v2020_12_25['eventSignatures']['is-skill-installed::v2020_12_25']
+
 		'list-locations::v2020_12_25': MercuryListLocationsEventContract_v2020_12_25['eventSignatures']['list-locations::v2020_12_25']
+
 		'list-organizations::v2020_12_25': MercuryListOrganizationsEventContract_v2020_12_25['eventSignatures']['list-organizations::v2020_12_25']
+
 		'list-roles::v2020_12_25': MercuryListRolesEventContract_v2020_12_25['eventSignatures']['list-roles::v2020_12_25']
+
 		'list-skills::v2020_12_25': MercuryListSkillsEventContract_v2020_12_25['eventSignatures']['list-skills::v2020_12_25']
+
 		'logout::v2020_12_25': MercuryLogoutEventContract_v2020_12_25['eventSignatures']['logout::v2020_12_25']
+
 		'register-conversation-topics::v2020_12_25': MercuryRegisterConversationTopicsEventContract_v2020_12_25['eventSignatures']['register-conversation-topics::v2020_12_25']
+
 		'register-events::v2020_12_25': MercuryRegisterEventsEventContract_v2020_12_25['eventSignatures']['register-events::v2020_12_25']
+
 		'register-listeners::v2020_12_25': MercuryRegisterListenersEventContract_v2020_12_25['eventSignatures']['register-listeners::v2020_12_25']
+
 		'register-skill::v2020_12_25': MercuryRegisterSkillEventContract_v2020_12_25['eventSignatures']['register-skill::v2020_12_25']
+
 		'request-pin::v2020_12_25': MercuryRequestPinEventContract_v2020_12_25['eventSignatures']['request-pin::v2020_12_25']
+
 		'scramble-account::v2020_12_25': MercuryScrambleAccountEventContract_v2020_12_25['eventSignatures']['scramble-account::v2020_12_25']
+
 		'send-message::v2020_12_25': MercurySendMessageEventContract_v2020_12_25['eventSignatures']['send-message::v2020_12_25']
+
 		'set-role::v2020_12_25': MercurySetRoleEventContract_v2020_12_25['eventSignatures']['set-role::v2020_12_25']
+
 		'uninstall-skill::v2020_12_25': MercuryUninstallSkillEventContract_v2020_12_25['eventSignatures']['uninstall-skill::v2020_12_25']
+
 		'unregister-conversation-topics::v2020_12_25': MercuryUnregisterConversationTopicsEventContract_v2020_12_25['eventSignatures']['unregister-conversation-topics::v2020_12_25']
+
 		'unregister-events::v2020_12_25': MercuryUnregisterEventsEventContract_v2020_12_25['eventSignatures']['unregister-events::v2020_12_25']
+
 		'unregister-listeners::v2020_12_25': MercuryUnregisterListenersEventContract_v2020_12_25['eventSignatures']['unregister-listeners::v2020_12_25']
+
 		'unregister-skill::v2020_12_25': MercuryUnregisterSkillEventContract_v2020_12_25['eventSignatures']['unregister-skill::v2020_12_25']
+
 		'update-location::v2020_12_25': MercuryUpdateLocationEventContract_v2020_12_25['eventSignatures']['update-location::v2020_12_25']
+
 		'update-organization::v2020_12_25': MercuryUpdateOrganizationEventContract_v2020_12_25['eventSignatures']['update-organization::v2020_12_25']
+
 		'update-role::v2020_12_25': MercuryUpdateRoleEventContract_v2020_12_25['eventSignatures']['update-role::v2020_12_25']
+
 		'whoami::v2020_12_25': MercuryWhoamiEventContract_v2020_12_25['eventSignatures']['whoami::v2020_12_25']
 	}
 }

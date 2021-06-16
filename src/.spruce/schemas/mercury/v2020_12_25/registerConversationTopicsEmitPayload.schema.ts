@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import registerConversationTopicEmitPayloadTopicSchema from '#spruce/schemas/mercury/v2020_12_25/registerConversationTopicEmitPayloadTopic.schema'
+import registerConversationTopicEmitPayloadTopicSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/registerConversationTopicEmitPayloadTopic.schema'
 
 const registerConversationTopicsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.RegisterConversationTopicsEmitPayloadSchema  = {
 	id: 'registerConversationTopicsEmitPayload',
@@ -14,7 +14,7 @@ const registerConversationTopicsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_1
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
-	                options: {schema: registerConversationTopicEmitPayloadTopicSchema,}
+	                options: {schema: registerConversationTopicEmitPayloadTopicSchema_v2020_12_25,}
 	            },
 	    }
 }

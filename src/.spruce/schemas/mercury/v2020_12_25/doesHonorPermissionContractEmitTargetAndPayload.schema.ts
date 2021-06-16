@@ -1,8 +1,8 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import doesHonorPermissionContractEmitTargetSchema from '#spruce/schemas/mercury/v2020_12_25/doesHonorPermissionContractEmitTarget.schema'
-import doesHonorPermissionContractEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/doesHonorPermissionContractEmitPayload.schema'
+import doesHonorPermissionContractEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/doesHonorPermissionContractEmitTarget.schema'
+import doesHonorPermissionContractEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/doesHonorPermissionContractEmitPayload.schema'
 
 const doesHonorPermissionContractEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DoesHonorPermissionContractEmitTargetAndPayloadSchema  = {
 	id: 'doesHonorPermissionContractEmitTargetAndPayload',
@@ -13,13 +13,13 @@ const doesHonorPermissionContractEmitTargetAndPayloadSchema: SpruceSchemas.Mercu
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                options: {schema: doesHonorPermissionContractEmitTargetSchema,}
+	                options: {schema: doesHonorPermissionContractEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: doesHonorPermissionContractEmitPayloadSchema,}
+	                options: {schema: doesHonorPermissionContractEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

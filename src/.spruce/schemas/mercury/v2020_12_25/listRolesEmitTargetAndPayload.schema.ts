@@ -1,8 +1,8 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import listRolesEmitTargetSchema from '#spruce/schemas/mercury/v2020_12_25/listRolesEmitTarget.schema'
-import listRolesEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listRolesEmitPayload.schema'
+import listRolesEmitTargetSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listRolesEmitTarget.schema'
+import listRolesEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listRolesEmitPayload.schema'
 
 const listRolesEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListRolesEmitTargetAndPayloadSchema  = {
 	id: 'listRolesEmitTargetAndPayload',
@@ -14,12 +14,12 @@ const listRolesEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Lis
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: listRolesEmitTargetSchema,}
+	                options: {schema: listRolesEmitTargetSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                options: {schema: listRolesEmitPayloadSchema,}
+	                options: {schema: listRolesEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

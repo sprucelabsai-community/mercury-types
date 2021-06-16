@@ -1,11 +1,11 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import eventSignaturesByNameSchema_v2020_09_01 from '#spruce/schemas/mercury/v2020_09_01/eventSignaturesByName.schema'
+import eventSignaturesByNameSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/eventSignaturesByName.schema'
 
-const eventContractSchema: SpruceSchemas.Mercury.v2020_09_01.EventContractSchema  = {
+const eventContractSchema: SpruceSchemas.Mercury.v2020_12_25.EventContractSchema  = {
 	id: 'eventContract',
-	version: 'v2020_09_01',
+	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Event contract',
 	description: 'A Mercury Event Contract.',
@@ -19,7 +19,7 @@ const eventContractSchema: SpruceSchemas.Mercury.v2020_09_01.EventContractSchema
 	            'eventSignatures': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: eventSignaturesByNameSchema_v2020_09_01,}
+	                options: {schema: eventSignaturesByNameSchema_v2020_12_25,}
 	            },
 	    }
 }

@@ -1,8 +1,8 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import listLocationsTargetPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listLocationsTargetPayload.schema'
-import listLocationsEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/listLocationsEmitPayload.schema'
+import listLocationsTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listLocationsTargetPayload.schema'
+import listLocationsEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/listLocationsEmitPayload.schema'
 
 const listLocationsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListLocationsEmitTargetAndPayloadSchema  = {
 	id: 'listLocationsEmitTargetAndPayload',
@@ -14,12 +14,12 @@ const listLocationsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: listLocationsTargetPayloadSchema,}
+	                options: {schema: listLocationsTargetPayloadSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                options: {schema: listLocationsEmitPayloadSchema,}
+	                options: {schema: listLocationsEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

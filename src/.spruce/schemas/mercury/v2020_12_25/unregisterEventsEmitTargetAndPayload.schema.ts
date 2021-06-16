@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import unregisterEventsEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/unregisterEventsEmitPayload.schema'
+import unregisterEventsEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/unregisterEventsEmitPayload.schema'
 
 const unregisterEventsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UnregisterEventsEmitTargetAndPayloadSchema  = {
 	id: 'unregisterEventsEmitTargetAndPayload',
@@ -12,7 +12,7 @@ const unregisterEventsEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12
 	            /** . */
 	            'payload': {
 	                type: 'schema',
-	                options: {schema: unregisterEventsEmitPayloadSchema,}
+	                options: {schema: unregisterEventsEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

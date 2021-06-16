@@ -1,12 +1,12 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import permissionDefaultsSchema_v2020_09_01 from '#spruce/schemas/mercury/v2020_09_01/permissionDefaults.schema'
-import statusFlagsSchema_v2020_09_01 from '#spruce/schemas/mercury/v2020_09_01/statusFlags.schema'
+import permissionDefaultsSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/permissionDefaults.schema'
+import statusFlagsSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/statusFlags.schema'
 
-const permissionSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionSchema  = {
+const permissionSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionSchema  = {
 	id: 'permission',
-	version: 'v2020_09_01',
+	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Permission',
 	    fields: {
@@ -42,12 +42,12 @@ const permissionSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionSchema  = {
 	            /** . */
 	            'defaults': {
 	                type: 'schema',
-	                options: {schema: permissionDefaultsSchema_v2020_09_01,}
+	                options: {schema: permissionDefaultsSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'can': {
 	                type: 'schema',
-	                options: {schema: statusFlagsSchema_v2020_09_01,}
+	                options: {schema: statusFlagsSchema_v2020_12_25,}
 	            },
 	    }
 }

@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import authSchemaSchema from '#spruce/schemas/mercury/v2020_12_25/authSchema.schema'
+import authSchemaSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/authSchema.schema'
 
 const authenticateResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.AuthenticateResponsePayloadSchema  = {
 	id: 'authenticateResponsePayload',
@@ -19,7 +19,7 @@ const authenticateResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Authe
 	            'auth': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: authSchemaSchema,}
+	                options: {schema: authSchemaSchema_v2020_12_25,}
 	            },
 	    }
 }

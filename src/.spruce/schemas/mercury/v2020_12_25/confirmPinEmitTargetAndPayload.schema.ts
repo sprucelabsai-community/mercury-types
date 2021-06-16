@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import confirmPinEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/confirmPinEmitPayload.schema'
+import confirmPinEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/confirmPinEmitPayload.schema'
 
 const confirmPinEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ConfirmPinEmitTargetAndPayloadSchema  = {
 	id: 'confirmPinEmitTargetAndPayload',
@@ -13,7 +13,7 @@ const confirmPinEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Co
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: confirmPinEmitPayloadSchema,}
+	                options: {schema: confirmPinEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

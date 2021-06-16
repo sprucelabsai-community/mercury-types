@@ -1,8 +1,8 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import sendMessageTargetPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/sendMessageTargetPayload.schema'
-import sendMessageEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/sendMessageEmitPayload.schema'
+import sendMessageTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/sendMessageTargetPayload.schema'
+import sendMessageEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/sendMessageEmitPayload.schema'
 
 const sendMessageEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.SendMessageEmitTargetAndPayloadSchema  = {
 	id: 'sendMessageEmitTargetAndPayload',
@@ -13,13 +13,13 @@ const sendMessageEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.S
 	            /** . */
 	            'target': {
 	                type: 'schema',
-	                options: {schema: sendMessageTargetPayloadSchema,}
+	                options: {schema: sendMessageTargetPayloadSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: sendMessageEmitPayloadSchema,}
+	                options: {schema: sendMessageEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

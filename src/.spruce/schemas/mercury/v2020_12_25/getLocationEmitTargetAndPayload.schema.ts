@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import getLocationTargetPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/getLocationTargetPayload.schema'
+import getLocationTargetPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/getLocationTargetPayload.schema'
 
 const getLocationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetLocationEmitTargetAndPayloadSchema  = {
 	id: 'getLocationEmitTargetAndPayload',
@@ -13,7 +13,7 @@ const getLocationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.G
 	            'target': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: getLocationTargetPayloadSchema,}
+	                options: {schema: getLocationTargetPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

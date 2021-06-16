@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import organizationSchema from '#spruce/schemas/spruce/v2020_07_22/organization.schema'
+import organizationSchema_v2020_07_22 from '#spruce/schemas/spruce/v2020_07_22/organization.schema'
 
 const deleteOrgResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteOrgResponsePayloadSchema  = {
 	id: 'deleteOrgResponsePayload',
@@ -13,7 +13,7 @@ const deleteOrgResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.DeleteOr
 	            'organization': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: organizationSchema,}
+	                options: {schema: organizationSchema_v2020_07_22,}
 	            },
 	    }
 }

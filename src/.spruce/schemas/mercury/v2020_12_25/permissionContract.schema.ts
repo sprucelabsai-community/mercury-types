@@ -1,11 +1,11 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import permissionSchema_v2020_09_01 from '#spruce/schemas/mercury/v2020_09_01/permission.schema'
+import permissionSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/permission.schema'
 
-const permissionContractSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionContractSchema  = {
+const permissionContractSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema  = {
 	id: 'permissionContract',
-	version: 'v2020_09_01',
+	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Permission contract',
 	description: 'A Mercury Permission Contract',
@@ -43,7 +43,7 @@ const permissionContractSchema: SpruceSchemas.Mercury.v2020_09_01.PermissionCont
 	                isRequired: true,
 	                isArray: true,
 	                minArrayLength: 0,
-	                options: {schema: permissionSchema_v2020_09_01,}
+	                options: {schema: permissionSchema_v2020_12_25,}
 	            },
 	    }
 }

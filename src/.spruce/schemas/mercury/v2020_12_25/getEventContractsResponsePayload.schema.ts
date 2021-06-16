@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import eventContractSchema from '#spruce/schemas/mercury/v2020_09_01/eventContract.schema'
+import eventContractSchema_v2020_09_01 from '#spruce/schemas/mercury/v2020_09_01/eventContract.schema'
 
 const getEventContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.GetEventContractsResponsePayloadSchema  = {
 	id: 'getEventContractsResponsePayload',
@@ -14,7 +14,7 @@ const getEventContractsResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.
 	                type: 'schema',
 	                isRequired: true,
 	                isArray: true,
-	                options: {schema: eventContractSchema,}
+	                options: {schema: eventContractSchema_v2020_09_01,}
 	            },
 	    }
 }

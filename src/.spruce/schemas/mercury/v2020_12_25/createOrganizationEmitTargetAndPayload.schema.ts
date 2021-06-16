@@ -1,7 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
-import createOrgEmitPayloadSchema from '#spruce/schemas/mercury/v2020_12_25/createOrgEmitPayload.schema'
+import createOrgEmitPayloadSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/createOrgEmitPayload.schema'
 
 const createOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.CreateOrganizationEmitTargetAndPayloadSchema  = {
 	id: 'createOrganizationEmitTargetAndPayload',
@@ -13,7 +13,7 @@ const createOrganizationEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_
 	            'payload': {
 	                type: 'schema',
 	                isRequired: true,
-	                options: {schema: createOrgEmitPayloadSchema,}
+	                options: {schema: createOrgEmitPayloadSchema_v2020_12_25,}
 	            },
 	    }
 }

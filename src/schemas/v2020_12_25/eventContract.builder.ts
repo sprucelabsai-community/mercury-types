@@ -1,4 +1,5 @@
 import { buildSchema } from '@sprucelabs/schema'
+import permissionContractBuilder from './permissionContract.builder'
 
 export default buildSchema({
 	id: 'eventContract',
@@ -39,19 +40,13 @@ export default buildSchema({
 									listenPermissionContract: {
 										type: 'schema',
 										options: {
-											schemaId: {
-												id: 'permissionContract',
-												version: 'v2020_09_01',
-											},
+											schema: permissionContractBuilder,
 										},
 									},
 									emitPermissionContract: {
 										type: 'schema',
 										options: {
-											schemaId: {
-												id: 'permissionContract',
-												version: 'v2020_09_01',
-											},
+											schema: permissionContractBuilder,
 										},
 									},
 								},
