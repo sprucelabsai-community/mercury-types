@@ -1,5 +1,5 @@
 import { validateSchemaValues } from '@sprucelabs/schema'
-import eventContractSchema from '#spruce/schemas/mercury/v2020_09_01/eventContract.schema'
+import eventContractSchema from '#spruce/schemas/mercury/v2020_12_25/eventContract.schema'
 import SpruceError from '../errors/SpruceError'
 import { EventContract } from '../types/mercury.types'
 

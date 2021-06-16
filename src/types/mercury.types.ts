@@ -3,15 +3,15 @@ import { Schema, SchemaValues } from '@sprucelabs/schema'
 import { SpruceSchemas } from '#spruce/schemas/schemas.types'
 import { authorizerStatuses } from '../constants'
 
-export type EventContract = SpruceSchemas.Mercury.v2020_09_01.EventContract
-export type EventSignature = SpruceSchemas.Mercury.v2020_09_01.EventSignature
+export type EventContract = SpruceSchemas.Mercury.v2020_12_25.EventContract
+export type EventSignature = SpruceSchemas.Mercury.v2020_12_25.EventSignature
 export type EventSignaturesByName =
-	SpruceSchemas.Mercury.v2020_09_01.EventSignaturesByName
-export type Permission = SpruceSchemas.Mercury.v2020_09_01.Permission
+	SpruceSchemas.Mercury.v2020_12_25.EventSignaturesByName
+export type Permission = SpruceSchemas.Mercury.v2020_12_25.Permission
 type Statuses = typeof authorizerStatuses
 export type AuthorizerStatus = Statuses[number]['name']
 export type PermissionContract =
-	SpruceSchemas.Mercury.v2020_09_01.PermissionContract
+	SpruceSchemas.Mercury.v2020_12_25.PermissionContract
 export interface MercuryAggregateResponse<Payload> {
 	totalContracts: number
 	totalResponses: number
