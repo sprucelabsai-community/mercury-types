@@ -1,3 +1,10 @@
+# [22.1.0](https://github.com/sprucelabsai/mercury-types/compare/v22.0.7...v22.1.0) (2021-06-16)
+
+
+### Features
+
+* version normalized (both versions still exported) ([0607ecc](https://github.com/sprucelabsai/mercury-types/commit/0607ecc))
+
 ## [22.0.7](https://github.com/sprucelabsai/mercury-types/compare/v22.0.6...v22.0.7) (2021-06-14)
 
 ## [22.0.6](https://github.com/sprucelabsai/mercury-types/compare/v22.0.5...v22.0.6) (2021-06-14)
