@@ -2226,7 +2226,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface IsSkillInstalledResponsePayload {
 			
 				
-				'isInstalled'?: boolean| undefined | null
+				'isInstalled': boolean
 		}
 
 		interface IsSkillInstalledResponsePayloadSchema extends SpruceSchema.Schema {
@@ -2238,6 +2238,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'isInstalled': {
 			                type: 'boolean',
+			                isRequired: true,
 			                options: undefined
 			            },
 			    }

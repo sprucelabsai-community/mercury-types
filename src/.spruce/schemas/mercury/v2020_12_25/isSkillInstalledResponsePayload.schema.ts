@@ -12,6 +12,7 @@ const isSkillInstalledResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25.I
 	            /** . */
 	            'isInstalled': {
 	                type: 'boolean',
+	                isRequired: true,
 	                options: undefined
 	            },
 	    }
