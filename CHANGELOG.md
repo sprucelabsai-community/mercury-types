@@ -1,3 +1,10 @@
+# [23.1.0](https://github.com/sprucelabsai/mercury-types/compare/v23.0.9...v23.1.0) (2021-06-28)
+
+
+### Features
+
+* create person event types ([e07083a](https://github.com/sprucelabsai/mercury-types/commit/e07083a))
+
 ## [23.0.9](https://github.com/sprucelabsai/mercury-types/compare/v23.0.8...v23.0.9) (2021-06-26)
 
 ## [23.0.8](https://github.com/sprucelabsai/mercury-types/compare/v23.0.7...v23.0.8) (2021-06-22)
