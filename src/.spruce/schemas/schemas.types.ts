@@ -909,6 +909,136 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface CreatePersonEmitPayload {
+			
+				/** First name. */
+				'firstName'?: string| undefined | null
+				/** Last name. */
+				'lastName'?: string| undefined | null
+				/** Profile photos. */
+				'profileImages'?: SpruceSchemas.Spruce.v2020_07_22.ProfileImage| undefined | null
+				
+				'dateCreated'?: number| undefined | null
+				
+				'dateScrambled'?: number| undefined | null
+				/** Phone. A number that can be texted */
+				'phone': string
+		}
+
+		interface CreatePersonEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'createPersonEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** First name. */
+			            'firstName': {
+			                label: 'First name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Last name. */
+			            'lastName': {
+			                label: 'Last name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Profile photos. */
+			            'profileImages': {
+			                label: 'Profile photos',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.ProfileImageSchema,}
+			            },
+			            /** . */
+			            'dateCreated': {
+			                type: 'number',
+			                options: undefined
+			            },
+			            /** . */
+			            'dateScrambled': {
+			                type: 'number',
+			                options: undefined
+			            },
+			            /** Phone. A number that can be texted */
+			            'phone': {
+			                label: 'Phone',
+			                type: 'phone',
+			                isPrivate: true,
+			                isRequired: true,
+			                hint: 'A number that can be texted',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type CreatePersonEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface CreatePersonEmitTargetAndPayload {
+			
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayload
+		}
+
+		interface CreatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'createPersonEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type CreatePersonEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.CreatePersonEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface CreatePersonResponsePayload {
+			
+				
+				'person': SpruceSchemas.Spruce.v2020_07_22.Person
+		}
+
+		interface CreatePersonResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'createPersonResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			            },
+			    }
+		}
+
+		type CreatePersonResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.CreatePersonResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface CreateRoleTargetPayload {
 			
 				

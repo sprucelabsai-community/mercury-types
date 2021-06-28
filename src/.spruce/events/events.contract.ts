@@ -13,6 +13,9 @@ import mercuryCreateLocationEventContract_v2020_12_25, {
 import mercuryCreateOrganizationEventContract_v2020_12_25, {
 	CreateOrganizationEventContract as MercuryCreateOrganizationEventContract_v2020_12_25,
 } from '#spruce/events/mercury/createOrganization.v2020_12_25.contract'
+import mercuryCreatePersonEventContract_v2020_12_25, {
+	CreatePersonEventContract as MercuryCreatePersonEventContract_v2020_12_25,
+} from '#spruce/events/mercury/createPerson.v2020_12_25.contract'
 import mercuryCreateRoleEventContract_v2020_12_25, {
 	CreateRoleEventContract as MercuryCreateRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/createRole.v2020_12_25.contract'
@@ -136,6 +139,7 @@ export default [
 	mercuryConfirmPinEventContract_v2020_12_25,
 	mercuryCreateLocationEventContract_v2020_12_25,
 	mercuryCreateOrganizationEventContract_v2020_12_25,
+	mercuryCreatePersonEventContract_v2020_12_25,
 	mercuryCreateRoleEventContract_v2020_12_25,
 	mercuryDeleteLocationEventContract_v2020_12_25,
 	mercuryDeleteOrganizationEventContract_v2020_12_25,
@@ -189,6 +193,8 @@ declare module '../../types/mercury.types' {
 		'create-location::v2020_12_25': MercuryCreateLocationEventContract_v2020_12_25['eventSignatures']['create-location::v2020_12_25']
 
 		'create-organization::v2020_12_25': MercuryCreateOrganizationEventContract_v2020_12_25['eventSignatures']['create-organization::v2020_12_25']
+
+		'create-person::v2020_12_25': MercuryCreatePersonEventContract_v2020_12_25['eventSignatures']['create-person::v2020_12_25']
 
 		'create-role::v2020_12_25': MercuryCreateRoleEventContract_v2020_12_25['eventSignatures']['create-role::v2020_12_25']
 
