@@ -13,6 +13,7 @@ const createRoleEmitTargetAndPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Cr
 	            /** . */
 	            'target': {
 	                type: 'schema',
+	                isRequired: true,
 	                options: {schema: createRoleTargetPayloadSchema_v2020_12_25,}
 	            },
 	            /** . */

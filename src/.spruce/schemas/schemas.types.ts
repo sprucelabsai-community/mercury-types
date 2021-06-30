@@ -1042,7 +1042,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreateRoleTargetPayload {
 			
 				
-				'organizationId'?: string| undefined | null
+				'organizationId': string
 		}
 
 		interface CreateRoleTargetPayloadSchema extends SpruceSchema.Schema {
@@ -1054,6 +1054,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'organizationId': {
 			                type: 'id',
+			                isRequired: true,
 			                options: undefined
 			            },
 			    }
@@ -1133,7 +1134,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface CreateRoleEmitTargetAndPayload {
 			
 				
-				'target'?: SpruceSchemas.Mercury.v2020_12_25.CreateRoleTargetPayload| undefined | null
+				'target': SpruceSchemas.Mercury.v2020_12_25.CreateRoleTargetPayload
 				
 				'payload': SpruceSchemas.Mercury.v2020_12_25.CreateRoleEmitPayload
 		}
@@ -1147,6 +1148,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'target': {
 			                type: 'schema',
+			                isRequired: true,
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.CreateRoleTargetPayloadSchema,}
 			            },
 			            /** . */
@@ -3332,6 +3334,62 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type RequestPinResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RequestPinResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ScrambleAccountEmitTarget {
+			
+				
+				'personId'?: string| undefined | null
+		}
+
+		interface ScrambleAccountEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'scrambleAccountEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type ScrambleAccountEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ScrambleAccountEmitTargetSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ScrambleAccountEmitTargetAndPayload {
+			
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.ScrambleAccountEmitTarget| undefined | null
+		}
+
+		interface ScrambleAccountEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'scrambleAccountEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ScrambleAccountEmitTargetSchema,}
+			            },
+			    }
+		}
+
+		type ScrambleAccountEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ScrambleAccountEmitTargetAndPayloadSchema>
 
 	}
 
