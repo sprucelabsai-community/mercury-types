@@ -1,3 +1,10 @@
+# [23.2.0](https://github.com/sprucelabsai/mercury-types/compare/v23.1.1...v23.2.0) (2021-06-30)
+
+
+### Features
+
+* scramble account accepts optional target ([eb8b17c](https://github.com/sprucelabsai/mercury-types/commit/eb8b17c))
+
 ## [23.1.1](https://github.com/sprucelabsai/mercury-types/compare/v23.1.0...v23.1.1) (2021-06-28)
 
 # [23.1.0](https://github.com/sprucelabsai/mercury-types/compare/v23.0.9...v23.1.0) (2021-06-28)
