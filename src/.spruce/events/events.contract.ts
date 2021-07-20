@@ -70,6 +70,9 @@ import mercuryListLocationsEventContract_v2020_12_25, {
 import mercuryListOrganizationsEventContract_v2020_12_25, {
 	ListOrganizationsEventContract as MercuryListOrganizationsEventContract_v2020_12_25,
 } from '#spruce/events/mercury/listOrganizations.v2020_12_25.contract'
+import mercuryListPeopleEventContract_v2020_12_25, {
+	ListPeopleEventContract as MercuryListPeopleEventContract_v2020_12_25,
+} from '#spruce/events/mercury/listPeople.v2020_12_25.contract'
 import mercuryListRolesEventContract_v2020_12_25, {
 	ListRolesEventContract as MercuryListRolesEventContract_v2020_12_25,
 } from '#spruce/events/mercury/listRoles.v2020_12_25.contract'
@@ -159,6 +162,7 @@ export default [
 	mercuryIsSkillInstalledEventContract_v2020_12_25,
 	mercuryListLocationsEventContract_v2020_12_25,
 	mercuryListOrganizationsEventContract_v2020_12_25,
+	mercuryListPeopleEventContract_v2020_12_25,
 	mercuryListRolesEventContract_v2020_12_25,
 	mercuryListSkillsEventContract_v2020_12_25,
 	mercuryLogoutEventContract_v2020_12_25,
@@ -231,6 +235,8 @@ declare module '../../types/mercury.types' {
 		'list-locations::v2020_12_25': MercuryListLocationsEventContract_v2020_12_25['eventSignatures']['list-locations::v2020_12_25']
 
 		'list-organizations::v2020_12_25': MercuryListOrganizationsEventContract_v2020_12_25['eventSignatures']['list-organizations::v2020_12_25']
+
+		'list-people::v2020_12_25': MercuryListPeopleEventContract_v2020_12_25['eventSignatures']['list-people::v2020_12_25']
 
 		'list-roles::v2020_12_25': MercuryListRolesEventContract_v2020_12_25['eventSignatures']['list-roles::v2020_12_25']
 

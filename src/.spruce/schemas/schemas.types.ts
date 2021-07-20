@@ -2594,6 +2594,93 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface ListPeopleEmitPayload {
+			
+				
+				'ids'?: string[]| undefined | null
+		}
+
+		interface ListPeopleEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'listPeopleEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'ids': {
+			                type: 'id',
+			                isArray: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		type ListPeopleEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListPeopleEmitTargetAndPayload {
+			
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitPayload| undefined | null
+		}
+
+		interface ListPeopleEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'listPeopleEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type ListPeopleEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListPeopleEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface ListPeopleResponsePayload {
+			
+				
+				'people': SpruceSchemas.Spruce.v2020_07_22.Person[]
+		}
+
+		interface ListPeopleResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'listPeopleResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'people': {
+			                type: 'schema',
+			                isRequired: true,
+			                isArray: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			            },
+			    }
+		}
+
+		type ListPeopleResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.ListPeopleResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface ListRolesEmitTarget {
 			
 				
