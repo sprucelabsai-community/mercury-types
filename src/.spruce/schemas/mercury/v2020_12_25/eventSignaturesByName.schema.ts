@@ -13,7 +13,7 @@ const eventSignaturesByNameSchema: SpruceSchemas.Mercury.v2020_12_25.EventSignat
 	    keyName: 'eventName',
 	    isRequired: true,
 	    options: {schema: eventSignatureSchema_v2020_12_25,}
-	}}
+	},}
 
 SchemaRegistry.getInstance().trackSchema(eventSignaturesByNameSchema)
 

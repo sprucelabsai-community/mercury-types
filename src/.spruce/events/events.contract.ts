@@ -124,6 +124,9 @@ import mercuryUpdateLocationEventContract_v2020_12_25, {
 import mercuryUpdateOrganizationEventContract_v2020_12_25, {
 	UpdateOrganizationEventContract as MercuryUpdateOrganizationEventContract_v2020_12_25,
 } from '#spruce/events/mercury/updateOrganization.v2020_12_25.contract'
+import mercuryUpdatePersonEventContract_v2020_12_25, {
+	UpdatePersonEventContract as MercuryUpdatePersonEventContract_v2020_12_25,
+} from '#spruce/events/mercury/updatePerson.v2020_12_25.contract'
 import mercuryUpdateRoleEventContract_v2020_12_25, {
 	UpdateRoleEventContract as MercuryUpdateRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/updateRole.v2020_12_25.contract'
@@ -174,6 +177,7 @@ export default [
 	mercuryUnregisterSkillEventContract_v2020_12_25,
 	mercuryUpdateLocationEventContract_v2020_12_25,
 	mercuryUpdateOrganizationEventContract_v2020_12_25,
+	mercuryUpdatePersonEventContract_v2020_12_25,
 	mercuryUpdateRoleEventContract_v2020_12_25,
 	mercuryWhoamiEventContract_v2020_12_25,
 ]
@@ -263,6 +267,8 @@ declare module '../../types/mercury.types' {
 		'update-location::v2020_12_25': MercuryUpdateLocationEventContract_v2020_12_25['eventSignatures']['update-location::v2020_12_25']
 
 		'update-organization::v2020_12_25': MercuryUpdateOrganizationEventContract_v2020_12_25['eventSignatures']['update-organization::v2020_12_25']
+
+		'update-person::v2020_12_25': MercuryUpdatePersonEventContract_v2020_12_25['eventSignatures']['update-person::v2020_12_25']
 
 		'update-role::v2020_12_25': MercuryUpdateRoleEventContract_v2020_12_25['eventSignatures']['update-role::v2020_12_25']
 

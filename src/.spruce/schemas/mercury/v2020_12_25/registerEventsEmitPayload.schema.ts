@@ -8,6 +8,7 @@ const registerEventsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.Registe
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
+	importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 	    fields: {
 	            /** . */
 	            'contract': {

@@ -1679,6 +1679,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 			    fields: {
 			            /** . */
 			            'contracts': {
@@ -3023,6 +3024,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 			    fields: {
 			            /** . */
 			            'contract': {
@@ -4571,6 +4573,169 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface UpdatePersonEmitTarget {
+			
+				
+				'personId'?: string| undefined | null
+		}
+
+		interface UpdatePersonEmitTargetSchema extends SpruceSchema.Schema {
+			id: 'updatePersonEmitTarget',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type UpdatePersonEmitTargetEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface UpdatePersonEmitPayload {
+			
+				/** First name. */
+				'firstName'?: string| undefined | null
+				/** Last name. */
+				'lastName'?: string| undefined | null
+				/** Profile photos. */
+				'profileImages'?: SpruceSchemas.Spruce.v2020_07_22.ProfileImage| undefined | null
+				
+				'dateCreated'?: number| undefined | null
+				
+				'dateScrambled'?: number| undefined | null
+				/** Phone. A number that can be texted */
+				'phone'?: string| undefined | null
+		}
+
+		interface UpdatePersonEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'updatePersonEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** First name. */
+			            'firstName': {
+			                label: 'First name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Last name. */
+			            'lastName': {
+			                label: 'Last name',
+			                type: 'text',
+			                isPrivate: true,
+			                options: undefined
+			            },
+			            /** Profile photos. */
+			            'profileImages': {
+			                label: 'Profile photos',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.ProfileImageSchema,}
+			            },
+			            /** . */
+			            'dateCreated': {
+			                type: 'number',
+			                options: undefined
+			            },
+			            /** . */
+			            'dateScrambled': {
+			                type: 'number',
+			                options: undefined
+			            },
+			            /** Phone. A number that can be texted */
+			            'phone': {
+			                label: 'Phone',
+			                type: 'phone',
+			                isPrivate: true,
+			                hint: 'A number that can be texted',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type UpdatePersonEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface UpdatePersonEmitTargetAndPayload {
+			
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTarget| undefined | null
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayload| undefined | null
+		}
+
+		interface UpdatePersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'updatePersonEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type UpdatePersonEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdatePersonEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface UpdatePersonResponsePayload {
+			
+				
+				'person': SpruceSchemas.Spruce.v2020_07_22.Person
+		}
+
+		interface UpdatePersonResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'updatePersonResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			            },
+			    }
+		}
+
+		type UpdatePersonResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.UpdatePersonResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface UpdateRoleEmitTarget {
 			
 				
@@ -4903,7 +5068,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    keyName: 'eventName',
 			    isRequired: true,
 			    options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventSignatureSchema,}
-			}		}
+			},		}
 
 		type EventSignaturesByNameEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventSignaturesByNameSchema>
 
@@ -5121,33 +5286,5 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		type PermissionEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionSchema>
 
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
