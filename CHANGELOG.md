@@ -1,3 +1,10 @@
+# [23.3.0](https://github.com/sprucelabsai/mercury-types/compare/v23.2.4...v23.3.0) (2021-07-20)
+
+
+### Features
+
+* update person event ([ad9e4af](https://github.com/sprucelabsai/mercury-types/commit/ad9e4af))
+
 ## [23.2.4](https://github.com/sprucelabsai/mercury-types/compare/v23.2.3...v23.2.4) (2021-07-17)
 
 ## [23.2.3](https://github.com/sprucelabsai/mercury-types/compare/v23.2.2...v23.2.3) (2021-07-09)
