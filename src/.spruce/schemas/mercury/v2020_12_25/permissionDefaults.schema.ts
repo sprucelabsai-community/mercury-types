@@ -50,6 +50,12 @@ const permissionDefaultsSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionDefa
 	                type: 'schema',
 	                options: {schema: statusFlagsSchema_v2020_12_25,}
 	            },
+	            /** Logged in. */
+	            'loggedIn': {
+	                label: 'Logged in',
+	                type: 'schema',
+	                options: {schema: statusFlagsSchema_v2020_12_25,}
+	            },
 	    }
 }
 

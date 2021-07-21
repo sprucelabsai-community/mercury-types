@@ -5246,6 +5246,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'guest'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
 				/** Anonymous. */
 				'anonymous'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				/** Logged in. */
+				'loggedIn'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
 		}
 
 		interface PermissionDefaultsSchema extends SpruceSchema.Schema {
@@ -5292,6 +5294,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** Anonymous. */
 			            'anonymous': {
 			                label: 'Anonymous',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
+			            },
+			            /** Logged in. */
+			            'loggedIn': {
+			                label: 'Logged in',
 			                type: 'schema',
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
 			            },
