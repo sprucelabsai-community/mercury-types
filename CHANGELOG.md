@@ -1,3 +1,10 @@
+# [23.5.0](https://github.com/sprucelabsai/mercury-types/compare/v23.4.0...v23.5.0) (2021-07-21)
+
+
+### Features
+
+* logged in on event contract ([8fda9ce](https://github.com/sprucelabsai/mercury-types/commit/8fda9ce))
+
 # [23.4.0](https://github.com/sprucelabsai/mercury-types/compare/v23.3.0...v23.4.0) (2021-07-20)
 
 
