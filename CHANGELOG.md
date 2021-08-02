@@ -1,3 +1,10 @@
+# [23.6.0](https://github.com/sprucelabsai/mercury-types/compare/v23.5.2...v23.6.0) (2021-08-02)
+
+
+### Features
+
+* add get-person ([40376d3](https://github.com/sprucelabsai/mercury-types/commit/40376d3))
+
 ## [23.5.2](https://github.com/sprucelabsai/mercury-types/compare/v23.5.1...v23.5.2) (2021-07-30)
 
 ## [23.5.1](https://github.com/sprucelabsai/mercury-types/compare/v23.5.0...v23.5.1) (2021-07-28)
