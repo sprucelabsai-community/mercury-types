@@ -49,6 +49,9 @@ import mercuryGetLocationEventContract_v2020_12_25, {
 import mercuryGetOrganizationEventContract_v2020_12_25, {
 	GetOrganizationEventContract as MercuryGetOrganizationEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getOrganization.v2020_12_25.contract'
+import mercuryGetPersonEventContract_v2020_12_25, {
+	GetPersonEventContract as MercuryGetPersonEventContract_v2020_12_25,
+} from '#spruce/events/mercury/getPerson.v2020_12_25.contract'
 import mercuryGetRoleEventContract_v2020_12_25, {
 	GetRoleEventContract as MercuryGetRoleEventContract_v2020_12_25,
 } from '#spruce/events/mercury/getRole.v2020_12_25.contract'
@@ -155,6 +158,7 @@ export default [
 	mercuryGetEventContractsEventContract_v2020_12_25,
 	mercuryGetLocationEventContract_v2020_12_25,
 	mercuryGetOrganizationEventContract_v2020_12_25,
+	mercuryGetPersonEventContract_v2020_12_25,
 	mercuryGetRoleEventContract_v2020_12_25,
 	mercuryGetSkillEventContract_v2020_12_25,
 	mercuryHealthEventContract_v2020_12_25,
@@ -221,6 +225,8 @@ declare module '../../types/mercury.types' {
 		'get-location::v2020_12_25': MercuryGetLocationEventContract_v2020_12_25['eventSignatures']['get-location::v2020_12_25']
 
 		'get-organization::v2020_12_25': MercuryGetOrganizationEventContract_v2020_12_25['eventSignatures']['get-organization::v2020_12_25']
+
+		'get-person::v2020_12_25': MercuryGetPersonEventContract_v2020_12_25['eventSignatures']['get-person::v2020_12_25']
 
 		'get-role::v2020_12_25': MercuryGetRoleEventContract_v2020_12_25['eventSignatures']['get-role::v2020_12_25']
 

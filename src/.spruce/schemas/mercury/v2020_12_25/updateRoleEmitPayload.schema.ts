@@ -20,7 +20,7 @@ const updateRoleEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.UpdateRoleE
 	                label: 'Base',
 	                type: 'select',
 	                hint: 'Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role.',
-	                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Guest","value":"guest"},{"label":"Anonymous","value":"anonymous"}],}
+	                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Guest","value":"guest"},{"label":"Anonymous","value":"anonymous"},{"label":"Logged in","value":"loggedIn"}],}
 	            },
 	            /** Description. */
 	            'description': {

@@ -1073,7 +1073,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name': string
 				/** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
-				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "guest" | "anonymous")| undefined | null
+				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "guest" | "anonymous" | "loggedIn")| undefined | null
 				/** Description. */
 				'description'?: string| undefined | null
 				
@@ -1100,7 +1100,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Base',
 			                type: 'select',
 			                hint: 'Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role.',
-			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Guest","value":"guest"},{"label":"Anonymous","value":"anonymous"}],}
+			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Guest","value":"guest"},{"label":"Anonymous","value":"anonymous"},{"label":"Logged in","value":"loggedIn"}],}
 			            },
 			            /** Description. */
 			            'description': {
@@ -1866,6 +1866,133 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		}
 
 		type GetOrgResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetOrgResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface GetPersonTargetPayload {
+			
+				
+				'personId'?: string| undefined | null
+				
+				'phone'?: string| undefined | null
+		}
+
+		interface GetPersonTargetPayloadSchema extends SpruceSchema.Schema {
+			id: 'getPersonTargetPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'personId': {
+			                type: 'id',
+			                options: undefined
+			            },
+			            /** . */
+			            'phone': {
+			                type: 'phone',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type GetPersonTargetPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetPersonTargetPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface GetPersonEmitPayload {
+			
+				
+				'includePrivateFields'?: boolean| undefined | null
+		}
+
+		interface GetPersonEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'getPersonEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'includePrivateFields': {
+			                type: 'boolean',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type GetPersonEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface GetPersonEmitTargetAndPayload {
+			
+				
+				'target'?: SpruceSchemas.Mercury.v2020_12_25.GetPersonTargetPayload| undefined | null
+				
+				'payload'?: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitPayload| undefined | null
+		}
+
+		interface GetPersonEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'getPersonEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'target': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetPersonTargetPayloadSchema,}
+			            },
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type GetPersonEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetPersonEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface GetPersonResponsePayload {
+			
+				
+				'person': SpruceSchemas.Spruce.v2020_07_22.Person
+		}
+
+		interface GetPersonResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'getPersonResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'person': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Spruce.v2020_07_22.PersonSchema,}
+			            },
+			    }
+		}
+
+		type GetPersonResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.GetPersonResponsePayloadSchema>
 
 	}
 
@@ -4857,7 +4984,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. */
 				'name'?: string| undefined | null
 				/** Base. Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role. */
-				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "guest" | "anonymous")| undefined | null
+				'base'?: ("owner" | "groupManager" | "manager" | "teammate" | "guest" | "anonymous" | "loggedIn")| undefined | null
 				/** Description. */
 				'description'?: string| undefined | null
 				
@@ -4883,7 +5010,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                label: 'Base',
 			                type: 'select',
 			                hint: 'Used to determine the default permissions when this role is created and the fallback for when a permission is not set on this role.',
-			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Guest","value":"guest"},{"label":"Anonymous","value":"anonymous"}],}
+			                options: {choices: [{"label":"Owner","value":"owner"},{"label":"Group manager","value":"groupManager"},{"label":"Manager","value":"manager"},{"label":"Teammate","value":"teammate"},{"label":"Guest","value":"guest"},{"label":"Anonymous","value":"anonymous"},{"label":"Logged in","value":"loggedIn"}],}
 			            },
 			            /** Description. */
 			            'description': {
