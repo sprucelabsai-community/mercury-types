@@ -1,3 +1,10 @@
+# [23.7.0](https://github.com/sprucelabsai/mercury-types/compare/v23.6.2...v23.7.0) (2021-08-03)
+
+
+### Features
+
+* register proxy token event ([3708cfe](https://github.com/sprucelabsai/mercury-types/commit/3708cfe))
+
 ## [23.6.2](https://github.com/sprucelabsai/mercury-types/compare/v23.6.1...v23.6.2) (2021-08-02)
 
 ## [23.6.1](https://github.com/sprucelabsai/mercury-types/compare/v23.6.0...v23.6.1) (2021-08-02)
