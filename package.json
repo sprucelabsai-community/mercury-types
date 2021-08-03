@@ -54,7 +54,7 @@
     "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
     "watch.build.dev": "concurrently 'yarn build.dev' 'yarn watch.tsc' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.copy-files && yarn build.resolve-paths'\"",
     "watch.lint": "chokidar 'src/**/*' -c 'yarn lint'",
-    "watch.tsc": "tsc -w"
+    "watch.tsc": "tsc -w --sourceMap"
   },
   "dependencies": {
     "@sprucelabs/error": "latest",
