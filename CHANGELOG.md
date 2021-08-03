@@ -1,3 +1,10 @@
+# [23.8.0](https://github.com/sprucelabsai/mercury-types/compare/v23.7.2...v23.8.0) (2021-08-03)
+
+
+### Features
+
+* source in all events ([96f9dac](https://github.com/sprucelabsai/mercury-types/commit/96f9dac))
+
 ## [23.7.2](https://github.com/sprucelabsai/mercury-types/compare/v23.7.1...v23.7.2) (2021-08-03)
 
 ## [23.7.1](https://github.com/sprucelabsai/mercury-types/compare/v23.7.0...v23.7.1) (2021-08-03)
