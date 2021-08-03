@@ -94,6 +94,9 @@ import mercuryRegisterEventsEventContract_v2020_12_25, {
 import mercuryRegisterListenersEventContract_v2020_12_25, {
 	RegisterListenersEventContract as MercuryRegisterListenersEventContract_v2020_12_25,
 } from '#spruce/events/mercury/registerListeners.v2020_12_25.contract'
+import mercuryRegisterProxyTokenEventContract_v2020_12_25, {
+	RegisterProxyTokenEventContract as MercuryRegisterProxyTokenEventContract_v2020_12_25,
+} from '#spruce/events/mercury/registerProxyToken.v2020_12_25.contract'
 import mercuryRegisterSkillEventContract_v2020_12_25, {
 	RegisterSkillEventContract as MercuryRegisterSkillEventContract_v2020_12_25,
 } from '#spruce/events/mercury/registerSkill.v2020_12_25.contract'
@@ -173,6 +176,7 @@ export default [
 	mercuryRegisterConversationTopicsEventContract_v2020_12_25,
 	mercuryRegisterEventsEventContract_v2020_12_25,
 	mercuryRegisterListenersEventContract_v2020_12_25,
+	mercuryRegisterProxyTokenEventContract_v2020_12_25,
 	mercuryRegisterSkillEventContract_v2020_12_25,
 	mercuryRequestPinEventContract_v2020_12_25,
 	mercuryScrambleAccountEventContract_v2020_12_25,
@@ -255,6 +259,8 @@ declare module '../../types/mercury.types' {
 		'register-events::v2020_12_25': MercuryRegisterEventsEventContract_v2020_12_25['eventSignatures']['register-events::v2020_12_25']
 
 		'register-listeners::v2020_12_25': MercuryRegisterListenersEventContract_v2020_12_25['eventSignatures']['register-listeners::v2020_12_25']
+
+		'register-proxy-token::v2020_12_25': MercuryRegisterProxyTokenEventContract_v2020_12_25['eventSignatures']['register-proxy-token::v2020_12_25']
 
 		'register-skill::v2020_12_25': MercuryRegisterSkillEventContract_v2020_12_25['eventSignatures']['register-skill::v2020_12_25']
 

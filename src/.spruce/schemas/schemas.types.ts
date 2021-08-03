@@ -3366,6 +3366,86 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface RegisterProxyTokenEmitPayload {
+			
+				/** Token. */
+				'token': string
+		}
+
+		interface RegisterProxyTokenEmitPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerProxyTokenEmitPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** Token. */
+			            'token': {
+			                label: 'Token',
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
+			    }
+		}
+
+		type RegisterProxyTokenEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RegisterProxyTokenEmitTargetAndPayload {
+			
+				
+				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitPayload
+		}
+
+		interface RegisterProxyTokenEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
+			id: 'registerProxyTokenEmitTargetAndPayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			            /** . */
+			            'payload': {
+			                type: 'schema',
+			                isRequired: true,
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitPayloadSchema,}
+			            },
+			    }
+		}
+
+		type RegisterProxyTokenEmitTargetAndPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitTargetAndPayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
+		interface RegisterProxyTokenResponsePayload {
+			
+		}
+
+		interface RegisterProxyTokenResponsePayloadSchema extends SpruceSchema.Schema {
+			id: 'registerProxyTokenResponsePayload',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			    fields: {
+			    }
+		}
+
+		type RegisterProxyTokenResponsePayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenResponsePayloadSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface RegisterSkillEmitPayload {
 			
 				/** Name. */
