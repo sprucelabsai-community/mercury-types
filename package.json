@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "23.6.2",
+  "version": "23.7.2",
   "files": [
     "build"
   ],
@@ -54,7 +54,7 @@
     "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
     "watch.build.dev": "concurrently 'yarn build.dev' 'yarn watch.tsc' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.copy-files && yarn build.resolve-paths'\"",
     "watch.lint": "chokidar 'src/**/*' -c 'yarn lint'",
-    "watch.tsc": "tsc -w"
+    "watch.tsc": "tsc -w --sourceMap"
   },
   "dependencies": {
     "@sprucelabs/error": "latest",
@@ -67,7 +67,7 @@
     "@sprucelabs/resolve-path-aliases": "latest",
     "@sprucelabs/semantic-release": "latest",
     "@sprucelabs/test": "latest",
-    "@sprucelabs/test-utils": "^3.0.52",
+    "@sprucelabs/test-utils": "^3.0.53",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.2.0",
     "conventional-changelog-sprucelabs": "latest",
