@@ -3706,42 +3706,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface RegisterProxyTokenEmitPayload {
-			
-				/** Token. */
-				'token': string
-		}
-
-		interface RegisterProxyTokenEmitPayloadSchema extends SpruceSchema.Schema {
-			id: 'registerProxyTokenEmitPayload',
-			version: 'v2020_12_25',
-			namespace: 'Mercury',
-			name: '',
-			    fields: {
-			            /** Token. */
-			            'token': {
-			                label: 'Token',
-			                type: 'id',
-			                isRequired: true,
-			                options: undefined
-			            },
-			    }
-		}
-
-		type RegisterProxyTokenEmitPayloadEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitPayloadSchema>
-
-	}
-
-
-	namespace SpruceSchemas.Mercury.v2020_12_25 {
-
-		
 		interface RegisterProxyTokenEmitTargetAndPayload {
 			
 				/** Source. */
 				'source'?: SpruceSchemas.Mercury.v2020_12_25.EventSource| undefined | null
-				
-				'payload': SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitPayload
 		}
 
 		interface RegisterProxyTokenEmitTargetAndPayloadSchema extends SpruceSchema.Schema {
@@ -3756,12 +3724,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventSourceSchema,}
 			            },
-			            /** . */
-			            'payload': {
-			                type: 'schema',
-			                isRequired: true,
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.RegisterProxyTokenEmitPayloadSchema,}
-			            },
 			    }
 		}
 
@@ -3775,6 +3737,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		
 		interface RegisterProxyTokenResponsePayload {
 			
+				/** Generate token. */
+				'token': string
 		}
 
 		interface RegisterProxyTokenResponsePayloadSchema extends SpruceSchema.Schema {
@@ -3783,6 +3747,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			namespace: 'Mercury',
 			name: '',
 			    fields: {
+			            /** Generate token. */
+			            'token': {
+			                label: 'Generate token',
+			                type: 'id',
+			                isRequired: true,
+			                options: undefined
+			            },
 			    }
 		}
 

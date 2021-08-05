@@ -9,6 +9,13 @@ const registerProxyTokenResponsePayloadSchema: SpruceSchemas.Mercury.v2020_12_25
 	namespace: 'Mercury',
 	name: '',
 	    fields: {
+	            /** Generate token. */
+	            'token': {
+	                label: 'Generate token',
+	                type: 'id',
+	                isRequired: true,
+	                options: undefined
+	            },
 	    }
 }
 
