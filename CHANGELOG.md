@@ -1,3 +1,10 @@
+# [24.0.0](https://github.com/sprucelabsai/mercury-types/compare/v23.8.0...v24.0.0) (2021-08-05)
+
+
+### Breaking Changes
+
+* register proxy signature change ([b2fc703](https://github.com/sprucelabsai/mercury-types/commit/b2fc703))
+
 # [23.8.0](https://github.com/sprucelabsai/mercury-types/compare/v23.7.2...v23.8.0) (2021-08-03)
 
 
