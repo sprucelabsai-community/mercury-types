@@ -1,3 +1,10 @@
+# [24.1.0](https://github.com/sprucelabsai/mercury-types/compare/v24.0.2...v24.1.0) (2021-08-09)
+
+
+### Features
+
+* listing skills by namespaces ([8e21f1e](https://github.com/sprucelabsai/mercury-types/commit/8e21f1e))
+
 ## [24.0.2](https://github.com/sprucelabsai/mercury-types/compare/v24.0.1...v24.0.2) (2021-08-08)
 
 ## [24.0.1](https://github.com/sprucelabsai/mercury-types/compare/v24.0.0...v24.0.1) (2021-08-08)
