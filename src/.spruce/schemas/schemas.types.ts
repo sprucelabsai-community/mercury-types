@@ -3221,6 +3221,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				
 				'showMineOnly'?: boolean| undefined | null
+				
+				'namespaces'?: string[]| undefined | null
 		}
 
 		interface ListSkillsEmitPayloadSchema extends SpruceSchema.Schema {
@@ -3232,6 +3234,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** . */
 			            'showMineOnly': {
 			                type: 'boolean',
+			                options: undefined
+			            },
+			            /** . */
+			            'namespaces': {
+			                type: 'id',
+			                isArray: true,
 			                options: undefined
 			            },
 			    }

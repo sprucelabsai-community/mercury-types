@@ -14,6 +14,12 @@ const listSkillsEmitPayloadSchema: SpruceSchemas.Mercury.v2020_12_25.ListSkillsE
 	                type: 'boolean',
 	                options: undefined
 	            },
+	            /** . */
+	            'namespaces': {
+	                type: 'id',
+	                isArray: true,
+	                options: undefined
+	            },
 	    }
 }
 
