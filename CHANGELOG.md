@@ -1,3 +1,10 @@
+# [25.0.0](https://github.com/sprucelabsai/mercury-types/compare/v24.1.0...v25.0.0) (2021-08-13)
+
+
+### Breaking Changes
+
+* permission contracts now referenced in events (vs embedded) ([afd6530](https://github.com/sprucelabsai/mercury-types/commit/afd6530))
+
 # [24.1.0](https://github.com/sprucelabsai/mercury-types/compare/v24.0.2...v24.1.0) (2021-08-09)
 
 
