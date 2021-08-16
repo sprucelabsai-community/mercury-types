@@ -11,7 +11,10 @@
     "namespace": "mercury",
     "commandOverrides": {
       "sync.events": "--shouldSyncOnlyCoreEvents true --skillEventContractTypesFile ../../types/mercury.types --eventBuilderFile ../../../utilities"
-    }
+    },
+    "upgradeIgnoreList": [
+      "globby"
+    ]
   },
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -98,21 +101,9 @@
       "^#spruce/(.*)$": "<rootDir>/snakebuild/.spruce/$1"
     }
   },
-  "resolutions": {
-    "marked": "2.0.7"
-  },
   "yarn-upgrade-all": {
     "ignore": [
-      "@sprucelabs/error",
-      "@sprucelabs/esm-postbuild",
-      "@sprucelabs/jest-json-reporter",
-      "@sprucelabs/resolve-path-aliases",
-      "@sprucelabs/schema",
-      "@sprucelabs/semantic-release",
-      "@sprucelabs/spruce-core-schemas",
-      "@sprucelabs/test",
-      "conventional-changelog-sprucelabs",
-      "eslint-config-spruce"
+      "globby"
     ]
   }
 }
