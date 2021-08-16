@@ -60,22 +60,22 @@
     "watch.tsc": "tsc -w --sourceMap"
   },
   "dependencies": {
-    "@sprucelabs/error": "latest",
-    "@sprucelabs/schema": "latest",
-    "@sprucelabs/spruce-core-schemas": "latest"
+    "@sprucelabs/error": "^4.1.16",
+    "@sprucelabs/schema": "^21.4.8",
+    "@sprucelabs/spruce-core-schemas": "^22.5.22"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "latest",
-    "@sprucelabs/jest-json-reporter": "latest",
-    "@sprucelabs/resolve-path-aliases": "latest",
-    "@sprucelabs/semantic-release": "latest",
-    "@sprucelabs/test": "latest",
+    "@sprucelabs/esm-postbuild": "^1.0.31",
+    "@sprucelabs/jest-json-reporter": "^6.0.25",
+    "@sprucelabs/resolve-path-aliases": "^1.0.60",
+    "@sprucelabs/semantic-release": "^4.0.6",
+    "@sprucelabs/test": "^7.7.53",
     "@sprucelabs/test-utils": "^3.0.53",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.2.1",
-    "conventional-changelog-sprucelabs": "latest",
+    "conventional-changelog-sprucelabs": "^1.1.2",
     "eslint": "^7.32.0",
-    "eslint-config-spruce": "latest",
+    "eslint-config-spruce": "^10.10.10",
     "jest": "^27.0.6",
     "jest-circus": "^27.0.6",
     "prettier": "^2.3.2",
