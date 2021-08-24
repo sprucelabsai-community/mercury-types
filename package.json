@@ -60,8 +60,8 @@
     "watch.tsc": "tsc -w --sourceMap"
   },
   "dependencies": {
-    "@sprucelabs/error": "^4.1.16",
-    "@sprucelabs/schema": "^21.4.9",
+    "@sprucelabs/error": "^5.0.1",
+    "@sprucelabs/schema": "^22.0.0",
     "@sprucelabs/spruce-core-schemas": "^22.5.26"
   },
   "devDependencies": {
