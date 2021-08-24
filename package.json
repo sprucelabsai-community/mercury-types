@@ -60,17 +60,17 @@
     "watch.tsc": "tsc -w --sourceMap"
   },
   "dependencies": {
-    "@sprucelabs/error": "^4.1.16",
-    "@sprucelabs/schema": "^21.4.9",
-    "@sprucelabs/spruce-core-schemas": "^22.5.26"
+    "@sprucelabs/error": "latest",
+    "@sprucelabs/schema": "latest",
+    "@sprucelabs/spruce-core-schemas": "latest"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.31",
-    "@sprucelabs/jest-json-reporter": "^6.0.25",
-    "@sprucelabs/resolve-path-aliases": "^1.0.63",
-    "@sprucelabs/semantic-release": "^4.0.6",
-    "@sprucelabs/test": "^7.7.55",
-    "@sprucelabs/test-utils": "^3.0.53",
+    "@sprucelabs/esm-postbuild": "latest",
+    "@sprucelabs/jest-json-reporter": "latest",
+    "@sprucelabs/resolve-path-aliases": "latest",
+    "@sprucelabs/semantic-release": "latest",
+    "@sprucelabs/test": "latest",
+    "@sprucelabs/test-utils": "latest",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.2.1",
     "conventional-changelog-sprucelabs": "^1.1.2",
@@ -103,7 +103,16 @@
   },
   "yarn-upgrade-all": {
     "ignore": [
-      "globby"
+      "globby",
+      "@sprucelabs/error",
+      "@sprucelabs/schema",
+      "@sprucelabs/spruce-core-schemas",
+      "@sprucelabs/esm-postbuild",
+      "@sprucelabs/jest-json-reporter",
+      "@sprucelabs/resolve-path-aliases",
+      "@sprucelabs/semantic-release",
+      "@sprucelabs/test",
+      "@sprucelabs/test-utils"
     ]
   }
 }
