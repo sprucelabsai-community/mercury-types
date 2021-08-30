@@ -8,7 +8,7 @@ export default function validateEventContract<C extends EventContract>(
 ): asserts contract is C {
 	try {
 		validateSchemaValues(eventContractSchema, contract)
-	} catch (err) {
+	} catch (err: any) {
 		throw new SpruceError({
 			code: 'INVALID_EVENT_CONTRACT',
 			originalError: err,

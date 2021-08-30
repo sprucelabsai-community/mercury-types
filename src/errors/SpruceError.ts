@@ -1,5 +1,5 @@
 import BaseSpruceError from '@sprucelabs/error'
-import AbstractSpruceError from '@sprucelabs/error'
+import { SchemaError } from '@sprucelabs/schema'
 import ErrorOptions from '#spruce/errors/options.types'
 
 export default class SpruceError extends BaseSpruceError<ErrorOptions> {
@@ -14,15 +14,10 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 				const { originalError } = options ?? {}
 
 				if (
-					originalError instanceof AbstractSpruceError &&
+					originalError instanceof SchemaError &&
 					originalError.options.code === 'VALIDATION_FAILED'
 				) {
-					const { errors } = originalError.options
-					message += '\n\n'
-					let count = 1
-					for (const error of errors) {
-						message += `${count}. ${this.prepareErrorMessage(error.message)}`
-					}
+					message = '\n\n' + originalError.message
 				} else {
 					message += ` I'm not sure exactly why, though.`
 				}
@@ -37,8 +32,5 @@ export default class SpruceError extends BaseSpruceError<ErrorOptions> {
 			: message
 
 		return fullMessage
-	}
-	private prepareErrorMessage(message: string) {
-		return message.replace(/\.dynamicField/gis, '[eventName]')
 	}
 }
