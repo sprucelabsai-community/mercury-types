@@ -55,9 +55,10 @@
     "upgrade.packages": "yarn-upgrade-all && rm -f yarn.lock ; yarn ; yarn fix.lint ; true",
     "upgrade.packages.all": "yarn install && yarn upgrade.packages",
     "upgrade.packages.test": "yarn upgrade.packages.all && yarn lint && yarn build.dev && yarn test",
-    "watch.build.dev": "concurrently 'yarn watch.tsc' \"chokidar 'src/**/*' --ignore '.*/tmp/.*' -c 'yarn build.copy-files && yarn build.resolve-paths'\"",
     "watch.lint": "chokidar 'src/**/*' -c 'yarn lint'",
-    "watch.tsc": "tsc -w --sourceMap"
+    "watch.tsc": "tsc -w --sourceMap",
+    "post.watch.build": "yarn build.copy-files && yarn build.resolve-paths",
+    "watch.build.dev": "tsc-watch --sourceMap --onCompilationComplete 'yarn post.watch.build'"
   },
   "dependencies": {
     "@sprucelabs/error": "latest",
@@ -80,6 +81,7 @@
     "jest-circus": "^27.1.0",
     "prettier": "^2.3.2",
     "ts-node": "^10.2.1",
+    "tsc-watch": "^4.5.0",
     "typescript": "^4.4.2",
     "yarn-upgrade-all": "^0.5.4"
   },
