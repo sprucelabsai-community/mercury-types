@@ -101,10 +101,3 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 
 	off(eventName: EventNames<Contract>, cb?: any): Promise<number>
 }
-
-export interface SkillEventSignatures {}
-
-/** @ts-ignore */
-export interface SkillEventContract extends EventContract {
-	eventSignatures: SkillEventSignatures
-}

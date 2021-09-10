@@ -13,22 +13,3 @@ export * from './constants'
 export { default as buildEventContract } from './utilities/buildEventContract'
 export { default as buildPermissionContract } from './utilities/buildPermissionContract'
 export { default as validateEventContract } from './utilities/validateEventContract'
-import { default as coreEventContractsSplit } from '#spruce/events/events.contract'
-import { SkillEventContract as CoreEventContract } from './types/mercury.types'
-
-export const coreEventContracts: [CoreEventContract] = [
-	//@ts-ignore
-	coreEventContractsSplit.reduce(
-		(contract, current) => {
-			Object.keys(current.eventSignatures).forEach((name) => {
-				//@ts-ignore
-				contract.eventSignatures[name] = current.eventSignatures[name]
-			})
-			return contract
-		},
-		{ eventSignatures: {} }
-	),
-]
-
-export { SkillEventContract as CoreEventContract } from './types/mercury.types'
-export * from '#spruce/events/events.contract'

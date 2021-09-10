@@ -1,11 +1,7 @@
 import { buildSchema } from '@sprucelabs/schema'
 import AbstractSpruceTest, { test, assert } from '@sprucelabs/test'
 import TestClient from '../../TestClient'
-import {
-	EventContract,
-	EventNames,
-	SkillEventContract,
-} from '../../types/mercury.types'
+import { EventContract, EventNames } from '../../types/mercury.types'
 import buildEventContract from '../../utilities/buildEventContract'
 import validateEventContract from '../../utilities/validateEventContract'
 
@@ -180,29 +176,5 @@ export default class TypesWorkTest extends AbstractSpruceTest {
 
 		const id = results.responses[0].payload?.id
 		assert.isExactType<string | undefined, typeof id>(true)
-	}
-
-	@test('Handles core contract (always passes, types will fail)')
-	protected static async coreContractWorksWithClient() {
-		//@ts-ignore
-		const client = new TestClient<SkillEventContract>()
-
-		await client.emit('did-message::v2020_12_25', {
-			target: {},
-			payload: {
-				message: {
-					id: 'aoeuaoeu',
-					dateCreated: 1,
-					target: {
-						personId: '01',
-					},
-					body: 'write it down',
-					classification: 'incoming',
-					source: {
-						skillId: '02',
-					},
-				},
-			},
-		})
 	}
 }

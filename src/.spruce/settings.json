@@ -5,14 +5,6 @@
   "installed": [
     "schema",
     "test",
-    "event",
     "error"
-  ],
-  "events.lastSync": {
-    "contractDestinationDir": "#spruce/events",
-    "schemaTypesLookupDir": "#spruce/schemas",
-    "skillEventContractTypesFile": "../../types/mercury.types",
-    "eventBuilderFile": "../../../utilities",
-    "shouldSyncOnlyCoreEvents": "true"
-  }
+  ]
 }
