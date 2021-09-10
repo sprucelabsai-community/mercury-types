@@ -26,6 +26,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			dynamicFieldSignature: { 
 			    type: 'schema',
 			    keyName: 'eventName',
@@ -54,6 +55,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Event contract',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			description: 'A Mercury Event Contract.',
 			    fields: {
 			            /** . */
@@ -97,6 +99,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Permission contract',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			description: 'A Mercury Permission Contract',
 			    fields: {
 			            /** . */
@@ -164,6 +167,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			    fields: {
 			            /** . What is the fallback if no status is set? */
 			            'default': {
@@ -235,6 +239,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			    fields: {
 			            /** . */
 			            'skill': {
@@ -315,6 +320,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Permission',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			    fields: {
 			            /** id. Hyphen separated id for this permission, e.g. can-unlock-doors */
 			            'id': {
@@ -379,6 +385,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			    fields: {
 			            /** . */
 			            'contractId': {
@@ -426,6 +433,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Event Signature',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			    fields: {
 			            /** . */
 			            'isGlobal': {

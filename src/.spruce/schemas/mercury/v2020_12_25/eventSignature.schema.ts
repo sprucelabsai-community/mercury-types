@@ -9,6 +9,7 @@ const eventSignatureSchema: SpruceSchemas.Mercury.v2020_12_25.EventSignatureSche
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Event Signature',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	    fields: {
 	            /** . */
 	            'isGlobal': {

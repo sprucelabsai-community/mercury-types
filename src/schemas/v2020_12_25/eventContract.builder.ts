@@ -19,6 +19,7 @@ export default buildSchema({
 	id: 'eventContract',
 	name: 'Event contract',
 	description: 'A Mercury Event Contract.',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	fields: {
 		id: {
 			type: 'id',

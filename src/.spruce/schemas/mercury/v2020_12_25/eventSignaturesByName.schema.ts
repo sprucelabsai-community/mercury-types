@@ -8,6 +8,7 @@ const eventSignaturesByNameSchema: SpruceSchemas.Mercury.v2020_12_25.EventSignat
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	dynamicFieldSignature: { 
 	    type: 'schema',
 	    keyName: 'eventName',

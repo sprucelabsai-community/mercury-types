@@ -8,6 +8,7 @@ const permissionReferenceSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionRef
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	    fields: {
 	            /** . */
 	            'contractId': {

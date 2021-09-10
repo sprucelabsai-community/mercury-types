@@ -8,6 +8,7 @@ const permissionDefaultsSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionDefa
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	    fields: {
 	            /** . */
 	            'skill': {

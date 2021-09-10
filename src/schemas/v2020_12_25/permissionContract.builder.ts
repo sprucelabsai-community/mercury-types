@@ -51,6 +51,7 @@ export default buildSchema({
 	id: 'permissionContract',
 	name: 'Permission contract',
 	description: 'A Mercury Permission Contract',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	fields: {
 		id: {
 			type: 'text',

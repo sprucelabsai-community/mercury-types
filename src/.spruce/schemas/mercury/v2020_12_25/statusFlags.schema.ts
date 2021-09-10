@@ -8,6 +8,7 @@ const statusFlagsSchema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema  = 
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: '',
+	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	    fields: {
 	            /** . What is the fallback if no status is set? */
 	            'default': {
