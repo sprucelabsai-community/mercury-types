@@ -1,4 +1,5 @@
 import { buildSchema } from '@sprucelabs/schema'
+import permissionContractBuilder from './permissionContract.builder'
 
 const permissionReferenceSchema = buildSchema({
 	id: 'permissionReference',
@@ -60,6 +61,18 @@ export default buildSchema({
 										type: 'schema',
 										options: {
 											schema: permissionReferenceSchema,
+										},
+									},
+									listenPermissionContract: {
+										type: 'schema',
+										options: {
+											schema: permissionContractBuilder,
+										},
+									},
+									emitPermissionContract: {
+										type: 'schema',
+										options: {
+											schema: permissionContractBuilder,
 										},
 									},
 								},
