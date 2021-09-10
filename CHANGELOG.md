@@ -1,3 +1,10 @@
+# [26.0.0](https://github.com/sprucelabsai/mercury-types/compare/v25.0.16...v26.0.0) (2021-09-10)
+
+
+### Breaking Changes
+
+* global contracts extracted out (module is now parent-most in events) ([494d513](https://github.com/sprucelabsai/mercury-types/commit/494d513))
+
 ## [25.0.16](https://github.com/sprucelabsai/mercury-types/compare/v25.0.15...v25.0.16) (2021-09-03)
 
 ## [25.0.15](https://github.com/sprucelabsai/mercury-types/compare/v25.0.14...v25.0.15) (2021-09-03)
