@@ -5,6 +5,7 @@ export { default as eventSignaturesByNameSchema } from './.spruce/schemas/mercur
 export { default as permissionSchema } from './.spruce/schemas/mercury/v2020_12_25/permission.schema'
 export { default as permissionContractSchema } from './.spruce/schemas/mercury/v2020_12_25/permissionContract.schema'
 export { default as statusFlagsSchema } from './.spruce/schemas/mercury/v2020_12_25/statusFlags.schema'
+export { default as permissionReferenceSchema } from './.spruce/schemas/mercury/v2020_12_25/permissionReference.schema'
 
 export * from './types/mercury.types'
 export * from './.spruce/schemas/schemas.types'
