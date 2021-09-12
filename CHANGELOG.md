@@ -1,3 +1,10 @@
+# [26.1.0](https://github.com/sprucelabsai/mercury-types/compare/v26.0.3...v26.1.0) (2021-09-12)
+
+
+### Features
+
+* export of permissionReferenceSchema ([193072a](https://github.com/sprucelabsai/mercury-types/commit/193072a))
+
 ## [26.0.3](https://github.com/sprucelabsai/mercury-types/compare/v26.0.2...v26.0.3) (2021-09-12)
 
 ## [26.0.2](https://github.com/sprucelabsai/mercury-types/compare/v26.0.1...v26.0.2) (2021-09-10)
