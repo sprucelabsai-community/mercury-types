@@ -6,7 +6,7 @@ import MercuryEventEmitter, {
 	EventSignature,
 	KeyOf,
 	EventNames,
-} from './types/mercury.types'
+} from '../types/mercury.types'
 
 export default class TestClient<Contract extends EventContract>
 	implements MercuryEventEmitter<Contract>
