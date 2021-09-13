@@ -107,19 +107,5 @@
     "moduleNameMapper": {
       "^#spruce/(.*)$": "<rootDir>/snakebuild/.spruce/$1"
     }
-  },
-  "yarn-upgrade-all": {
-    "ignore": [
-      "globby",
-      "@sprucelabs/error",
-      "@sprucelabs/schema",
-      "@sprucelabs/spruce-core-schemas",
-      "@sprucelabs/esm-postbuild",
-      "@sprucelabs/jest-json-reporter",
-      "@sprucelabs/resolve-path-aliases",
-      "@sprucelabs/semantic-release",
-      "@sprucelabs/test",
-      "@sprucelabs/test-utils"
-    ]
   }
 }
