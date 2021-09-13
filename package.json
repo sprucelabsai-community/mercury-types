@@ -13,7 +13,8 @@
       "sync.events": "--shouldSyncOnlyCoreEvents true --skillEventContractTypesFile ../../types/mercury.types --eventBuilderFile ../../../utilities"
     },
     "upgradeIgnoreList": [
-      "globby"
+      "globby",
+      "@sprucelabs/spruce-test-fixtures"
     ]
   },
   "main": "./build/index.js",
@@ -66,14 +67,13 @@
   "dependencies": {
     "@sprucelabs/error": "^5.0.3",
     "@sprucelabs/schema": "^25.3.1",
-    "@sprucelabs/spruce-core-schemas": "^22.5.48"
+    "@sprucelabs/spruce-core-schemas": "^22.5.49"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^1.0.40",
     "@sprucelabs/jest-json-reporter": "^6.0.33",
     "@sprucelabs/resolve-path-aliases": "^1.0.74",
     "@sprucelabs/semantic-release": "^4.0.6",
-    "@sprucelabs/spruce-test-fixtures": "^5.4.49",
     "@sprucelabs/test": "^7.7.60",
     "@sprucelabs/test-utils": "^3.0.55",
     "@types/node": "^16.9.1",
@@ -105,7 +105,7 @@
       "**/__tests__/**/*.test.js?(x)"
     ],
     "moduleNameMapper": {
-      "^#spruce/(.*)$": "<rootDir>/snakebuild/.spruce/$1"
+      "^#spruce/(.*)$": "<rootDir>/.spruce/$1"
     }
   }
 }
