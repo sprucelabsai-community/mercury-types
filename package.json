@@ -65,9 +65,9 @@
     "watch.rebuild": "yarn clean.all && yarn && yarn watch.build.dev"
   },
   "dependencies": {
-    "@sprucelabs/error": "^5.0.60",
-    "@sprucelabs/schema": "^25.3.89",
-    "@sprucelabs/spruce-core-schemas": "^22.5.156"
+    "@sprucelabs/error": "^5.0.61",
+    "@sprucelabs/schema": "^25.3.90",
+    "@sprucelabs/spruce-core-schemas": "^22.5.157"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^1.0.103",
