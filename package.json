@@ -65,13 +65,13 @@
     "watch.rebuild": "yarn clean.all && yarn && yarn watch.build.dev"
   },
   "dependencies": {
-    "@sprucelabs/error": "^5.0.61",
-    "@sprucelabs/schema": "^25.3.90",
-    "@sprucelabs/spruce-core-schemas": "^22.5.158"
+    "@sprucelabs/error": "^5.0.62",
+    "@sprucelabs/schema": "^25.3.91",
+    "@sprucelabs/spruce-core-schemas": "^22.5.159"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.104",
-    "@sprucelabs/jest-json-reporter": "^6.0.57",
+    "@sprucelabs/esm-postbuild": "^1.0.105",
+    "@sprucelabs/jest-json-reporter": "^6.0.58",
     "@sprucelabs/resolve-path-aliases": "^1.0.87",
     "@sprucelabs/semantic-release": "^4.0.7",
     "@sprucelabs/test": "^7.7.67",
