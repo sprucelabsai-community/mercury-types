@@ -66,11 +66,11 @@
   },
   "dependencies": {
     "@sprucelabs/error": "^5.0.77",
-    "@sprucelabs/schema": "^25.3.113",
+    "@sprucelabs/schema": "^25.3.114",
     "@sprucelabs/spruce-core-schemas": "^22.5.181"
   },
   "devDependencies": {
-    "@sprucelabs/esm-postbuild": "^1.0.118",
+    "@sprucelabs/esm-postbuild": "^1.0.119",
     "@sprucelabs/jest-json-reporter": "^6.0.62",
     "@sprucelabs/resolve-path-aliases": "^1.0.89",
     "@sprucelabs/semantic-release": "^4.0.7",
