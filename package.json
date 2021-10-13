@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "@sprucelabs/error": "^5.0.223",
-    "@sprucelabs/schema": "^25.3.287",
+    "@sprucelabs/schema": "^25.3.288",
     "@sprucelabs/spruce-core-schemas": "^22.5.357"
   },
   "devDependencies": {
@@ -76,7 +76,7 @@
     "@sprucelabs/semantic-release": "^4.0.7",
     "@sprucelabs/test": "^7.7.192",
     "@sprucelabs/test-utils": "^3.0.191",
-    "@types/node": "^16.10.5",
+    "@types/node": "^16.10.6",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^6.3.0",
     "conventional-changelog-sprucelabs": "^1.1.2",
