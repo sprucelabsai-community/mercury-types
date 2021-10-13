@@ -8,6 +8,7 @@ const eventContractSchema: SpruceSchemas.Mercury.v2020_12_25.EventContractSchema
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Event contract',
+	importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	description: 'A Mercury Event Contract.',
 	    fields: {
