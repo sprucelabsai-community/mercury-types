@@ -8,6 +8,7 @@ const permissionContractSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionCont
 	version: 'v2020_12_25',
 	namespace: 'Mercury',
 	name: 'Permission contract',
+	importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	description: 'A Mercury Permission Contract',
 	    fields: {

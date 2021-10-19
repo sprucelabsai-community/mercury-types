@@ -55,6 +55,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Event contract',
+			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			description: 'A Mercury Event Contract.',
 			    fields: {
@@ -99,6 +100,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: 'Permission contract',
+			importsWhenRemote: ['import \'@sprucelabs/mercury-types\'',],
 			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			description: 'A Mercury Permission Contract',
 			    fields: {
