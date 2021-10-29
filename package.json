@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@sprucelabs/error": "^5.0.262",
-    "@sprucelabs/schema": "^25.3.424",
+    "@sprucelabs/schema": "^25.3.425",
     "@sprucelabs/spruce-core-schemas": "^22.5.578"
   },
   "devDependencies": {
