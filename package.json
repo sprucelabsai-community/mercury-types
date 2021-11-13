@@ -68,7 +68,7 @@
   "dependencies": {
     "@sprucelabs/error": "^5.0.274",
     "@sprucelabs/schema": "^25.3.495",
-    "@sprucelabs/spruce-core-schemas": "^22.6.87"
+    "@sprucelabs/spruce-core-schemas": "^22.6.88"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^1.0.280",
@@ -79,7 +79,7 @@
     "@sprucelabs/test-utils": "^3.0.251",
     "@types/node": "^16.11.7",
     "chokidar-cli": "^3.0.0",
-    "concurrently": "^6.3.0",
+    "concurrently": "^6.4.0",
     "conventional-changelog-sprucelabs": "^1.1.2",
     "eslint": "^8.2.0",
     "eslint-config-spruce": "^10.10.15",
