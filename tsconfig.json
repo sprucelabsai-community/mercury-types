@@ -2,8 +2,12 @@
 	"compilerOptions": {
 		"module": "commonjs",
 		"esModuleInterop": true,
-		"target": "ES2019",
-		"lib": ["es2019"],
+		"target": "ES2017",
+		"lib": [
+			"DOM",
+			"es2017",
+			"ES2020"
+		],
 		"declaration": true,
 		"noImplicitAny": true,
 		"allowJs": true,
@@ -18,9 +22,17 @@
 		"baseUrl": "src",
 		"experimentalDecorators": true,
 		"paths": {
-			"#spruce/*": [".spruce/*"]
+			"#spruce/*": [
+				".spruce/*"
+			]
 		}
 	},
-	"include": ["./*.ts", "./**/*.ts", "./src/.spruce/**/*"],
-	"exclude": ["build"]
+	"include": [
+		"./src/*.ts",
+		"./src/**/*.ts",
+		"./src/.spruce/**/*"
+	],
+	"exclude": [
+		"build"
+	]
 }

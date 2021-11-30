@@ -1,4 +1,2 @@
 build
 node_modules
-mercury.min.*
-src/events.contract.ts
