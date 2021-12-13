@@ -68,7 +68,7 @@
   "dependencies": {
     "@sprucelabs/error": "^5.0.332",
     "@sprucelabs/schema": "^25.4.102",
-    "@sprucelabs/spruce-core-schemas": "^22.6.299"
+    "@sprucelabs/spruce-core-schemas": "^22.6.300"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^1.0.301",
@@ -83,8 +83,8 @@
     "conventional-changelog-sprucelabs": "^1.1.2",
     "eslint": "^8.4.1",
     "eslint-config-spruce": "^10.11.0",
-    "jest": "^27.4.4",
-    "jest-circus": "^27.4.4",
+    "jest": "^27.4.5",
+    "jest-circus": "^27.4.5",
     "prettier": "^2.5.1",
     "ts-node": "^10.4.0",
     "tsc-watch": "^4.5.0",
