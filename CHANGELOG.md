@@ -1,3 +1,5 @@
+## [26.1.1113](https://github.com/sprucelabsai/mercury-types/compare/v26.1.1112...v26.1.1113) (2021-12-23)
+
 ## [26.1.1112](https://github.com/sprucelabsai/mercury-types/compare/v26.1.1111...v26.1.1112) (2021-12-23)
 
 ## [26.1.1111](https://github.com/sprucelabsai/mercury-types/compare/v26.1.1110...v26.1.1111) (2021-12-23)
