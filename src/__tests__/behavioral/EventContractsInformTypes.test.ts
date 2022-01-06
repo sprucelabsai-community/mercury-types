@@ -177,4 +177,22 @@ export default class TypesWorkTest extends AbstractSpruceTest {
 		const id = results.responses[0].payload?.id
 		assert.isExactType<string | undefined, typeof id>(true)
 	}
+
+	@test()
+	protected static async typesEmitAndFlattenResponses() {
+		const client = new TestClient<TestContract>()
+		const results = await client.emitAndFlattenResponses(
+			'spruce.testWithPayload',
+			{
+				emitPayloadField: 'taco',
+			}
+		)
+
+		assert.isExactType<
+			{
+				responsePayloadField: string
+			}[],
+			typeof results
+		>(true)
+	}
 }
