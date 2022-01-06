@@ -1,3 +1,12 @@
+## [26.2.1](https://github.com/sprucelabsai/mercury-types/compare/v26.2.0...v26.2.1) (2022-01-06)
+
+# [26.2.0](https://github.com/sprucelabsai/mercury-types/compare/v26.1.1177...v26.2.0) (2022-01-06)
+
+
+### Features
+
+* New 'emitAndFlattenResponses' on mercury clients, making working with mercury even EASIER! ([353179c](https://github.com/sprucelabsai/mercury-types/commit/353179c))
+
 ## [26.1.1177](https://github.com/sprucelabsai/mercury-types/compare/v26.1.1176...v26.1.1177) (2022-01-06)
 
 ## [26.1.1176](https://github.com/sprucelabsai/mercury-types/compare/v26.1.1175...v26.1.1176) (2022-01-06)
