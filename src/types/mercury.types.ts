@@ -80,6 +80,25 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		cb?: EmitCallback<Contract, EventName>
 	): Promise<MercuryAggregateResponse<SchemaValues<ResponseSchema>>>
 
+	on<
+		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
+			Contract['eventSignatures']
+		>,
+		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+			? IEventSignature['emitPayloadSchema']
+			: never
+	>(
+		eventName: EventName,
+		cb: (
+			payload: EmitSchema extends Schema ? SchemaValues<EmitSchema> : never
+		) => IEventSignature['responsePayloadSchema'] extends Schema
+			?
+					| Promise<SchemaValues<IEventSignature['responsePayloadSchema']>>
+					| SchemaValues<IEventSignature['responsePayloadSchema']>
+			: Promise<void> | void
+	): Promise<void>
+
 	emitAndFlattenResponses<
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
