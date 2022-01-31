@@ -1,3 +1,10 @@
+# [27.0.0](https://github.com/sprucelabsai/mercury-types/compare/v26.2.127...v27.0.0) (2022-01-31)
+
+
+### Breaking Changes
+
+* upgrade ([cdc871e](https://github.com/sprucelabsai/mercury-types/commit/cdc871e))
+
 ## [26.2.127](https://github.com/sprucelabsai/mercury-types/compare/v26.2.126...v26.2.127) (2022-01-29)
 
 ## [26.2.126](https://github.com/sprucelabsai/mercury-types/compare/v26.2.125...v26.2.126) (2022-01-29)
