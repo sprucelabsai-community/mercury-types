@@ -1,3 +1,5 @@
+## [27.0.19](https://github.com/sprucelabsai/mercury-types/compare/v27.0.18...v27.0.19) (2022-02-03)
+
 ## [27.0.18](https://github.com/sprucelabsai/mercury-types/compare/v27.0.17...v27.0.18) (2022-02-03)
 
 ## [27.0.17](https://github.com/sprucelabsai/mercury-types/compare/v27.0.16...v27.0.17) (2022-02-03)
