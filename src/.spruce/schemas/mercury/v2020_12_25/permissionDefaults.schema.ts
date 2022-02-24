@@ -39,12 +39,6 @@ const permissionDefaultsSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionDefa
 	                type: 'schema',
 	                options: {schema: statusFlagsSchema_v2020_12_25,}
 	            },
-	            /** Guest. */
-	            'guest': {
-	                label: 'Guest',
-	                type: 'schema',
-	                options: {schema: statusFlagsSchema_v2020_12_25,}
-	            },
 	            /** Anonymous. */
 	            'anonymous': {
 	                label: 'Anonymous',
@@ -54,6 +48,12 @@ const permissionDefaultsSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionDefa
 	            /** Logged in. */
 	            'loggedIn': {
 	                label: 'Logged in',
+	                type: 'schema',
+	                options: {schema: statusFlagsSchema_v2020_12_25,}
+	            },
+	            /** Guest. */
+	            'guest': {
+	                label: 'Guest',
 	                type: 'schema',
 	                options: {schema: statusFlagsSchema_v2020_12_25,}
 	            },

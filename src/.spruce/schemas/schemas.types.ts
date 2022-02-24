@@ -228,12 +228,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'manager'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
 				/** Teammate. */
 				'teammate'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
-				/** Guest. */
-				'guest'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
 				/** Anonymous. */
 				'anonymous'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
 				/** Logged in. */
 				'loggedIn'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				/** Guest. */
+				'guest'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
 		}
 
 		interface PermissionDefaultsSchema extends SpruceSchema.Schema {
@@ -272,12 +272,6 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'schema',
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
 			            },
-			            /** Guest. */
-			            'guest': {
-			                label: 'Guest',
-			                type: 'schema',
-			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
-			            },
 			            /** Anonymous. */
 			            'anonymous': {
 			                label: 'Anonymous',
@@ -287,6 +281,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            /** Logged in. */
 			            'loggedIn': {
 			                label: 'Logged in',
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
+			            },
+			            /** Guest. */
+			            'guest': {
+			                label: 'Guest',
 			                type: 'schema',
 			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema,}
 			            },
