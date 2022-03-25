@@ -30,16 +30,16 @@ const statusFlagsSchema: SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema  = 
 	                hint: 'When someone is not working (off the clock).',
 	                options: undefined
 	            },
-	            /** On premise. Are they at work (maybe working, maybe visiting). */
+	            /** On premises. Are they at work (maybe working, maybe visiting). */
 	            'onPrem': {
-	                label: 'On premise',
+	                label: 'On premises',
 	                type: 'boolean',
 	                hint: 'Are they at work (maybe working, maybe visiting).',
 	                options: undefined
 	            },
-	            /** Off premise. They aren't at the office or shop. */
+	            /** Off premises. They aren't at the office or shop. */
 	            'offPrem': {
-	                label: 'Off premise',
+	                label: 'Off premises',
 	                type: 'boolean',
 	                hint: 'They aren\'t at the office or shop.',
 	                options: undefined

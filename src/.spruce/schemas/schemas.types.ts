@@ -158,9 +158,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'clockedIn'?: boolean| undefined | null
 				/** Clocked out. When someone is not working (off the clock). */
 				'clockedOut'?: boolean| undefined | null
-				/** On premise. Are they at work (maybe working, maybe visiting). */
+				/** On premises. Are they at work (maybe working, maybe visiting). */
 				'onPrem'?: boolean| undefined | null
-				/** Off premise. They aren't at the office or shop. */
+				/** Off premises. They aren't at the office or shop. */
 				'offPrem'?: boolean| undefined | null
 		}
 
@@ -191,16 +191,16 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                hint: 'When someone is not working (off the clock).',
 			                options: undefined
 			            },
-			            /** On premise. Are they at work (maybe working, maybe visiting). */
+			            /** On premises. Are they at work (maybe working, maybe visiting). */
 			            'onPrem': {
-			                label: 'On premise',
+			                label: 'On premises',
 			                type: 'boolean',
 			                hint: 'Are they at work (maybe working, maybe visiting).',
 			                options: undefined
 			            },
-			            /** Off premise. They aren't at the office or shop. */
+			            /** Off premises. They aren't at the office or shop. */
 			            'offPrem': {
-			                label: 'Off premise',
+			                label: 'Off premises',
 			                type: 'boolean',
 			                hint: 'They aren\'t at the office or shop.',
 			                options: undefined
