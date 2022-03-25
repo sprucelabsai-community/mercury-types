@@ -11,12 +11,12 @@ export const authorizerStatuses = [
 	},
 	{
 		name: 'onPrem',
-		label: 'On premise',
+		label: 'On premises',
 		hint: 'Are they at work (maybe working, maybe visiting).',
 	},
 	{
 		name: 'offPrem',
-		label: 'Off premise',
+		label: 'Off premises',
 		hint: "They aren't at the office or shop.",
 	},
 ] as const
