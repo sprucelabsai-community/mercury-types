@@ -412,6 +412,36 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
+		interface FeedOptions {
+			
+				/** . A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details. */
+				'template'?: string| undefined | null
+		}
+
+		interface FeedOptionsSchema extends SpruceSchema.Schema {
+			id: 'feedOptions',
+			version: 'v2020_12_25',
+			namespace: 'Mercury',
+			name: '',
+			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
+			    fields: {
+			            /** . A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details. */
+			            'template': {
+			                type: 'text',
+			                hint: 'A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details.',
+			                options: undefined
+			            },
+			    }
+		}
+
+		type FeedOptionsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedOptionsSchema>
+
+	}
+
+
+	namespace SpruceSchemas.Mercury.v2020_12_25 {
+
+		
 		interface EventSignature {
 			
 				
@@ -420,6 +450,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'responsePayloadSchema'?: (SpruceSchema.Schema)| undefined | null
 				
 				'emitPayloadSchema'?: (SpruceSchema.Schema)| undefined | null
+				
+				'feed'?: SpruceSchemas.Mercury.v2020_12_25.FeedOptions| undefined | null
 				
 				'listenPermissions'?: SpruceSchemas.Mercury.v2020_12_25.PermissionReference| undefined | null
 				
@@ -452,6 +484,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'emitPayloadSchema': {
 			                type: 'raw',
 			                options: {valueType: `SpruceSchema.Schema`,}
+			            },
+			            /** . */
+			            'feed': {
+			                type: 'schema',
+			                options: {schema: SpruceSchemas.Mercury.v2020_12_25.FeedOptionsSchema,}
 			            },
 			            /** . */
 			            'listenPermissions': {

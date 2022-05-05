@@ -53,6 +53,20 @@ export default buildSchema({
 										type: 'raw',
 										options: { valueType: 'SpruceSchema.Schema' },
 									},
+									feed: {
+										type: 'schema',
+										options: {
+											schema: buildSchema({
+												id: 'feedOptions',
+												fields: {
+													template: {
+														type: 'text',
+														hint: 'A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details.',
+													},
+												},
+											}),
+										},
+									},
 									listenPermissions: {
 										type: 'schema',
 										options: {

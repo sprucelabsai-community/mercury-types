@@ -1,6 +1,7 @@
 import { SchemaRegistry } from '@sprucelabs/schema'
 import { SpruceSchemas } from '../../schemas.types'
 
+import feedOptionsSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/feedOptions.schema'
 import permissionReferenceSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/permissionReference.schema'
 import permissionContractSchema_v2020_12_25 from '#spruce/schemas/mercury/v2020_12_25/permissionContract.schema'
 
@@ -26,6 +27,11 @@ const eventSignatureSchema: SpruceSchemas.Mercury.v2020_12_25.EventSignatureSche
 	            'emitPayloadSchema': {
 	                type: 'raw',
 	                options: {valueType: `SpruceSchema.Schema`,}
+	            },
+	            /** . */
+	            'feed': {
+	                type: 'schema',
+	                options: {schema: feedOptionsSchema_v2020_12_25,}
 	            },
 	            /** . */
 	            'listenPermissions': {
