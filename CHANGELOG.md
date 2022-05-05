@@ -1,3 +1,10 @@
+# [27.1.0](https://github.com/sprucelabsai/mercury-types/compare/v27.0.255...v27.1.0) (2022-05-05)
+
+
+### Features
+
+* feed configuration now settable on an event signature, making it effortless for devs to visualize the acitvity taking place in Mercury ([9b8b3f2](https://github.com/sprucelabsai/mercury-types/commit/9b8b3f2))
+
 ## [27.0.255](https://github.com/sprucelabsai/mercury-types/compare/v27.0.254...v27.0.255) (2022-05-03)
 
 ## [27.0.254](https://github.com/sprucelabsai/mercury-types/compare/v27.0.253...v27.0.254) (2022-05-03)
