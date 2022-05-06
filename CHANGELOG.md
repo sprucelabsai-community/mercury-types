@@ -1,3 +1,10 @@
+# [28.0.0](https://github.com/sprucelabsai/mercury-types/compare/v27.1.3...v28.0.0) (2022-05-06)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([75c7e91](https://github.com/sprucelabsai/mercury-types/commit/75c7e91))
+
 ## [27.1.3](https://github.com/sprucelabsai/mercury-types/compare/v27.1.2...v27.1.3) (2022-05-06)
 
 ## [27.1.2](https://github.com/sprucelabsai/mercury-types/compare/v27.1.1...v27.1.2) (2022-05-06)
