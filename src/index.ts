@@ -6,7 +6,7 @@ export { default as permissionSchema } from './.spruce/schemas/mercury/v2020_12_
 export { default as permissionContractSchema } from './.spruce/schemas/mercury/v2020_12_25/permissionContract.schema'
 export { default as statusFlagsSchema } from './.spruce/schemas/mercury/v2020_12_25/statusFlags.schema'
 export { default as permissionReferenceSchema } from './.spruce/schemas/mercury/v2020_12_25/permissionReference.schema'
-export { default as feedOptionsSchemas } from './.spruce/schemas/mercury/v2020_12_25/feedOptions.schema'
+export { default as feedOptionsSchema } from './.spruce/schemas/mercury/v2020_12_25/feedOptions.schema'
 
 export * from './types/mercury.types'
 export * from './.spruce/schemas/schemas.types'
