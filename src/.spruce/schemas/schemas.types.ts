@@ -379,7 +379,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'contractId': string
 				
-				'requiredPermissionsAll'?: string[]| undefined | null
+				'permissionIdsAny'?: string[]| undefined | null
 		}
 
 		interface PermissionReferenceSchema extends SpruceSchema.Schema {
@@ -391,13 +391,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'contractId': {
-			                type: 'text',
+			                type: 'id',
 			                isRequired: true,
 			                options: undefined
 			            },
 			            /** . */
-			            'requiredPermissionsAll': {
-			                type: 'text',
+			            'permissionIdsAny': {
+			                type: 'id',
 			                isArray: true,
 			                options: undefined
 			            },

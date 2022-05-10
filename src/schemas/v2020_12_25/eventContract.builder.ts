@@ -5,11 +5,11 @@ const permissionReferenceSchema = buildSchema({
 	id: 'permissionReference',
 	fields: {
 		contractId: {
-			type: 'text',
+			type: 'id',
 			isRequired: true,
 		},
-		requiredPermissionsAll: {
-			type: 'text',
+		permissionIdsAny: {
+			type: 'id',
 			isArray: true,
 		},
 	},

@@ -12,13 +12,13 @@ const permissionReferenceSchema: SpruceSchemas.Mercury.v2020_12_25.PermissionRef
 	    fields: {
 	            /** . */
 	            'contractId': {
-	                type: 'text',
+	                type: 'id',
 	                isRequired: true,
 	                options: undefined
 	            },
 	            /** . */
-	            'requiredPermissionsAll': {
-	                type: 'text',
+	            'permissionIdsAny': {
+	                type: 'id',
 	                isArray: true,
 	                options: undefined
 	            },
