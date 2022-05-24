@@ -1,3 +1,10 @@
+# [30.0.0](https://github.com/sprucelabsai/mercury-types/compare/v29.0.1...v30.0.0) (2022-05-24)
+
+
+### Breaking Changes
+
+* upgrade ([7765447](https://github.com/sprucelabsai/mercury-types/commit/7765447))
+
 ## [29.0.1](https://github.com/sprucelabsai/mercury-types/compare/v29.0.0...v29.0.1) (2022-05-24)
 
 # [29.0.0](https://github.com/sprucelabsai/mercury-types/compare/v28.0.41...v29.0.0) (2022-05-24)
