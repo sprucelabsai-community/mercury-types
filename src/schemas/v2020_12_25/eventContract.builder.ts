@@ -63,6 +63,16 @@ export default buildSchema({
 														type: 'text',
 														hint: 'A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details.',
 													},
+													pathsToLinks: {
+														type: 'text',
+														isArray: true,
+														minArrayLength: 0,
+													},
+													pathsToChoices: {
+														type: 'text',
+														isArray: true,
+														minArrayLength: 0,
+													},
 												},
 											}),
 										},

@@ -16,6 +16,20 @@ const feedOptionsSchema: SpruceSchemas.Mercury.v2020_12_25.FeedOptionsSchema  = 
 	                hint: 'A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details.',
 	                options: undefined
 	            },
+	            /** . */
+	            'pathsToLinks': {
+	                type: 'text',
+	                isArray: true,
+	                minArrayLength: 0,
+	                options: undefined
+	            },
+	            /** . */
+	            'pathsToChoices': {
+	                type: 'text',
+	                isArray: true,
+	                minArrayLength: 0,
+	                options: undefined
+	            },
 	    }
 }
 

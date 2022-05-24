@@ -416,6 +416,10 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			
 				/** . A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details. */
 				'template'?: string| undefined | null
+				
+				'pathsToLinks'?: string[]| undefined | null
+				
+				'pathsToChoices'?: string[]| undefined | null
 		}
 
 		interface FeedOptionsSchema extends SpruceSchema.Schema {
@@ -429,6 +433,20 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			            'template': {
 			                type: 'text',
 			                hint: 'A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details.',
+			                options: undefined
+			            },
+			            /** . */
+			            'pathsToLinks': {
+			                type: 'text',
+			                isArray: true,
+			                minArrayLength: 0,
+			                options: undefined
+			            },
+			            /** . */
+			            'pathsToChoices': {
+			                type: 'text',
+			                isArray: true,
+			                minArrayLength: 0,
 			                options: undefined
 			            },
 			    }
