@@ -1,3 +1,10 @@
+# [32.0.0](https://github.com/sprucelabsai/mercury-types/compare/v31.0.0...v32.0.0) (2022-06-01)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([9126aa5](https://github.com/sprucelabsai/mercury-types/commit/9126aa5))
+
 # [31.0.0](https://github.com/sprucelabsai/mercury-types/compare/v30.0.10...v31.0.0) (2022-05-31)
 
 
