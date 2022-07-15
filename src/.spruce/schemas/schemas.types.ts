@@ -34,7 +34,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    options: {schema: SpruceSchemas.Mercury.v2020_12_25.EventSignatureSchema,}
 			},		}
 
-		type EventSignaturesByNameEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventSignaturesByNameSchema>
+		interface EventSignaturesByNameEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventSignaturesByNameSchema> {}
 
 	}
 
@@ -73,7 +73,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type EventContractEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventContractSchema>
+		interface EventContractEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventContractSchema> {}
 
 	}
 
@@ -142,7 +142,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type PermissionContractEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema>
+		interface PermissionContractEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionContractSchema> {}
 
 	}
 
@@ -208,7 +208,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type StatusFlagsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema>
+		interface StatusFlagsEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.StatusFlagsSchema> {}
 
 	}
 
@@ -293,7 +293,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type PermissionDefaultsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionDefaultsSchema>
+		interface PermissionDefaultsEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionDefaultsSchema> {}
 
 	}
 
@@ -366,7 +366,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type PermissionEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionSchema>
+		interface PermissionEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionSchema> {}
 
 	}
 
@@ -404,7 +404,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type PermissionReferenceEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionReferenceSchema>
+		interface PermissionReferenceEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.PermissionReferenceSchema> {}
 
 	}
 
@@ -452,7 +452,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type FeedOptionsEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedOptionsSchema>
+		interface FeedOptionsEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.FeedOptionsSchema> {}
 
 	}
 
@@ -531,7 +531,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    }
 		}
 
-		type EventSignatureEntity = SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventSignatureSchema>
+		interface EventSignatureEntity extends SchemaEntity<SpruceSchemas.Mercury.v2020_12_25.EventSignatureSchema> {}
 
 	}
 
