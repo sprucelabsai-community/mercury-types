@@ -1,3 +1,5 @@
+## [35.0.50](https://github.com/sprucelabsai/mercury-types/compare/v35.0.49...v35.0.50) (2022-07-19)
+
 ## [35.0.49](https://github.com/sprucelabsai/mercury-types/compare/v35.0.48...v35.0.49) (2022-07-18)
 
 ## [35.0.48](https://github.com/sprucelabsai/mercury-types/compare/v35.0.47...v35.0.48) (2022-07-18)
