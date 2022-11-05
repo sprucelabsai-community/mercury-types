@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "37.0.43",
+  "version": "37.0.44",
   "files": [
     "build"
   ],
