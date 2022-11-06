@@ -1,5 +1,5 @@
-import AbstractSpruceTest, { test, assert } from '@sprucelabs/test'
-import { errorAssertUtil } from '@sprucelabs/test-utils'
+import AbstractSpruceTest from '@sprucelabs/test'
+import { assert, errorAssert, test } from '@sprucelabs/test-utils'
 import validateEventContract from '../../utilities/validateEventContract'
 
 export default class ValidatingEventContractsTest extends AbstractSpruceTest {
@@ -12,7 +12,7 @@ export default class ValidatingEventContractsTest extends AbstractSpruceTest {
 			})
 		)
 
-		errorAssertUtil.assertError(err, 'INVALID_EVENT_CONTRACT')
+		errorAssert.assertError(err, 'INVALID_EVENT_CONTRACT')
 		//@ts-ignore
 		assert.isTruthy(err.options.originalError)
 	}
