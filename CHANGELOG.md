@@ -1,3 +1,10 @@
+# [37.1.0](https://github.com/sprucelabsai/mercury-types/compare/v37.0.60...v37.1.0) (2022-11-17)
+
+
+### Features
+
+* permission contract map ([b0213ed](https://github.com/sprucelabsai/mercury-types/commit/b0213ed))
+
 ## [37.0.60](https://github.com/sprucelabsai/mercury-types/compare/v37.0.59...v37.0.60) (2022-11-16)
 
 ## [37.0.59](https://github.com/sprucelabsai/mercury-types/compare/v37.0.58...v37.0.59) (2022-11-16)
