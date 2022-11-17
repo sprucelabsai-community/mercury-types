@@ -137,3 +137,7 @@ export interface SkillEventSignatures {}
 export interface SkillEventContract extends EventContract {
 	eventSignatures: SkillEventSignatures
 }
+
+export interface PermissionContractMap {
+	[contractName: string]: string[]
+}
