@@ -2,7 +2,7 @@ import { buildSchema } from '@sprucelabs/schema'
 import AbstractSpruceTest from '@sprucelabs/test'
 import { assert, test } from '@sprucelabs/test-utils'
 import TestClient from '../../tests/TestClient'
-import { EventContract, EventNames } from '../../types/mercury.types'
+import { EventContract, EventName } from '../../types/mercury.types'
 import buildEventContract from '../../utilities/buildEventContract'
 import validateEventContract from '../../utilities/validateEventContract'
 
@@ -107,8 +107,8 @@ type SignupContract = typeof signupContract
 
 export default class TypesWorkTest extends AbstractSpruceTest {
 	@test('Can pull event names (always passes, types will fail)')
-	protected static async canPullEventNames() {
-		type Names = EventNames<SignupContract>
+	protected static async canPullEventName() {
+		type Names = EventName<SignupContract>
 		assert.isExactType<Names, 'sign-up' | 'log-out'>(true)
 	}
 

@@ -5,15 +5,15 @@ import MercuryEventEmitter, {
 	EventContract,
 	EventSignature,
 	KeyOf,
-	EventNames,
+	EventName,
 } from '../types/mercury.types'
 
 export default class TestClient<Contract extends EventContract>
 	implements MercuryEventEmitter<Contract>
 {
 	public async emitAndFlattenResponses<
-		EventName extends EventNames<Contract> = EventNames<Contract>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
+		Fqen extends EventName<Contract> = EventName<Contract>,
+		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
 		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
@@ -24,19 +24,19 @@ export default class TestClient<Contract extends EventContract>
 			? SchemaValues<ResponseSchema>
 			: never
 	>(
-		_eventName: EventName,
+		_eventName: Fqen,
 		_payload:
 			| (EmitSchema extends Schema ? SchemaValues<EmitSchema> : never)
-			| EmitCallback<Contract, EventName>
+			| EmitCallback<Contract, Fqen>
 			| undefined,
-		_cb?: EmitCallback<Contract, EventName> | undefined
+		_cb?: EmitCallback<Contract, Fqen> | undefined
 	): Promise<ResponsePayload[]> {
 		return [] as any
 	}
 
 	public async emit<
-		EventName extends EventNames<Contract> = EventNames<Contract>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
+		Fqen extends EventName<Contract> = EventName<Contract>,
+		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
 		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
@@ -47,12 +47,12 @@ export default class TestClient<Contract extends EventContract>
 			? SchemaValues<ResponseSchema>
 			: never
 	>(
-		_eventName: EventName,
+		_eventName: Fqen,
 		_payload:
 			| (EmitSchema extends Schema ? SchemaValues<EmitSchema> : never)
-			| EmitCallback<Contract, EventName>
+			| EmitCallback<Contract, Fqen>
 			| undefined,
-		_cb?: EmitCallback<Contract, EventName> | undefined
+		_cb?: EmitCallback<Contract, Fqen> | undefined
 	): Promise<MercuryAggregateResponse<ResponsePayload>> {
 		//@ts-ignore
 		const results = {
@@ -72,15 +72,15 @@ export default class TestClient<Contract extends EventContract>
 	}
 
 	public async on<
-		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
+		Fqen extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
+		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
 		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never
 	>(
-		_eventName: EventName,
+		_eventName: Fqen,
 		_cb: (
 			payload: EmitSchema extends Schema ? SchemaValues<EmitSchema> : never
 		) => IEventSignature['responsePayloadSchema'] extends Schema
@@ -90,7 +90,7 @@ export default class TestClient<Contract extends EventContract>
 			: Promise<void> | void
 	): Promise<void> {}
 
-	public async off(_eventName: EventNames<Contract>): Promise<number> {
+	public async off(_eventName: EventName<Contract>): Promise<number> {
 		return 0
 	}
 }
