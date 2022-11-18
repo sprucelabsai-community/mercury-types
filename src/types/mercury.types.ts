@@ -131,15 +131,26 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 	off(eventName: EventNames<Contract>, cb?: any): Promise<number>
 }
 
-export interface SkillEventSignatures {}
+export interface SkillEventSignatures extends EventSignaturesByName {}
 
-/** @ts-ignore */
 export interface SkillEventContract extends EventContract {
-	eventSignatures: SkillEventSignatures
+	eventSignatures: RemoveStringKeys<SkillEventSignatures>
 }
 
-export interface PermissionContractMap {}
+interface PCM {
+	[contractId: string]: string[]
+}
+
+export interface PermissionContractMap extends PCM {}
 
 export type PermissionContractId = Extract<keyof PermissionContractMap, string>
 export type PermissionId<ContractId extends PermissionContractId> =
 	PermissionContractMap[ContractId][number]
+
+type RemoveStringKeys<T> = {
+	[K in keyof T as string extends K
+		? never
+		: number extends K
+		? never
+		: K]: T[K]
+}
