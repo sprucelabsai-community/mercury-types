@@ -156,7 +156,7 @@ export type EventName<Contract extends EventContract = SkillEventContract> =
 	KeyOf<Contract['eventSignatures']>
 
 /**
- * @deprecated EventNames<> -> EventName
+ * @deprecated EventNames -> EventName
  */
 export type EventNames<Contract extends EventContract = SkillEventContract> =
 	EventName<Contract>
