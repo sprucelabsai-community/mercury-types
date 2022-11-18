@@ -9,6 +9,7 @@ import { default as SchemaEntity } from '@sprucelabs/schema'
 
 import * as SpruceSchema from '@sprucelabs/schema'
 
+import * as MercuryTypes from '../../'
 
 declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schemas.types' {
 
@@ -374,12 +375,12 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 	namespace SpruceSchemas.Mercury.v2020_12_25 {
 
 		
-		interface PermissionReference {
+		interface PermissionReference<ContractId extends MercuryTypes.PermissionContractId = MercuryTypes.PermissionContractId> {
 			
 				
-				'contractId': string
+				'contractId': (ContractId)
 				
-				'permissionIdsAny'?: string[]| undefined | null
+				'permissionIdsAny'?: (MercuryTypes.PermissionId<ContractId>)[]| undefined | null
 		}
 
 		interface PermissionReferenceSchema extends SpruceSchema.Schema {
@@ -387,19 +388,21 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			version: 'v2020_12_25',
 			namespace: 'Mercury',
 			name: '',
+			importsWhenRemote: ['import * as MercuryTypes from \'@sprucelabs/mercury-types\'',],
 			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
+			typeSuffix: '<ContractId extends MercuryTypes.PermissionContractId = MercuryTypes.PermissionContractId>',
 			    fields: {
 			            /** . */
 			            'contractId': {
-			                type: 'id',
+			                type: 'raw',
 			                isRequired: true,
-			                options: undefined
+			                options: {valueType: `ContractId`,}
 			            },
 			            /** . */
 			            'permissionIdsAny': {
-			                type: 'id',
+			                type: 'raw',
 			                isArray: true,
-			                options: undefined
+			                options: {valueType: `MercuryTypes.PermissionId<ContractId>`,}
 			            },
 			    }
 		}

@@ -3,14 +3,26 @@ import permissionContractBuilder from './permissionContract.builder'
 
 const permissionReferenceSchema = buildSchema({
 	id: 'permissionReference',
+	importsWhenLocal: [`import * as MercuryTypes from '../../'`],
+	typeSuffix:
+		'<ContractId extends MercuryTypes.PermissionContractId = MercuryTypes.PermissionContractId>',
+	importsWhenRemote: [
+		`import * as MercuryTypes from '@sprucelabs/mercury-types'`,
+	],
 	fields: {
 		contractId: {
-			type: 'id',
+			type: 'raw',
 			isRequired: true,
+			options: {
+				valueType: 'ContractId',
+			},
 		},
 		permissionIdsAny: {
-			type: 'id',
+			type: 'raw',
 			isArray: true,
+			options: {
+				valueType: 'MercuryTypes.PermissionId<ContractId>',
+			},
 		},
 	},
 })
