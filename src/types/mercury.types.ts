@@ -24,9 +24,6 @@ export interface MercurySingleResponse<Payload> {
 	payload?: Payload
 }
 export type KeyOf<O> = Extract<keyof O, string>
-export declare type EventNames<Contract extends EventContract> = KeyOf<
-	Contract['eventSignatures']
->
 
 export type EventContractEmitPayloads<Contract extends EventContract> = {
 	[N in EventNames<Contract>]: Contract['eventSignatures'][N]['emitPayloadSchema'] extends Schema
@@ -154,3 +151,6 @@ type RemoveStringKeys<T> = {
 		? never
 		: K]: T[K]
 }
+
+export type EventNames<Contract extends EventContract = SkillEventContract> =
+	KeyOf<Contract['eventSignatures']>
