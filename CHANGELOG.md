@@ -1,3 +1,10 @@
+# [37.2.0](https://github.com/sprucelabsai/mercury-types/compare/v37.1.0...v37.2.0) (2022-11-18)
+
+
+### Features
+
+* new shared permissions and event contract type test ([ef3448f](https://github.com/sprucelabsai/mercury-types/commit/ef3448f))
+
 # [37.1.0](https://github.com/sprucelabsai/mercury-types/compare/v37.0.60...v37.1.0) (2022-11-17)
 
 
