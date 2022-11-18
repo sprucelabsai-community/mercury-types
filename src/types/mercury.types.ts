@@ -143,6 +143,6 @@ interface PCM {
 
 export interface PermissionContractMap extends PCM {}
 
-export type PermissionContractId = keyof PermissionContractMap
+export type PermissionContractId = Extract<keyof PermissionContractMap, string>
 export type PermissionId<ContractId extends PermissionContractId> =
-	PermissionContractMap[ContractId]
+	PermissionContractMap[ContractId][number]
