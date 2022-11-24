@@ -144,6 +144,9 @@ export type PermissionContractId = keyof RemoveStringKeys<PermissionContractMap>
 export type PermissionId<ContractId extends PermissionContractId> =
 	PermissionContractMap[ContractId][number]
 
+export type PermissionReference<ContractId extends PermissionContractId> =
+	SpruceSchemas.Mercury.v2020_12_25.PermissionReference<ContractId>
+
 type RemoveStringKeys<T> = {
 	[K in keyof T as string extends K
 		? never
