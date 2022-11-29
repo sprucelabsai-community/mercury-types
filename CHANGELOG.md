@@ -1,3 +1,10 @@
+# [37.3.0](https://github.com/sprucelabsai/mercury-types/compare/v37.2.15...v37.3.0) (2022-11-29)
+
+
+### Features
+
+* permission reference builder fully typed baby! ([363dee4](https://github.com/sprucelabsai/mercury-types/commit/363dee4))
+
 ## [37.2.15](https://github.com/sprucelabsai/mercury-types/compare/v37.2.14...v37.2.15) (2022-11-23)
 
 ## [37.2.14](https://github.com/sprucelabsai/mercury-types/compare/v37.2.13...v37.2.14) (2022-11-23)
