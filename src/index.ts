@@ -14,9 +14,5 @@ export { default as MercuryEventEmitter } from './types/mercury.types'
 export * from './constants'
 export { default as buildEventContract } from './utilities/buildEventContract'
 export { default as buildPermissionContract } from './utilities/buildPermissionContract'
-/**
- * @depracted buildPermissionReferenc -> buildPermissionReference
- */
-export { default as buildPermissionReferenc } from './utilities/buildPermissionReference'
 export { default as buildPermissionReference } from './utilities/buildPermissionReference'
 export { default as validateEventContract } from './utilities/validateEventContract'
