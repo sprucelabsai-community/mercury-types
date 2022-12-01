@@ -1,3 +1,20 @@
+## [37.3.5](https://github.com/sprucelabsai/mercury-types/compare/v37.3.4...v37.3.5) (2022-12-01)
+
+## [37.3.4](https://github.com/sprucelabsai/mercury-types/compare/v37.3.3...v37.3.4) (2022-11-30)
+
+## [37.3.3](https://github.com/sprucelabsai/mercury-types/compare/v37.3.2...v37.3.3) (2022-11-30)
+
+## [37.3.2](https://github.com/sprucelabsai/mercury-types/compare/v37.3.1...v37.3.2) (2022-11-30)
+
+## [37.3.1](https://github.com/sprucelabsai/mercury-types/compare/v37.3.0...v37.3.1) (2022-11-29)
+
+# [37.3.0](https://github.com/sprucelabsai/mercury-types/compare/v37.2.15...v37.3.0) (2022-11-29)
+
+
+### Features
+
+* permission reference builder fully typed baby! ([363dee4](https://github.com/sprucelabsai/mercury-types/commit/363dee4))
+
 ## [37.2.15](https://github.com/sprucelabsai/mercury-types/compare/v37.2.14...v37.2.15) (2022-11-23)
 
 ## [37.2.14](https://github.com/sprucelabsai/mercury-types/compare/v37.2.13...v37.2.14) (2022-11-23)
