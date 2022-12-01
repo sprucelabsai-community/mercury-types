@@ -1,3 +1,10 @@
+# [37.4.0](https://github.com/sprucelabsai/mercury-types/compare/v37.3.5...v37.4.0) (2022-12-01)
+
+
+### Features
+
+* export name fix ([0493941](https://github.com/sprucelabsai/mercury-types/commit/0493941))
+
 ## [37.3.5](https://github.com/sprucelabsai/mercury-types/compare/v37.3.4...v37.3.5) (2022-12-01)
 
 ## [37.3.4](https://github.com/sprucelabsai/mercury-types/compare/v37.3.3...v37.3.4) (2022-11-30)
