@@ -1,3 +1,10 @@
+# [38.0.0](https://github.com/sprucelabsai/mercury-types/compare/v37.4.1...v38.0.0) (2022-12-01)
+
+
+### Breaking Changes
+
+* removed renamed buildPermissionReference ([5b7e93d](https://github.com/sprucelabsai/mercury-types/commit/5b7e93d))
+
 ## [37.4.1](https://github.com/sprucelabsai/mercury-types/compare/v37.4.0...v37.4.1) (2022-12-01)
 
 # [37.4.0](https://github.com/sprucelabsai/mercury-types/compare/v37.3.5...v37.4.0) (2022-12-01)
