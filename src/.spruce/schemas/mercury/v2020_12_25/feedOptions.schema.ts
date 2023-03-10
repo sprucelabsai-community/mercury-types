@@ -30,6 +30,11 @@ const feedOptionsSchema: SpruceSchemas.Mercury.v2020_12_25.FeedOptionsSchema  = 
 	                minArrayLength: 0,
 	                options: undefined
 	            },
+	            /** . */
+	            'pathToContext': {
+	                type: 'text',
+	                options: undefined
+	            },
 	    }
 }
 

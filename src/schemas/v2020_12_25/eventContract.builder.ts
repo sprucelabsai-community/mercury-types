@@ -85,6 +85,9 @@ export default buildSchema({
 														isArray: true,
 														minArrayLength: 0,
 													},
+													pathToContext: {
+														type: 'text',
+													},
 												},
 											}),
 										},

@@ -423,6 +423,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				'pathsToLinks'?: string[]| undefined | null
 				
 				'pathsToChoices'?: string[]| undefined | null
+				
+				'pathToContext'?: string| undefined | null
 		}
 
 		interface FeedOptionsSchema extends SpruceSchema.Schema {
@@ -450,6 +452,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			                type: 'text',
 			                isArray: true,
 			                minArrayLength: 0,
+			                options: undefined
+			            },
+			            /** . */
+			            'pathToContext': {
+			                type: 'text',
 			                options: undefined
 			            },
 			    }
