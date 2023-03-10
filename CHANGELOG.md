@@ -1,3 +1,10 @@
+# [42.1.0](https://github.com/sprucelabsai/mercury-types/compare/v42.0.10...v42.1.0) (2023-03-10)
+
+
+### Features
+
+* path to context on feed templates ([9bf678e](https://github.com/sprucelabsai/mercury-types/commit/9bf678e))
+
 ## [42.0.10](https://github.com/sprucelabsai/mercury-types/compare/v42.0.9...v42.0.10) (2023-03-09)
 
 ## [42.0.9](https://github.com/sprucelabsai/mercury-types/compare/v42.0.8...v42.0.9) (2023-03-09)
