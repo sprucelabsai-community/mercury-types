@@ -1,3 +1,44 @@
+## [42.0.10](https://github.com/sprucelabsai/mercury-types/compare/v42.0.9...v42.0.10) (2023-03-09)
+
+## [42.0.9](https://github.com/sprucelabsai/mercury-types/compare/v42.0.8...v42.0.9) (2023-03-09)
+
+## [42.0.8](https://github.com/sprucelabsai/mercury-types/compare/v42.0.7...v42.0.8) (2023-03-09)
+
+## [42.0.7](https://github.com/sprucelabsai/mercury-types/compare/v42.0.6...v42.0.7) (2023-03-09)
+
+## [42.0.6](https://github.com/sprucelabsai/mercury-types/compare/v42.0.5...v42.0.6) (2023-03-06)
+
+## [42.0.5](https://github.com/sprucelabsai/mercury-types/compare/v42.0.4...v42.0.5) (2023-03-06)
+
+## [42.0.4](https://github.com/sprucelabsai/mercury-types/compare/v42.0.3...v42.0.4) (2023-03-06)
+
+## [42.0.3](https://github.com/sprucelabsai/mercury-types/compare/v42.0.2...v42.0.3) (2023-03-06)
+
+## [42.0.2](https://github.com/sprucelabsai/mercury-types/compare/v42.0.1...v42.0.2) (2023-03-06)
+
+## [42.0.1](https://github.com/sprucelabsai/mercury-types/compare/v42.0.0...v42.0.1) (2023-03-06)
+
+# [42.0.0](https://github.com/sprucelabsai/mercury-types/compare/v41.0.0...v42.0.0) (2023-03-05)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([9e7efa4](https://github.com/sprucelabsai/mercury-types/commit/9e7efa4))
+
+# [41.0.0](https://github.com/sprucelabsai/mercury-types/compare/v40.0.0...v41.0.0) (2023-03-05)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([458a47e](https://github.com/sprucelabsai/mercury-types/commit/458a47e))
+
+# [40.0.0](https://github.com/sprucelabsai/mercury-types/compare/v39.0.0...v40.0.0) (2023-03-05)
+
+
+### Breaking Changes
+
+* upgrade ([102321a](https://github.com/sprucelabsai/mercury-types/commit/102321a))
+
 # [39.0.0](https://github.com/sprucelabsai/mercury-types/compare/v38.0.134...v39.0.0) (2023-03-05)
 
 
