@@ -1,3 +1,10 @@
+# [44.0.0](https://github.com/sprucelabsai-community/mercury-types/compare/v43.0.0...v44.0.0) (2023-03-27)
+
+
+### Breaking Changes
+
+* **auto-upgrade:** upgraded packages [upgrade-all] ([fb6951f](https://github.com/sprucelabsai-community/mercury-types/commit/fb6951f))
+
 # [43.0.0](https://github.com/sprucelabsai-community/mercury-types/compare/v42.1.27...v43.0.0) (2023-03-27)
 
 
