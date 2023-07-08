@@ -6,9 +6,10 @@ import MercuryEventEmitter, {
 	EventSignature,
 	KeyOf,
 	EventName,
+	ListenerCallback,
 } from '../types/mercury.types'
 
-export default class TestClient<Contract extends EventContract>
+export default class StubClient<Contract extends EventContract>
 	implements MercuryEventEmitter<Contract>
 {
 	public async emitAndFlattenResponses<
@@ -75,20 +76,8 @@ export default class TestClient<Contract extends EventContract>
 		Fqen extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
-			? IEventSignature['emitPayloadSchema']
-			: never
-	>(
-		_eventName: Fqen,
-		_cb: (
-			payload: EmitSchema extends Schema ? SchemaValues<EmitSchema> : never
-		) => IEventSignature['responsePayloadSchema'] extends Schema
-			?
-					| Promise<SchemaValues<IEventSignature['responsePayloadSchema']>>
-					| SchemaValues<IEventSignature['responsePayloadSchema']>
-			: Promise<void> | void
-	): Promise<void> {}
+		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen]
+	>(_eventName: Fqen, _cb: ListenerCallback<IEventSignature>): Promise<void> {}
 
 	public async off(_eventName: EventName<Contract>): Promise<number> {
 		return 0
