@@ -40,13 +40,15 @@ type EmitCallbackReturnValue = void | { errors: AbstractSpruceError<any>[] }
 export declare type EmitCallback<
 	Contract extends EventContract,
 	EventName extends EventNames<Contract>,
-	IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-	ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+	IEventSignature extends
+		EventSignature = Contract['eventSignatures'][EventName],
+	ResponseSchema extends
+		Schema = IEventSignature['responsePayloadSchema'] extends Schema
 		? IEventSignature['responsePayloadSchema']
 		: never,
 	ResponsePayload = ResponseSchema extends Schema
 		? SchemaValues<ResponseSchema>
-		: never
+		: never,
 > = (
 	payload: MercurySingleResponse<ResponsePayload>
 ) => EmitCallbackReturnValue | Promise<EmitCallbackReturnValue>
@@ -55,7 +57,7 @@ export type ListenerResponseValues<
 	S extends Schema,
 	RequiredFields extends boolean = SchemaRequiredFieldNames<S> extends never
 		? false
-		: true
+		: true,
 > = RequiredFields extends false ? void | SchemaValues<S> : SchemaValues<S>
 
 export type ListenerResponse<IEventSignature extends EventSignature> =
@@ -69,9 +71,10 @@ export type ListenerResponse<IEventSignature extends EventSignature> =
 
 export type ListenerCallback<
 	IEventSignature extends EventSignature,
-	EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+	EmitSchema extends
+		Schema = IEventSignature['emitPayloadSchema'] extends Schema
 		? IEventSignature['emitPayloadSchema']
-		: never
+		: never,
 > = (
 	payload: EmitSchema extends Schema ? SchemaValues<EmitSchema> : never
 ) => ListenerResponse<IEventSignature>
@@ -81,13 +84,16 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
-			: never
+			: never,
 	>(
 		eventName: EventName,
 		payload: SchemaValues<EmitSchema>,
@@ -98,10 +104,12 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
-			: never
+			: never,
 	>(
 		eventName: EventName,
 		cb?: EmitCallback<Contract, EventName>
@@ -111,7 +119,8 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName]
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
 	>(
 		eventName: EventName,
 		cb: ListenerCallback<IEventSignature>
@@ -121,13 +130,16 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
-			: never
+			: never,
 	>(
 		eventName: EventName,
 		payload: SchemaValues<EmitSchema>,
@@ -138,10 +150,12 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		EventName extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][EventName],
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		IEventSignature extends
+			EventSignature = Contract['eventSignatures'][EventName],
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
-			: never
+			: never,
 	>(
 		eventName: EventName,
 		cb?: EmitCallback<Contract, EventName>

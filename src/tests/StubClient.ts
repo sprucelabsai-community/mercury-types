@@ -15,15 +15,17 @@ export default class StubClient<Contract extends EventContract>
 	public async emitAndFlattenResponses<
 		Fqen extends EventName<Contract> = EventName<Contract>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never,
 		ResponsePayload = ResponseSchema extends Schema
 			? SchemaValues<ResponseSchema>
-			: never
+			: never,
 	>(
 		_eventName: Fqen,
 		_payload:
@@ -38,15 +40,17 @@ export default class StubClient<Contract extends EventContract>
 	public async emit<
 		Fqen extends EventName<Contract> = EventName<Contract>,
 		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
-		EmitSchema extends Schema = IEventSignature['emitPayloadSchema'] extends Schema
+		EmitSchema extends
+			Schema = IEventSignature['emitPayloadSchema'] extends Schema
 			? IEventSignature['emitPayloadSchema']
 			: never,
-		ResponseSchema extends Schema = IEventSignature['responsePayloadSchema'] extends Schema
+		ResponseSchema extends
+			Schema = IEventSignature['responsePayloadSchema'] extends Schema
 			? IEventSignature['responsePayloadSchema']
 			: never,
 		ResponsePayload = ResponseSchema extends Schema
 			? SchemaValues<ResponseSchema>
-			: never
+			: never,
 	>(
 		_eventName: Fqen,
 		_payload:
@@ -76,7 +80,7 @@ export default class StubClient<Contract extends EventContract>
 		Fqen extends KeyOf<Contract['eventSignatures']> = KeyOf<
 			Contract['eventSignatures']
 		>,
-		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen]
+		IEventSignature extends EventSignature = Contract['eventSignatures'][Fqen],
 	>(_eventName: Fqen, _cb: ListenerCallback<IEventSignature>): Promise<void> {}
 
 	public async off(_eventName: EventName<Contract>): Promise<number> {

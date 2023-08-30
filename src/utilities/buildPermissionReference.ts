@@ -5,7 +5,7 @@ import {
 } from '../types/mercury.types'
 
 export default function buildPermissionReference<
-	ContractId extends PermissionContractId
+	ContractId extends PermissionContractId,
 >(
 	contractId: ContractId,
 	permissionIdsAny: PermissionId<ContractId>[]
