@@ -39,9 +39,8 @@ type EmitCallbackReturnValue = void | { errors: AbstractSpruceError<any>[] }
 
 export declare type EmitCallback<
 	Contract extends EventContract,
-	EventName extends EventNames<Contract>,
-	IEventSignature extends
-		EventSignature = Contract['eventSignatures'][EventName],
+	Name extends EventName<Contract>,
+	IEventSignature extends EventSignature = Contract['eventSignatures'][Name],
 	ResponseSchema extends
 		Schema = IEventSignature['responsePayloadSchema'] extends Schema
 		? IEventSignature['responsePayloadSchema']
@@ -161,7 +160,7 @@ export default interface MercuryEventEmitter<Contract extends EventContract> {
 		cb?: EmitCallback<Contract, EventName>
 	): Promise<SchemaValues<ResponseSchema>[]>
 
-	off(eventName: EventNames<Contract>, cb?: any): Promise<number>
+	off(eventName: EventName<Contract>, cb?: any): Promise<number>
 }
 
 export interface SkillEventSignatures extends EventSignaturesByName {}
@@ -187,8 +186,8 @@ type RemoveStringKeys<T> = {
 	[K in keyof T as string extends K
 		? never
 		: number extends K
-		? never
-		: K]: T[K]
+		  ? never
+		  : K]: T[K]
 }
 
 export type EventName<Contract extends EventContract = SkillEventContract> =
