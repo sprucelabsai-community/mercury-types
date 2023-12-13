@@ -186,8 +186,8 @@ type RemoveStringKeys<T> = {
 	[K in keyof T as string extends K
 		? never
 		: number extends K
-		  ? never
-		  : K]: T[K]
+			? never
+			: K]: T[K]
 }
 
 export type EventName<Contract extends EventContract = SkillEventContract> =
