@@ -66,7 +66,7 @@
   "dependencies": {
     "@sprucelabs/error": "^5.1.57",
     "@sprucelabs/schema": "^29.3.5",
-    "@sprucelabs/spruce-core-schemas": "^39.0.164"
+    "@sprucelabs/spruce-core-schemas": "^39.0.165"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^5.0.114",
@@ -74,7 +74,7 @@
     "@sprucelabs/resolve-path-aliases": "^1.1.275",
     "@sprucelabs/semantic-release": "^4.0.8",
     "@sprucelabs/test": "^8.0.39",
-    "@sprucelabs/test-utils": "^4.0.91",
+    "@sprucelabs/test-utils": "^4.0.92",
     "@types/node": "^20.10.4",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^8.2.2",
