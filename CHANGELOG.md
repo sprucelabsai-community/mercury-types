@@ -1,3 +1,5 @@
+## [46.0.207](https://github.com/sprucelabsai-community/mercury-types/compare/v46.0.206...v46.0.207) (2024-02-01)
+
 ## [46.0.206](https://github.com/sprucelabsai-community/mercury-types/compare/v46.0.205...v46.0.206) (2024-02-01)
 
 ## [46.0.205](https://github.com/sprucelabsai-community/mercury-types/compare/v46.0.204...v46.0.205) (2024-01-31)
