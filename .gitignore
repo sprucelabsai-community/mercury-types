@@ -22,3 +22,5 @@ mercury.min.*
 .env.-*
 .env-*
 .eslintcache
+
+**/.spruce/*cache.json

@@ -9,5 +9,10 @@
   ],
   "scriptUpdater": {
     "skipped": []
+  },
+  "writer": {
+    "skipped": [
+      ".gitignore"
+    ]
   }
 }
