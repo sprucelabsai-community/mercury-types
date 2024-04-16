@@ -4,14 +4,14 @@ import SpruceError from '../errors/SpruceError'
 import { EventContract } from '../types/mercury.types'
 
 export default function validateEventContract<C extends EventContract>(
-	contract: C
+    contract: C
 ): asserts contract is C {
-	try {
-		validateSchemaValues(eventContractSchema, contract)
-	} catch (err: any) {
-		throw new SpruceError({
-			code: 'INVALID_EVENT_CONTRACT',
-			originalError: err,
-		})
-	}
+    try {
+        validateSchemaValues(eventContractSchema, contract)
+    } catch (err: any) {
+        throw new SpruceError({
+            code: 'INVALID_EVENT_CONTRACT',
+            originalError: err,
+        })
+    }
 }

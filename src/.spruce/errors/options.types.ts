@@ -1,10 +1,12 @@
-import { SpruceErrors } from "#spruce/errors/errors.types"
-import { ErrorOptions as ISpruceErrorOptions} from "@sprucelabs/error"
+import { ErrorOptions as ISpruceErrorOptions } from '@sprucelabs/error'
+import { SpruceErrors } from '#spruce/errors/errors.types'
 
-export interface InvalidEventContractErrorOptions extends SpruceErrors.Mercury.InvalidEventContract, ISpruceErrorOptions {
-	code: 'INVALID_EVENT_CONTRACT'
+export interface InvalidEventContractErrorOptions
+    extends SpruceErrors.Mercury.InvalidEventContract,
+        ISpruceErrorOptions {
+    code: 'INVALID_EVENT_CONTRACT'
 }
 
-type ErrorOptions =  | InvalidEventContractErrorOptions 
+type ErrorOptions = InvalidEventContractErrorOptions
 
 export default ErrorOptions

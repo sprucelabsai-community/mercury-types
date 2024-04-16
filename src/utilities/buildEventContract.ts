@@ -3,8 +3,8 @@ import eventContractSchema from '#spruce/schemas/mercury/v2020_12_25/eventContra
 import { EventContract } from '../types/mercury.types'
 
 export default function buildEventContract<C extends EventContract>(
-	contract: C
+    contract: C
 ): C {
-	validateSchemaValues(eventContractSchema, contract)
-	return contract as C
+    validateSchemaValues(eventContractSchema, contract)
+    return contract as C
 }

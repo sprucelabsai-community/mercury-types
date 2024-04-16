@@ -3,8 +3,8 @@ import permissionContractSchema from '#spruce/schemas/mercury/v2020_12_25/permis
 import { PermissionContract } from '../types/mercury.types'
 
 export default function buildPermissionContract<C extends PermissionContract>(
-	contract: C
+    contract: C
 ): C {
-	validateSchemaValues(permissionContractSchema, contract)
-	return contract as C
+    validateSchemaValues(permissionContractSchema, contract)
+    return contract as C
 }
