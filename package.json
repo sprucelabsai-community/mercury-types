@@ -64,8 +64,8 @@
   },
   "dependencies": {
     "@sprucelabs/error": "^6.0.13",
-    "@sprucelabs/schema": "^30.0.20",
-    "@sprucelabs/spruce-core-schemas": "^40.0.15"
+    "@sprucelabs/schema": "^30.0.21",
+    "@sprucelabs/spruce-core-schemas": "^40.0.16"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^6.0.12",
