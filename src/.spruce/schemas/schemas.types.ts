@@ -48,7 +48,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface EventContract {
 			
 				
-				'id'?: string| undefined | null
+				'id'?: string | undefined | null
 				
 				'eventSignatures': SpruceSchemas.Mercury.v2020_12_25.EventSignaturesByName
 		}
@@ -91,9 +91,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. Human readable name for this contract */
 				'name': string
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				/** Require all permissions. */
-				'requireAllPermissions'?: boolean| undefined | null
+				'requireAllPermissions'?: boolean | undefined | null
 				
 				'permissions': SpruceSchemas.Mercury.v2020_12_25.Permission[]
 		}
@@ -156,15 +156,15 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface StatusFlags {
 			
 				/** . What is the fallback if no status is set? */
-				'default'?: boolean| undefined | null
+				'default'?: boolean | undefined | null
 				/** Clocked in. Is the person clocked in and ready to rock? */
-				'clockedIn'?: boolean| undefined | null
+				'clockedIn'?: boolean | undefined | null
 				/** Clocked out. When someone is not working (off the clock). */
-				'clockedOut'?: boolean| undefined | null
+				'clockedOut'?: boolean | undefined | null
 				/** On premises. Are they at work (maybe working, maybe visiting). */
-				'onPrem'?: boolean| undefined | null
+				'onPrem'?: boolean | undefined | null
 				/** Off premises. They aren't at the office or shop. */
-				'offPrem'?: boolean| undefined | null
+				'offPrem'?: boolean | undefined | null
 		}
 
 		interface StatusFlagsSchema extends SpruceSchema.Schema {
@@ -222,21 +222,21 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface PermissionDefaults {
 			
 				
-				'skill'?: boolean| undefined | null
+				'skill'?: boolean | undefined | null
 				/** Owner. */
-				'owner'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'owner'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 				/** Group manager. */
-				'groupManager'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'groupManager'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 				/** Manager. */
-				'manager'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'manager'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 				/** Teammate. */
-				'teammate'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'teammate'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 				/** Anonymous. */
-				'anonymous'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'anonymous'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 				/** Logged in. */
-				'loggedIn'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'loggedIn'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 				/** Guest. */
-				'guest'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'guest'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 		}
 
 		interface PermissionDefaultsSchema extends SpruceSchema.Schema {
@@ -311,13 +311,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				/** Name. Human readable name for this permission */
 				'name': string
 				/** Description. */
-				'description'?: string| undefined | null
+				'description'?: string | undefined | null
 				/** Require all statuses. */
-				'requireAllStatuses'?: boolean| undefined | null
+				'requireAllStatuses'?: boolean | undefined | null
 				
-				'defaults'?: SpruceSchemas.Mercury.v2020_12_25.PermissionDefaults| undefined | null
+				'defaults'?: SpruceSchemas.Mercury.v2020_12_25.PermissionDefaults | undefined | null
 				
-				'can'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags| undefined | null
+				'can'?: SpruceSchemas.Mercury.v2020_12_25.StatusFlags | undefined | null
 		}
 
 		interface PermissionSchema extends SpruceSchema.Schema {
@@ -382,7 +382,7 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'contractId': (ContractId)
 				
-				'permissionIdsAny'?: (MercuryTypes.PermissionId<ContractId>)[]| undefined | null
+				'permissionIdsAny'?: (MercuryTypes.PermissionId<ContractId>)[] | undefined | null
 		}
 
 		interface PermissionReferenceSchema extends SpruceSchema.Schema {
@@ -420,13 +420,13 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface FeedOptions {
 			
 				/** . A handlebarsjs template used to render the chat bubbles in the feed. You will have both the entire target and payload available to you in the template. See http://developer.spruce.bot for more details. */
-				'template'?: string| undefined | null
+				'template'?: string | undefined | null
 				
-				'pathsToLinks'?: string[]| undefined | null
+				'pathsToLinks'?: string[] | undefined | null
 				
-				'pathsToChoices'?: string[]| undefined | null
+				'pathsToChoices'?: string[] | undefined | null
 				
-				'pathToContext'?: string| undefined | null
+				'pathToContext'?: string | undefined | null
 		}
 
 		interface FeedOptionsSchema extends SpruceSchema.Schema {
@@ -475,21 +475,21 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface EventSignature {
 			
 				
-				'isGlobal'?: boolean| undefined | null
+				'isGlobal'?: boolean | undefined | null
 				
-				'responsePayloadSchema'?: (SpruceSchema.Schema)| undefined | null
+				'responsePayloadSchema'?: (SpruceSchema.Schema) | undefined | null
 				
-				'emitPayloadSchema'?: (SpruceSchema.Schema)| undefined | null
+				'emitPayloadSchema'?: (SpruceSchema.Schema) | undefined | null
 				
-				'feed'?: SpruceSchemas.Mercury.v2020_12_25.FeedOptions| undefined | null
+				'feed'?: SpruceSchemas.Mercury.v2020_12_25.FeedOptions | undefined | null
 				
-				'listenPermissions'?: SpruceSchemas.Mercury.v2020_12_25.PermissionReference| undefined | null
+				'listenPermissions'?: SpruceSchemas.Mercury.v2020_12_25.PermissionReference | undefined | null
 				
-				'emitPermissions'?: SpruceSchemas.Mercury.v2020_12_25.PermissionReference| undefined | null
+				'emitPermissions'?: SpruceSchemas.Mercury.v2020_12_25.PermissionReference | undefined | null
 				
-				'listenPermissionContract'?: SpruceSchemas.Mercury.v2020_12_25.PermissionContract| undefined | null
+				'listenPermissionContract'?: SpruceSchemas.Mercury.v2020_12_25.PermissionContract | undefined | null
 				
-				'emitPermissionContract'?: SpruceSchemas.Mercury.v2020_12_25.PermissionContract| undefined | null
+				'emitPermissionContract'?: SpruceSchemas.Mercury.v2020_12_25.PermissionContract | undefined | null
 		}
 
 		interface EventSignatureSchema extends SpruceSchema.Schema {
