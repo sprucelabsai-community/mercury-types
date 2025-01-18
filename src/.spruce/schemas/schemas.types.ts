@@ -475,6 +475,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface EventSignature {
 			
 				
+				'description'?: string | undefined | null
+				
 				'isGlobal'?: boolean | undefined | null
 				
 				'responsePayloadSchema'?: (SpruceSchema.Schema) | undefined | null
@@ -499,6 +501,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			name: 'Event Signature',
 			moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 			    fields: {
+			            /** . */
+			            'description': {
+			                type: 'text',
+			                options: undefined
+			            },
 			            /** . */
 			            'isGlobal': {
 			                type: 'boolean',

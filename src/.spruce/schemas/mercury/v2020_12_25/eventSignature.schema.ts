@@ -13,6 +13,11 @@ const eventSignatureSchema: SpruceSchemas.Mercury.v2020_12_25.EventSignatureSche
 	moduleToImportFromWhenRemote: '@sprucelabs/mercury-types',
 	    fields: {
 	            /** . */
+	            'description': {
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
 	            'isGlobal': {
 	                type: 'boolean',
 	                defaultValue: false,

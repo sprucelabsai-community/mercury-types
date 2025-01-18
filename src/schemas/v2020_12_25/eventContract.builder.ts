@@ -53,6 +53,9 @@ export default buildSchema({
                                 name: 'Event Signature',
                                 description: '',
                                 fields: {
+                                    description: {
+                                        type: 'text',
+                                    },
                                     isGlobal: {
                                         type: 'boolean',
                                         defaultValue: false,
