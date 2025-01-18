@@ -1,3 +1,10 @@
+# [47.1.0](https://github.com/sprucelabsai-community/mercury-types/compare/v47.0.661...v47.1.0) (2025-01-18)
+
+
+### Features
+
+* event signatures have description ([415dd23](https://github.com/sprucelabsai-community/mercury-types/commit/415dd23))
+
 ## [47.0.661](https://github.com/sprucelabsai-community/mercury-types/compare/v47.0.660...v47.0.661) (2025-01-16)
 
 ## [47.0.660](https://github.com/sprucelabsai-community/mercury-types/compare/v47.0.659...v47.0.660) (2025-01-16)
