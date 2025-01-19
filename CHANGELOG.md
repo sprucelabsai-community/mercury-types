@@ -1,3 +1,10 @@
+# [47.2.0](https://github.com/sprucelabsai-community/mercury-types/compare/v47.1.0...v47.2.0) (2025-01-19)
+
+
+### Features
+
+* ai instructions in event contract ([eb94eed](https://github.com/sprucelabsai-community/mercury-types/commit/eb94eed))
+
 # [47.1.0](https://github.com/sprucelabsai-community/mercury-types/compare/v47.0.661...v47.1.0) (2025-01-18)
 
 
