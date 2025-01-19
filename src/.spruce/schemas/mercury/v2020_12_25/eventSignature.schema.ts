@@ -18,6 +18,11 @@ const eventSignatureSchema: SpruceSchemas.Mercury.v2020_12_25.EventSignatureSche
 	                options: undefined
 	            },
 	            /** . */
+	            'aiInstructions': {
+	                type: 'text',
+	                options: undefined
+	            },
+	            /** . */
 	            'isGlobal': {
 	                type: 'boolean',
 	                defaultValue: false,

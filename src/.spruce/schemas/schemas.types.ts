@@ -477,6 +477,8 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'description'?: string | undefined | null
 				
+				'aiInstructions'?: string | undefined | null
+				
 				'isGlobal'?: boolean | undefined | null
 				
 				'responsePayloadSchema'?: (SpruceSchema.Schema) | undefined | null
@@ -503,6 +505,11 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 			    fields: {
 			            /** . */
 			            'description': {
+			                type: 'text',
+			                options: undefined
+			            },
+			            /** . */
+			            'aiInstructions': {
 			                type: 'text',
 			                options: undefined
 			            },

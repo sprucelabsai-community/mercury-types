@@ -56,6 +56,9 @@ export default buildSchema({
                                     description: {
                                         type: 'text',
                                     },
+                                    aiInstructions: {
+                                        type: 'text',
+                                    },
                                     isGlobal: {
                                         type: 'boolean',
                                         defaultValue: false,
