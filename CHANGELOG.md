@@ -1,3 +1,10 @@
+# [48.0.0](https://github.com/sprucelabsai-community/mercury-types/compare/v47.2.95...v48.0.0) (2025-06-10)
+
+
+### Breaking Changes
+
+* jest update ([b1c49d8](https://github.com/sprucelabsai-community/mercury-types/commit/b1c49d8))
+
 ## [47.2.95](https://github.com/sprucelabsai-community/mercury-types/compare/v47.2.94...v47.2.95) (2025-06-06)
 
 ## [47.2.94](https://github.com/sprucelabsai-community/mercury-types/compare/v47.2.93...v47.2.94) (2025-06-05)
