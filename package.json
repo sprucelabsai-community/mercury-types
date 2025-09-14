@@ -60,9 +60,9 @@
     "watch.rebuild": "yarn run clean.all && yarn install && yarn run watch.build.dev"
   },
   "dependencies": {
-    "@sprucelabs/error": "^7.1.16",
-    "@sprucelabs/schema": "^32.1.43",
-    "@sprucelabs/spruce-core-schemas": "^41.1.7"
+    "@sprucelabs/error": "^7.1.17",
+    "@sprucelabs/schema": "^32.1.44",
+    "@sprucelabs/spruce-core-schemas": "^41.1.8"
   },
   "devDependencies": {
     "@sprucelabs/esm-postbuild": "^7.0.33",
@@ -70,7 +70,7 @@
     "@sprucelabs/resolve-path-aliases": "^3.0.23",
     "@sprucelabs/semantic-release": "^5.0.2",
     "@sprucelabs/test": "^10.0.20",
-    "@sprucelabs/test-utils": "^6.0.78",
+    "@sprucelabs/test-utils": "^6.0.79",
     "@types/node": "^24.4.0",
     "chokidar-cli": "^3.0.0",
     "eslint": "^9.35.0",
