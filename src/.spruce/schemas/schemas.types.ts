@@ -380,9 +380,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 		interface PermissionReference<ContractId extends MercuryTypes.PermissionContractId = MercuryTypes.PermissionContractId> {
 			
 				
-				'contractId': (ContractId)
+				'contractId': ContractId
 				
-				'permissionIdsAny'?: (MercuryTypes.PermissionId<ContractId>)[] | undefined | null
+				'permissionIdsAny'?: MercuryTypes.PermissionId<ContractId>[] | undefined | null
 		}
 
 		interface PermissionReferenceSchema extends SpruceSchema.Schema {
@@ -481,9 +481,9 @@ declare module '@sprucelabs/spruce-core-schemas/build/.spruce/schemas/core.schem
 				
 				'isGlobal'?: boolean | undefined | null
 				
-				'responsePayloadSchema'?: (SpruceSchema.Schema) | undefined | null
+				'responsePayloadSchema'?: SpruceSchema.Schema | undefined | null
 				
-				'emitPayloadSchema'?: (SpruceSchema.Schema) | undefined | null
+				'emitPayloadSchema'?: SpruceSchema.Schema | undefined | null
 				
 				'feed'?: SpruceSchemas.Mercury.v2020_12_25.FeedOptions | undefined | null
 				
