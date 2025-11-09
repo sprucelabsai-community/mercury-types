@@ -1,3 +1,7 @@
+## 49.0.0 (2025-11-09)
+
+* major: upgrade ([18d7602](https://github.com/sprucelabsai-community/mercury-types/commit/18d7602))
+
 ## <small>48.0.149 (2025-11-08)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([d2bc593](https://github.com/sprucelabsai-community/mercury-types/commit/d2bc593))
