@@ -9,21 +9,21 @@ import MercuryEventEmitter, {
     ListenerCallback,
 } from '../types/mercury.types'
 
-export default class StubClient<Contract extends EventContract>
-    implements MercuryEventEmitter<Contract>
-{
+export default class StubClient<
+    Contract extends EventContract,
+> implements MercuryEventEmitter<Contract> {
     public async emitAndFlattenResponses<
         Fqen extends EventName<Contract> = EventName<Contract>,
-        IEventSignature extends
-            EventSignature = Contract['eventSignatures'][Fqen],
-        EmitSchema extends
-            Schema = IEventSignature['emitPayloadSchema'] extends Schema
-            ? IEventSignature['emitPayloadSchema']
-            : never,
-        ResponseSchema extends
-            Schema = IEventSignature['responsePayloadSchema'] extends Schema
-            ? IEventSignature['responsePayloadSchema']
-            : never,
+        IEventSignature extends EventSignature =
+            Contract['eventSignatures'][Fqen],
+        EmitSchema extends Schema =
+            IEventSignature['emitPayloadSchema'] extends Schema
+                ? IEventSignature['emitPayloadSchema']
+                : never,
+        ResponseSchema extends Schema =
+            IEventSignature['responsePayloadSchema'] extends Schema
+                ? IEventSignature['responsePayloadSchema']
+                : never,
         ResponsePayload = ResponseSchema extends Schema
             ? SchemaValues<ResponseSchema>
             : never,
@@ -40,16 +40,16 @@ export default class StubClient<Contract extends EventContract>
 
     public async emit<
         Fqen extends EventName<Contract> = EventName<Contract>,
-        IEventSignature extends
-            EventSignature = Contract['eventSignatures'][Fqen],
-        EmitSchema extends
-            Schema = IEventSignature['emitPayloadSchema'] extends Schema
-            ? IEventSignature['emitPayloadSchema']
-            : never,
-        ResponseSchema extends
-            Schema = IEventSignature['responsePayloadSchema'] extends Schema
-            ? IEventSignature['responsePayloadSchema']
-            : never,
+        IEventSignature extends EventSignature =
+            Contract['eventSignatures'][Fqen],
+        EmitSchema extends Schema =
+            IEventSignature['emitPayloadSchema'] extends Schema
+                ? IEventSignature['emitPayloadSchema']
+                : never,
+        ResponseSchema extends Schema =
+            IEventSignature['responsePayloadSchema'] extends Schema
+                ? IEventSignature['responsePayloadSchema']
+                : never,
         ResponsePayload = ResponseSchema extends Schema
             ? SchemaValues<ResponseSchema>
             : never,
@@ -82,8 +82,8 @@ export default class StubClient<Contract extends EventContract>
         Fqen extends KeyOf<Contract['eventSignatures']> = KeyOf<
             Contract['eventSignatures']
         >,
-        IEventSignature extends
-            EventSignature = Contract['eventSignatures'][Fqen],
+        IEventSignature extends EventSignature =
+            Contract['eventSignatures'][Fqen],
     >(
         _eventName: Fqen,
         _cb: ListenerCallback<IEventSignature>
