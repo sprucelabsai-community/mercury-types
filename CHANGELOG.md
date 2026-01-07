@@ -1,3 +1,8 @@
+## <small>49.1.1 (2026-01-07)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([ca9c2d4](https://github.com/sprucelabsai-community/mercury-types/commit/ca9c2d4))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([c760d7a](https://github.com/sprucelabsai-community/mercury-types/commit/c760d7a))
+
 ## 49.1.0 (2026-01-07)
 
 * feat: add exports field for proper ESM support in Node.js ([7206201](https://github.com/sprucelabsai-community/mercury-types/commit/7206201))
