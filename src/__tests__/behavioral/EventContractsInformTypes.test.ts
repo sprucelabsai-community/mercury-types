@@ -58,6 +58,7 @@ export default class TypesWorkTest extends AbstractSpruceTest {
     protected static async onWithPayload() {
         const client = new StubClient<TestContract>()
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         await client.on('spruce.testWithPayload', async (payload) => {
             assert.isExactType<typeof payload, { emitPayloadField: string }>(
                 true
@@ -88,6 +89,7 @@ export default class TypesWorkTest extends AbstractSpruceTest {
             },
         })
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const id = results.responses[0].payload?.id
         assert.isExactType<string | undefined, typeof id>(true)
     }
@@ -95,6 +97,7 @@ export default class TypesWorkTest extends AbstractSpruceTest {
     @test()
     protected static async typesEmitAndFlattenResponses() {
         const client = new StubClient<TestContract>()
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         const results = await client.emitAndFlattenResponses(
             'spruce.testWithPayload',
             {
@@ -136,6 +139,7 @@ export default class TypesWorkTest extends AbstractSpruceTest {
     }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const responsePayload = buildSchema({
     id: 'listenResponse',
     name: 'Test listen response',
@@ -147,6 +151,7 @@ const responsePayload = buildSchema({
     },
 })
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const emitPayload = buildSchema({
     id: 'emit',
     name: 'Test emit payload',
