@@ -1,3 +1,7 @@
+## <small>49.1.6 (2026-02-17)</small>
+
+* patch: upgrade dependencies and fix lint errors ([af86291](https://github.com/sprucelabsai-community/mercury-types/commit/af86291))
+
 ## <small>49.1.5 (2026-01-27)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([ece98f8](https://github.com/sprucelabsai-community/mercury-types/commit/ece98f8))
