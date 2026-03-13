@@ -1,3 +1,8 @@
+## <small>49.1.18 (2026-03-13)</small>
+
+* chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([d0aa9b2](https://github.com/sprucelabsai-community/mercury-types/commit/d0aa9b2))
+* chore(auto-upgrade): upgraded packages [upgrade-all] ([369303e](https://github.com/sprucelabsai-community/mercury-types/commit/369303e))
+
 ## <small>49.1.17 (2026-03-13)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([b24d494](https://github.com/sprucelabsai-community/mercury-types/commit/b24d494))
