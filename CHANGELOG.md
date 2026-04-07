@@ -1,3 +1,7 @@
+## <small>49.1.20 (2026-04-07)</small>
+
+* Upgrade dependencies and fix TypeScript 6.0 tsconfig deprecations ([4497b01](https://github.com/sprucelabsai-community/mercury-types/commit/4497b01))
+
 ## <small>49.1.19 (2026-03-13)</small>
 
 * chore(auto-upgrade): Upgrade Tests Passed [auto-merge] ([6912467](https://github.com/sprucelabsai-community/mercury-types/commit/6912467))
